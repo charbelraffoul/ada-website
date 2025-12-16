@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+body {
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  color: #111;
+}
+
 /* ===========================
    Datastory premium UI
    =========================== */
@@ -28,11 +35,11 @@
 /* Hero frame */
 .ds-hero {
   position: relative;
-  height: min(72vh, 560px);
+  height: 100vh; /* FULL SCREEN */
+  min-height: 700px; /* ensures impact on laptops */
   overflow: hidden;
   background: #111;
 }
-
 /* Image fills the banner (cropping like the reference) */
 .ds-hero-img {
   width: 100%;
@@ -123,11 +130,20 @@
    =========================== */
 
 .ds-lead {
-  margin: 0 0 14px 0;
-  max-width: 78ch;
-  font-size: 1.08rem;
-  line-height: 1.65;
-  opacity: 0.92;
+  margin: 0 0 0 0;
+  max-width: 75ch;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.28rem;
+  line-height: 1.85;
+}
+.ds-lead + .ds-lead {
+  text-indent: 1.6em;
+  margin-top: 0;
+}
+h1,
+h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
 .ds-divider {
