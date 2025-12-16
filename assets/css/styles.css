@@ -18,7 +18,7 @@
    HERO (full-bleed, centered like reference)
    =========================== */
 
-/* Full-bleed breakout (works even if your content is inside a centered wrapper) */
+/* Break out of the container to span full viewport width */
 .ds-hero--fullbleed {
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -41,19 +41,21 @@
   object-position: center;
   display: block;
   transform: scale(1.02);
-  filter: saturate(1.05) contrast(1.05);
+
+  /* BRIGHTER + more vivid */
+  filter: brightness(1.25) contrast(1.05) saturate(1.1);
 }
 
-/* Strong overlay for readable white text */
+/* Overlay for readable white text (softened so image isn't too dark) */
 .ds-hero-overlay {
   position: absolute;
   inset: 0;
   background: radial-gradient(
       900px 500px at 50% 35%,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.72)
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.55)
     ),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.74));
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.6));
   pointer-events: none;
 }
 
@@ -137,6 +139,17 @@
     rgba(0, 0, 0, 0.18) 50%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+/* Quote block (for the highlighted question) */
+.ds-quote {
+  margin: 18px 0 18px 0;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.04);
+  border-left: 5px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.12rem;
+  line-height: 1.55;
 }
 
 /* ===========================
