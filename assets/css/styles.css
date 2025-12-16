@@ -299,3 +299,146 @@ footer {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
+/* --- Datastory UI helpers --- */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.ds-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.ds-hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ds-hero img {
+  width: 100%;
+  height: min(72vh, 620px);
+  object-fit: cover;
+  display: block;
+}
+.ds-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.55) 40%,
+      rgba(0, 0, 0, 0.08) 100%
+    ),
+    radial-gradient(
+      60% 60% at 20% 20%,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+  pointer-events: none;
+}
+.ds-hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(18px, 4vw, 42px);
+}
+.ds-hero-card {
+  max-width: 980px;
+  margin: 0 auto;
+  color: white;
+}
+.ds-kicker {
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+}
+.ds-title {
+  margin: 14px 0 8px 0;
+  font-size: clamp(2.1rem, 4.2vw, 3.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+}
+.ds-subtitle {
+  margin: 0;
+  max-width: 70ch;
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+  line-height: 1.45;
+  opacity: 0.92;
+}
+.ds-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+.ds-card {
+  grid-column: span 12;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 16px 16px;
+}
+@media (min-width: 860px) {
+  .ds-card.span-4 {
+    grid-column: span 4;
+  }
+  .ds-card.span-6 {
+    grid-column: span 6;
+  }
+  .ds-card.span-8 {
+    grid-column: span 8;
+  }
+}
+.ds-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+.ds-card p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.55;
+}
+.ds-pill {
+  display: inline-block;
+  font-size: 0.82rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
+}
+.ds-divider {
+  margin: 22px 0 10px 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.16) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.ds-note {
+  border-radius: 16px;
+  padding: 14px 14px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.ds-note strong {
+  font-weight: 700;
+}
+.ds-muted {
+  opacity: 0.82;
+}
