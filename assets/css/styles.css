@@ -1,5 +1,5 @@
 /* ===========================
-   Datastory premium hero UI
+   Datastory premium UI
    =========================== */
 
 /* Page width + comfortable padding */
@@ -14,7 +14,7 @@
   margin-top: 10px;
 }
 
-/* Kicker pill */
+/* Kicker pill (default - light sections) */
 .ds-kicker {
   display: inline-flex;
   align-items: center;
@@ -31,9 +31,12 @@
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Hero image frame */
+/* ===========================
+   HERO (FULL image + white text)
+   =========================== */
+
 .ds-hero {
-  margin: 18px auto 18px auto;
+  margin: 18px auto;
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -42,39 +45,92 @@
   position: relative;
 }
 
-/* Image: crisp, cinematic */
-.ds-hero img {
+/* FULLY VISIBLE image (no crop) */
+.ds-hero-img {
   width: 100%;
-  height: min(54vh, 520px);
-  object-fit: cover;
+  height: min(62vh, 560px);
+  object-fit: contain; /* no cropping */
+  object-position: center;
   display: block;
-  transform: scale(1.02);
-  filter: contrast(1.05) saturate(1.08);
+  background: #0b0b0b; /* letterbox color */
+  filter: contrast(1.05) saturate(1.05);
 }
 
-/* Subtle cinematic overlay so text below feels cohesive */
-.ds-hero::after {
-  content: "";
+/* gradient overlay for readable white text */
+.ds-hero-overlay {
   position: absolute;
   inset: 0;
   background: radial-gradient(
-      1200px 500px at 20% 20%,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0) 55%
+      900px 420px at 20% 25%,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0) 60%
     ),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55));
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.42) 40%,
+      rgba(0, 0, 0, 0.1) 72%,
+      rgba(0, 0, 0, 0) 100%
+    );
   pointer-events: none;
+  z-index: 1;
 }
 
-/* Big title: modern */
-.ds-h1 {
-  margin: 14px 0 12px 0;
-  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+/* text on image */
+.ds-hero-text {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 18px;
+  max-width: 900px;
+  color: #fff;
+  z-index: 2;
+}
+
+.ds-hero-title {
+  margin: 10px 0 8px 0;
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
   line-height: 1.05;
   letter-spacing: -0.03em;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-/* Subtitle / lead: readable + elegant */
+.ds-hero-subtitle {
+  margin: 0;
+  max-width: 72ch;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.92;
+  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+}
+
+/* kicker styling on dark hero */
+.ds-hero .ds-kicker {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Mobile tweaks */
+@media (max-width: 520px) {
+  .ds-hero-img {
+    height: min(54vh, 460px);
+  }
+  .ds-hero-text {
+    left: 16px;
+    right: 16px;
+    bottom: 14px;
+  }
+  .ds-wrap {
+    padding: 0 16px;
+  }
+}
+
+/* ===========================
+   Typography blocks below hero
+   =========================== */
+
 .ds-lead {
   margin: 0 0 14px 0;
   max-width: 78ch;
@@ -83,7 +139,6 @@
   opacity: 0.92;
 }
 
-/* A nice divider */
 .ds-divider {
   margin: 22px 0 14px 0;
   height: 1px;
@@ -151,66 +206,4 @@
   margin: 0;
   opacity: 0.92;
   line-height: 1.6;
-}
-
-/* ===========================
-   Small-screen polish
-   =========================== */
-@media (max-width: 520px) {
-  .ds-hero img {
-    height: min(46vh, 420px);
-  }
-  .ds-wrap {
-    padding: 0 16px;
-  }
-}
-/* ===========================
-   Hero overlay content
-   =========================== */
-
-.ds-hero-content {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 18px;
-  pointer-events: none; /* overlay text shouldn't block scroll/taps */
-}
-
-.ds-hero-card {
-  pointer-events: auto;
-  max-width: min(720px, 92%);
-  padding: 16px 16px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.1), 0 6px 14px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.ds-title {
-  margin: 10px 0 8px 0;
-  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-}
-
-.ds-subtitle {
-  margin: 0;
-  max-width: 70ch;
-  font-size: 1.02rem;
-  line-height: 1.55;
-  opacity: 0.92;
-}
-
-@media (max-width: 520px) {
-  .ds-hero-content {
-    padding: 14px;
-  }
-  .ds-hero-card {
-    padding: 14px;
-    border-radius: 16px;
-  }
 }
