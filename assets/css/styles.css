@@ -1,64 +1,103 @@
-/* --- Datastory intro UI --- */
+/* ===========================
+   Datastory premium hero UI
+   =========================== */
+
+/* Page width + comfortable padding */
 .ds-wrap {
-  max-width: 980px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 20px;
 }
 
-.ds-hero {
-  margin: 18px auto 18px auto;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
-  background: #000;
-}
-
-.ds-hero img {
-  width: 100%;
-  height: min(52vh, 460px);
-  object-fit: cover;
-  display: block;
-}
-
-.ds-kicker {
-  display: inline-block;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  opacity: 0.85;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+/* Optional: make the top feel like a designed section */
+.ds-top {
   margin-top: 10px;
 }
 
-.ds-h1 {
-  margin: 12px 0 10px 0;
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  line-height: 1.06;
-  letter-spacing: -0.02em;
+/* Kicker pill */
+.ds-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
+/* Hero image frame */
+.ds-hero {
+  margin: 18px auto 18px auto;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.08);
+  background: #0b0b0b;
+  position: relative;
+}
+
+/* Image: crisp, cinematic */
+.ds-hero img {
+  width: 100%;
+  height: min(54vh, 520px);
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+  filter: contrast(1.05) saturate(1.08);
+}
+
+/* Subtle cinematic overlay so text below feels cohesive */
+.ds-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      1200px 500px at 20% 20%,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0) 55%
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55));
+  pointer-events: none;
+}
+
+/* Big title: modern */
+.ds-h1 {
+  margin: 14px 0 12px 0;
+  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+/* Subtitle / lead: readable + elegant */
 .ds-lead {
-  margin: 0 0 10px 0;
-  max-width: 75ch;
+  margin: 0 0 14px 0;
+  max-width: 78ch;
   font-size: 1.08rem;
-  line-height: 1.55;
+  line-height: 1.65;
   opacity: 0.92;
 }
 
+/* A nice divider */
 .ds-divider {
-  margin: 18px 0 10px 0;
+  margin: 22px 0 14px 0;
   height: 1px;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.16) 50%,
+    rgba(0, 0, 0, 0.18) 50%,
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+/* ===========================
+   Cards (below hero)
+   =========================== */
 
 .ds-grid {
   display: grid;
@@ -68,11 +107,19 @@
 
 .ds-card {
   grid-column: span 12;
-  border-radius: 16px;
+  border-radius: 18px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.08), 0 6px 14px rgba(0, 0, 0, 0.06);
   padding: 14px 14px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.ds-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.1), 0 8px 18px rgba(0, 0, 0, 0.07);
 }
 
 @media (min-width: 860px) {
@@ -84,24 +131,36 @@
   }
 }
 
+.ds-tag {
+  display: inline-block;
+  font-size: 0.82rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
+}
+
 .ds-card h3 {
   margin: 0 0 6px 0;
-  font-size: 1.05rem;
+  font-size: 1.06rem;
   letter-spacing: -0.01em;
 }
 
 .ds-card p {
   margin: 0;
-  opacity: 0.9;
-  line-height: 1.55;
+  opacity: 0.92;
+  line-height: 1.6;
 }
 
-.ds-tag {
-  display: inline-block;
-  font-size: 0.82rem;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  margin-bottom: 10px;
+/* ===========================
+   Small-screen polish
+   =========================== */
+@media (max-width: 520px) {
+  .ds-hero img {
+    height: min(46vh, 420px);
+  }
+  .ds-wrap {
+    padding: 0 16px;
+  }
 }

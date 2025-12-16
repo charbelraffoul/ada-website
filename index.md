@@ -3,7 +3,7 @@ layout: full
 ---
 
 <!-- HERO (contained, premium overlay) -->
-<section class="ds-container">
+<section class="ds-wrap ds-top">
   <div class="ds-hero">
     <img src="{{ '/assets/img/hero_oil.png' | relative_url }}" alt="Oil price shocks and market reactions">
     <div class="ds-hero-content">
