@@ -1,3 +1,7 @@
+---
+layout: full
+---
+
 # Oil Shocks, Sectors, and Portfolio Design
 
 Oil price shocks are a recurring source of macroeconomic stress, yet their impact is far from uniform across financial markets. Some sectors are highly exposed to energy costs, while others act as defensive buffers. Understanding these heterogeneous responses is essential for economic interpretation and portfolio construction.
