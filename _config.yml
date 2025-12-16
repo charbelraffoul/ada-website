@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: ADA Template Website
-description: A template website for ADA
+title: Crude connections
+description: This project studies how exogenous oil price shocks propagate through financial markets and ultimately affect investor portfolios. Rather than focusing on aggregate market returns, the analysis adopts a causal perspective and examines how oil shocks impact different economic sectors, how these effects vary across macroeconomic regimes, and whether they translate into meaningful portfolio-level outcomes. To move beyond simple correlations, the project relies on oil shock measures designed to be exogenous to financial market conditions, treating them as external impulses to the economy. Sector-level responses are analyzed first to identify heterogeneous causal effects. The analysis then incorporates macroeconomic regimes as effect modifiers, showing that the transmission of oil shocks depends strongly on the prevailing economic environment. Finally, sector-level findings are aggregated into cyclical and defensive portfolios to evaluate the economic relevance of these effects for investors. Overall, the project provides a coherent, applied framework for understanding how macroeconomic shocks causally influence sector returns and portfolio risk, highlighting the importance of cross-sectional and regime-aware analysis in financial data.
 show_downloads: True
 navigation:
   - title: Home
