@@ -14,113 +14,102 @@
   margin-top: 10px;
 }
 
-/* Kicker pill (default - light sections) */
-.ds-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.9;
-  padding: 7px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
 /* ===========================
-   HERO (FULL image + white text)
+   HERO (full-bleed, centered like reference)
    =========================== */
 
-.ds-hero {
-  margin: 18px auto;
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.08);
-  background: #0b0b0b;
-  position: relative;
+/* Full-bleed breakout (works even if your content is inside a centered wrapper) */
+.ds-hero--fullbleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
-/* FULLY VISIBLE image (no crop) */
+/* Hero frame */
+.ds-hero {
+  position: relative;
+  height: min(72vh, 560px);
+  overflow: hidden;
+  background: #111;
+}
+
+/* Image fills the banner (cropping like the reference) */
 .ds-hero-img {
   width: 100%;
-  height: min(62vh, 560px);
-  object-fit: contain; /* no cropping */
+  height: 100%;
+  object-fit: cover;
   object-position: center;
   display: block;
-  background: #0b0b0b; /* letterbox color */
-  filter: contrast(1.05) saturate(1.05);
+  transform: scale(1.02);
+  filter: saturate(1.05) contrast(1.05);
 }
 
-/* gradient overlay for readable white text */
+/* Strong overlay for readable white text */
 .ds-hero-overlay {
   position: absolute;
   inset: 0;
   background: radial-gradient(
-      900px 420px at 20% 25%,
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0) 60%
+      900px 500px at 50% 35%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.72)
     ),
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.78) 0%,
-      rgba(0, 0, 0, 0.42) 40%,
-      rgba(0, 0, 0, 0.1) 72%,
-      rgba(0, 0, 0, 0) 100%
-    );
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.74));
   pointer-events: none;
-  z-index: 1;
 }
 
-/* text on image */
-.ds-hero-text {
+/* Centered text */
+.ds-hero-center {
   position: absolute;
-  left: 22px;
-  right: 22px;
-  bottom: 18px;
-  max-width: 900px;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 24px;
   color: #fff;
-  z-index: 2;
 }
 
 .ds-hero-title {
-  margin: 10px 0 8px 0;
-  font-size: clamp(2rem, 4.2vw, 3.2rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  margin: 0 0 10px 0;
+  font-size: clamp(2.6rem, 6vw, 5.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-shadow: 0 18px 50px rgba(0, 0, 0, 0.65);
 }
 
 .ds-hero-subtitle {
   margin: 0;
-  max-width: 72ch;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  opacity: 0.92;
-  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+  font-weight: 600;
+  opacity: 0.95;
+  text-shadow: 0 14px 40px rgba(0, 0, 0, 0.65);
 }
 
-/* kicker styling on dark hero */
-.ds-hero .ds-kicker {
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+/* Bottom credit line */
+.ds-hero-foot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  padding: 0 18px;
+  display: flex;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.92);
 }
 
-/* Mobile tweaks */
+.ds-hero-credit {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-shadow: 0 14px 40px rgba(0, 0, 0, 0.65);
+}
+
+/* Mobile */
 @media (max-width: 520px) {
-  .ds-hero-img {
-    height: min(54vh, 460px);
+  .ds-hero {
+    height: min(62vh, 520px);
   }
-  .ds-hero-text {
-    left: 16px;
-    right: 16px;
-    bottom: 14px;
+  .ds-hero-credit {
+    font-size: 0.95rem;
   }
   .ds-wrap {
     padding: 0 16px;
