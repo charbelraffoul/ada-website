@@ -3,11 +3,11 @@ layout: full
 ---
 
 <!-- HERO IMAGE -->
-<div style="text-align:center; margin-bottom:2.5rem;">
+<div class="full-width" style="margin-bottom:2.5rem;">
   <img 
     src="{{ '/assets/img/hero_oil.png' | relative_url }}"
     alt="Oil price shocks as a moody boss"
-    style="max-width:100%; height:auto;"
+    style="width:100%; height:auto;"
   >
 </div>
 
