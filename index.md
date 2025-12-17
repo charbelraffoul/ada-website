@@ -243,6 +243,9 @@ layout: full
   <p class="ds-caption">
     <strong>Figure 4.</strong> Sector returns across oil shock regimes.
   </p>
+  <p class="ds-note">
+  <em>Tip:</em> Double-click a sector in the legend (e.g. <strong>Energy</strong>) to isolate its performance across oil-shock regimes.
+</p>
 
 </section>
 
