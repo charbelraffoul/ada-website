@@ -423,6 +423,35 @@ TODO, add causality to industries</p>
 Looking back, the company goes through three very different management styles. You can
 think of them as three bosses. Meet them—and pick one to explore.
 </p>
+<h2>Oil price regimes over time</h2>
+
+<p class="ds-lead">
+Before introducing the bosses, it helps to look at the full picture. The figure below shows
+the monthly Brent oil price level, with the three periods we focus on highlighted.
+</p>
+
+<p class="ds-lead">
+These shaded regions are not based on short-term price movements, but on clear breaks in
+the level, volatility, and persistence of oil prices. Each period reflects a distinct
+market environment in which oil shocks play out differently.
+</p>
+
+<figure class="ds-figure">
+  <img
+    src="{{ '/assets/img/oil_regime.png' | relative_url }}"
+    alt="Brent oil price with regime markers"
+    style="width:100%; border-radius:12px;"
+  >
+  <figcaption class="ds-caption">
+    Monthly Brent oil prices with regime markers: the Global Financial Crisis (2008–2009),
+    the high-price Plateau (2010–2014), and the Shale period (2014–2016).
+  </figcaption>
+</figure>
+
+<p class="ds-lead">
+With this timeline in mind, we can now meet the three bosses who ran the company during
+these periods.
+</p>
 
 <h2>Meet the bosses</h2>
 
