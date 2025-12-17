@@ -205,24 +205,47 @@ layout: full
   Each point corresponds to a sector, while the box plots summarize how sector returns
   are distributed within each group.
 </p>
-<section class="ds-wrap ds-figure-section">
+<section class="ds-figure-section">
 
-  <div class="ds-embed">
-    <iframe
-      src="{{ '/assets/interactive/all_sectors_oil_shock_regimes.html' | relative_url }}"
-      width="100%"
-      height="560"
-      style="border: 0; border-radius: 12px;"
-      loading="lazy"
-    ></iframe>
+  <div class="oil-regime-layout">
+
+    <!-- LEFT: Plot -->
+    <div class="oil-regime-plot">
+      <iframe
+        src="{{ '/assets/interactive/all_sectors_oil_shock_regimes.html' | relative_url }}"
+        width="100%"
+        height="560"
+        style="border: 0; border-radius: 12px;"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- RIGHT: Barrels -->
+    <div class="oil-regime-icons">
+      <div class="oil-icon">
+        <img src="{{ '/assets/img/red_barrel_transparent.png' | relative_url }}" alt="Negative shock">
+        <span>Negative shock</span>
+      </div>
+
+      <div class="oil-icon">
+        <img src="{{ '/assets/img/grey_barrel_transparent.png' | relative_url }}" alt="No shock">
+        <span>No shock</span>
+      </div>
+
+      <div class="oil-icon">
+        <img src="{{ '/assets/img/green_barrel_transparent.png' | relative_url }}" alt="Positive shock">
+        <span>Positive shock</span>
+      </div>
+    </div>
+
   </div>
 
   <p class="ds-caption">
-    <strong>Figure 4.</strong> Sector returns across oil shock regimes. Each point represents a sector (hover to see
-    sector name and value), while the box plots summarize the distribution across sectors within each regime.
+    <strong>Figure 4.</strong> Sector returns across oil shock regimes.
   </p>
 
 </section>
+
 <p class="ds-lead">
   Two patterns stand out. During large negative oil shocks, sector returns shift downward
   and become more dispersed, indicating that adverse oil movements are associated with
