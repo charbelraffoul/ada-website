@@ -316,7 +316,7 @@ effects on equity sectors.
 <h2>Causal analysis: does oil lead sector returns?</h2>
 
 <div class="figure-block">
-  <img src="matrix_causal_sectors.png"
+  <img src="{{ '/assets/img/matrix_causal_sectors.png' | relative_url }}"
        alt="Lagged regression p-values across sectors"
        class="img-fluid">
   <p class="figure-caption">
@@ -337,9 +337,11 @@ industries showing stronger and more consistent sensitivity to oil price movemen
 </p>
 
 <div class="figure-block">
-  <img src="p_value_causal.png"
+
+<img src="{{ '/assets/img/p_value_causal.png' | relative_url }}"
        alt="Granger causality test results by sector"
        class="img-fluid">
+
   <p class="figure-caption">
     Granger causality test results (best lag between one and three). Lower p-values indicate
     stronger evidence that oil price changes lead sector returns.
