@@ -59,7 +59,7 @@ layout: full
 
   <p class="ds-lead">
     Before looking at how oil shocks propagate through the market, we first need to clarify how the market itself
-    is structured. Stocks are not analyzed in isolation. Each company belongs to an industry, and industries are grouped
+    is structured.No stock is an island. Every company sits within an industry, and industries are grouped
     into broader sectors that capture shared economic exposure.
   </p>
 
@@ -120,7 +120,7 @@ layout: full
 </section>
 
 <p class="ds-lead">
-  From this point onward, our study focuses exclusively on the period from
+  For this analysis, we zoom in on the period from 
   <strong>January 2000 to April 1, 2020</strong>. All sector and industry level
   analyses, as well as the identification of oil price shocks, are conducted
   within this time window. This choice reflects both data availability and the
@@ -322,7 +322,7 @@ across sectors.
 
 <hr>
 
-<h2>Causal analysis: does oil lead sector returns?</h2>
+<h2>Who moves first?: does oil lead sector returns?</h2>
 
 <div class="figure-block">
   <img src="{{ '/assets/img/matrix_causal_sectors.png' | relative_url }}"
@@ -393,8 +393,7 @@ economic exposure.
 
 <div class="ds-transition-box">
   <p>
-    We would not give bonuses to—or fire—an entire department because of one team.
-    To see who is really driving the results, we now dive deeper into industries.
+    You wouldn't fire an entire department just because one employee underperformed. Yet, looking only at Sectors does exactly that.
   </p>
 </div>
 
@@ -424,12 +423,13 @@ TODO, add causality to industries</p>
 Looking back, the company goes through three very different management styles. You can
 think of them as three bosses. Meet them—and pick one to explore.
 </p>
+
 <h2>Meet the bosses</h2>
 
 <p class="ds-lead">
-Looking back at oil price history, we can distinguish three distinct periods. Each period
-comes with its own price dynamics, and therefore its own “personality”. To keep things
-intuitive, we present them as three different bosses.
+Looking back at oil price history, we can clearly distinguish three short but very different
+management periods. Each one corresponds to a specific type of shock and a distinct oil
+price environment. To keep things intuitive, we present them as three different bosses.
 </p>
 
 <div class="boss-grid">
@@ -438,20 +438,20 @@ intuitive, we present them as three different bosses.
   <article class="boss-card">
     <img src="{{ '/assets/img/first_regime_orange.png' | relative_url }}" alt="GFC boss">
 
-    <h3>Boss #1 — GFC</h3>
+    <h3>Boss #1 — GFC (2008–2009)</h3>
 
     <p class="ds-lead">
-      This boss presides over a period of extreme movements: a rapid price run-up followed by
-      a sudden and deep collapse. Prices change quickly and dramatically over a short span
-      of time.
+      This boss takes over during a demand shock. Oil prices spike and then collapse rapidly
+      as global demand disappears. The reaction is chaotic, driven by panic rather than
+      gradual adjustment.
     </p>
 
     <ul class="boss-traits">
-      <li><strong>Price level:</strong> rapidly changing</li>
-      <li><strong>Volatility:</strong> very high</li>
-      <li><strong>Trend persistence:</strong> low</li>
-      <li><strong>Shock size:</strong> large</li>
-      <li><strong>Market behavior:</strong> abrupt reversals</li>
+      <li><strong>Shock type:</strong> demand shock</li>
+      <li><strong>Craziness:</strong> very high</li>
+      <li><strong>Predictability:</strong> very low</li>
+      <li><strong>Market mood:</strong> panic-driven</li>
+      <li><strong>Overall vibe:</strong> crisis management</li>
     </ul>
 
   </article>
@@ -460,19 +460,20 @@ intuitive, we present them as three different bosses.
   <article class="boss-card">
     <img src="{{ '/assets/img/second_regime.png' | relative_url }}" alt="Plateau boss">
 
-    <h3>Boss #2 — Plateau</h3>
+    <h3>Boss #2 — Plateau (2010–2014)</h3>
 
     <p class="ds-lead">
-      This boss oversees a long stretch of elevated oil prices. Movements are frequent, but
-      prices remain within a relatively stable high range for several years.
+      This boss presides over a period of relative stability. Oil prices remain high—around
+      $100 per barrel—but fluctuate within a narrow range. Shocks occur, but the environment
+      itself is steady.
     </p>
 
     <ul class="boss-traits">
-      <li><strong>Price level:</strong> persistently high</li>
-      <li><strong>Volatility:</strong> moderate</li>
-      <li><strong>Trend persistence:</strong> high</li>
-      <li><strong>Shock size:</strong> moderate</li>
-      <li><strong>Market behavior:</strong> prolonged fluctuations</li>
+      <li><strong>Shock type:</strong> none dominant</li>
+      <li><strong>Craziness:</strong> low</li>
+      <li><strong>Predictability:</strong> high</li>
+      <li><strong>Market mood:</strong> stable</li>
+      <li><strong>Overall vibe:</strong> steady pressure</li>
     </ul>
 
   </article>
@@ -481,19 +482,20 @@ intuitive, we present them as three different bosses.
   <article class="boss-card">
     <img src="{{ '/assets/img/third_regime.png' | relative_url }}" alt="Shale boss">
 
-    <h3>Boss #3 — Shale</h3>
+    <h3>Boss #3 — Shale (2014–2016)</h3>
 
     <p class="ds-lead">
-      This boss arrives with a sharp price decline, after which oil trades at lower levels.
-      Prices continue to move substantially, but around a lower range than before.
+      This boss arrives during a supply shock. Rapid growth in U.S. shale production floods
+      the market, triggering a sharp drop in oil prices followed by continued volatility at
+      lower levels.
     </p>
 
     <ul class="boss-traits">
-      <li><strong>Price level:</strong> lower than previous periods</li>
-      <li><strong>Volatility:</strong> episodic</li>
-      <li><strong>Trend persistence:</strong> medium</li>
-      <li><strong>Shock size:</strong> uneven</li>
-      <li><strong>Market behavior:</strong> downward breaks followed by rebounds</li>
+      <li><strong>Shock type:</strong> supply shock</li>
+      <li><strong>Craziness:</strong> medium</li>
+      <li><strong>Predictability:</strong> medium</li>
+      <li><strong>Market mood:</strong> adjustment phase</li>
+      <li><strong>Overall vibe:</strong> rebalancing</li>
     </ul>
 
   </article>
@@ -501,8 +503,9 @@ intuitive, we present them as three different bosses.
 </div>
 
 <p class="ds-lead">
-These three bosses differ in how oil prices move over time. In the next step, we examine
-how sector and industry returns behave under each of these distinct environments.
+These three bosses differ in both the source of the shock and the behavior of oil prices.
+In the next step, we examine how departments and teams respond under each of these distinct
+management environments.
 </p>
 
 <p class="ds-lead">
