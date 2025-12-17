@@ -424,132 +424,86 @@ TODO, add causality to industries</p>
 Looking back, the company goes through three very different management styles. You can
 think of them as three bosses. Meet them—and pick one to explore.
 </p>
+<h2>Meet the bosses</h2>
+
+<p class="ds-lead">
+Looking back at oil price history, we can distinguish three distinct periods. Each period
+comes with its own price dynamics, and therefore its own “personality”. To keep things
+intuitive, we present them as three different bosses.
+</p>
 
 <div class="boss-grid">
 
-  <!-- Boss 1 -->
-  <article class="boss-card boss-gfc">
-    <div class="boss-media">
-      <img src="{{ '/assets/img/first_regime_orange.png' | relative_url }}" alt="Boss: GFC">
-      <div class="boss-tag">Crisis Manager</div>
-    </div>
+  <!-- GFC -->
+  <article class="boss-card">
+    <img src="{{ '/assets/img/first_regime_orange.png' | relative_url }}" alt="GFC boss">
 
-    <div class="boss-body">
-      <h3>Boss #1 — The Crisis Manager (GFC)</h3>
-      <p class="boss-desc">
-        Walks into the office, immediately flips the table, and calls it “risk management.”
-        In this era, demand evaporates, volatility spikes, and even well-run departments can
-        look bad simply because the whole building is shaking.
-      </p>
+    <h3>Boss #1 — GFC</h3>
 
-      <div class="boss-stats">
-        <div class="stat">
-          <div class="stat-k">Era</div>
-          <div class="stat-v"><!-- TODO --> 2008–2009</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Avg Brent</div>
-          <div class="stat-v"><!-- TODO --> $— / bbl</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Volatility</div>
-          <div class="stat-v"><!-- TODO --> —</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Worst drawdown</div>
-          <div class="stat-v"><!-- TODO --> —%</div>
-        </div>
-      </div>
+    <p class="ds-lead">
+      This boss presides over a period of extreme movements: a rapid price run-up followed by
+      a sudden and deep collapse. Prices change quickly and dramatically over a short span
+      of time.
+    </p>
 
-      <p class="boss-takeaway">
-        <strong>What to expect:</strong> noisy signals, strong co-movement, and “everything reacts at once.”
-      </p>
-    </div>
+    <ul class="boss-traits">
+      <li><strong>Price level:</strong> rapidly changing</li>
+      <li><strong>Volatility:</strong> very high</li>
+      <li><strong>Trend persistence:</strong> low</li>
+      <li><strong>Shock size:</strong> large</li>
+      <li><strong>Market behavior:</strong> abrupt reversals</li>
+    </ul>
 
   </article>
 
-  <!-- Boss 2 -->
-  <article class="boss-card boss-plateau">
-    <div class="boss-media">
-      <img src="{{ '/assets/img/second_regime.png' | relative_url }}" alt="Boss: Plateau">
-      <div class="boss-tag">Stable Operator</div>
-    </div>
+  <!-- Plateau -->
+  <article class="boss-card">
+    <img src="{{ '/assets/img/second_regime.png' | relative_url }}" alt="Plateau boss">
 
-    <div class="boss-body">
-      <h3>Boss #2 — The Stable Operator (Plateau)</h3>
-      <p class="boss-desc">
-        Loves routines, hates surprises, and runs a tight ship. Oil stays high and fairly
-        steady, so energy isn’t a one-off drama — it’s a standing line item in everyone’s budget.
-      </p>
+    <h3>Boss #2 — Plateau</h3>
 
-      <div class="boss-stats">
-        <div class="stat">
-          <div class="stat-k">Era</div>
-          <div class="stat-v"><!-- TODO --> 2010–2014</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Avg Brent</div>
-          <div class="stat-v"><!-- TODO --> $— / bbl</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Volatility</div>
-          <div class="stat-v"><!-- TODO --> —</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Months &gt; $100</div>
-          <div class="stat-v"><!-- TODO --> —</div>
-        </div>
-      </div>
+    <p class="ds-lead">
+      This boss oversees a long stretch of elevated oil prices. Movements are frequent, but
+      prices remain within a relatively stable high range for several years.
+    </p>
 
-      <p class="boss-takeaway">
-        <strong>What to expect:</strong> clearer exposure differences across departments, slower but persistent effects.
-      </p>
-    </div>
+    <ul class="boss-traits">
+      <li><strong>Price level:</strong> persistently high</li>
+      <li><strong>Volatility:</strong> moderate</li>
+      <li><strong>Trend persistence:</strong> high</li>
+      <li><strong>Shock size:</strong> moderate</li>
+      <li><strong>Market behavior:</strong> prolonged fluctuations</li>
+    </ul>
 
   </article>
 
-  <!-- Boss 3 -->
-  <article class="boss-card boss-shale">
-    <div class="boss-media">
-      <img src="{{ '/assets/img/third_regime.png' | relative_url }}" alt="Boss: Shale">
-      <div class="boss-tag">Rule Changer</div>
-    </div>
+  <!-- Shale -->
+  <article class="boss-card">
+    <img src="{{ '/assets/img/third_regime.png' | relative_url }}" alt="Shale boss">
 
-    <div class="boss-body">
-      <h3>Boss #3 — The Rule Changer (Shale)</h3>
-      <p class="boss-desc">
-        Shows up with new technology, rewrites the org chart, and suddenly supply is flexible.
-        Oil becomes less of a universal constraint — shocks still happen, but they don’t always
-        take the whole company hostage.
-      </p>
+    <h3>Boss #3 — Shale</h3>
 
-      <div class="boss-stats">
-        <div class="stat">
-          <div class="stat-k">Era</div>
-          <div class="stat-v"><!-- TODO --> 2014–2016</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Avg Brent</div>
-          <div class="stat-v"><!-- TODO --> $— / bbl</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Volatility</div>
-          <div class="stat-v"><!-- TODO --> —</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Price floor</div>
-          <div class="stat-v"><!-- TODO --> $—</div>
-        </div>
-      </div>
+    <p class="ds-lead">
+      This boss arrives with a sharp price decline, after which oil trades at lower levels.
+      Prices continue to move substantially, but around a lower range than before.
+    </p>
 
-      <p class="boss-takeaway">
-        <strong>What to expect:</strong> more regime-specific winners/losers, and less “one shock moves everything.”
-      </p>
-    </div>
+    <ul class="boss-traits">
+      <li><strong>Price level:</strong> lower than previous periods</li>
+      <li><strong>Volatility:</strong> episodic</li>
+      <li><strong>Trend persistence:</strong> medium</li>
+      <li><strong>Shock size:</strong> uneven</li>
+      <li><strong>Market behavior:</strong> downward breaks followed by rebounds</li>
+    </ul>
 
   </article>
 
 </div>
+
+<p class="ds-lead">
+These three bosses differ in how oil prices move over time. In the next step, we examine
+how sector and industry returns behave under each of these distinct environments.
+</p>
 
 <p class="ds-lead">
 With the bosses introduced, we can now ask a sharper question: which departments (sectors)
