@@ -27,9 +27,10 @@ body {
 
 /* Break out of the container to span full viewport width */
 .ds-hero--fullbleed {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  max-width: 1040px;
+  margin: 0 auto;
+  border-radius: 22px;
+  overflow: hidden;
 }
 
 /* Hero frame */
