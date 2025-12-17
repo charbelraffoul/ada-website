@@ -90,5 +90,6 @@ layout: full
     loading="lazy"
   ></iframe>
 </div>
+**Figure 1.** Stock universe organized by sector, industry, and individual stocks. Tile size reflects median monthly dollar trading volume.
 
 </section>
