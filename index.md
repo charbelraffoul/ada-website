@@ -163,14 +163,13 @@ layout: full
   how different sectors and industries respond when confronted with unexpected changes
   in a key macroeconomic input.
 </p>
-
-<section class="ds-wrap ds-figure-section">
-
-  <p class="ds-figure-intro">
+<p class="ds-lead">
     To concretize this definition, we identify oil price shocks using monthly
     Brent crude oil log returns. Months corresponding to unusually large price
     movements are classified as shocks.
   </p>
+
+<section class="ds-wrap ds-figure-section">
 
   <div class="ds-embed">
     <iframe
