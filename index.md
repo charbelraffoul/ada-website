@@ -296,22 +296,6 @@ reflecting its direct exposure to adverse oil price movements. Other sectors dis
 more muted responses, suggesting that oil shocks primarily reshape the cross-section
 of sector performance rather than uniformly shifting returns.
 </p>
-<h2>From patterns to causality</h2>
-
-<p class="ds-lead">
-The previous sections documented systematic differences in how sectors behave during periods
-of oil price stress. We now take a step further and ask whether these patterns reflect a
-directional mechanism: do oil price movements <em>lead</em> sector returns?
-</p>
-
-<p class="ds-lead">
-Because large oil price changes are typically triggered by events outside financial
-markets—such as geopolitical shocks or supply disruptions—they can reasonably be viewed as
-external disturbances. This makes oil prices a useful candidate for studying directional
-effects on equity sectors.
-</p>
-
-<hr>
 
 <h2>From patterns to causality</h2>
 
@@ -400,14 +384,22 @@ energy-related ones—tend to react afterward. This pattern is consistent with v
 price shocks as external disturbances that affect sectors differently depending on their
 economic exposure.
 </p>
-<p class="ds-lead">
-At this point, it is tempting to stop at the sector level.
-</p>
 
 <p class="ds-lead">
-But well, we would never give bonuses to—or fire—an entire department because of one team, so
-let’s dive deeper and examine oil price effects at the industry level.
+
 </p>
+
+<h2>At this point, it is tempting to stop at the sector level.
+</h2>
+
+<hr>
+
+<div class="ds-transition-box">
+  <p>
+    We would not give bonuses to—or fire—an entire department because of one team.
+    To see who is really driving the results, we now dive deeper into industries.
+  </p>
+</div>
 
 <p class="ds-lead">
 Looking at industries lets us see which teams are actually driving the sector-level results.
@@ -418,4 +410,6 @@ Some are highly exposed to oil prices, others much less so.
 Let’s dive deeper and see where these effects really come from.
 </p>
 
+<p class="ds-lead">
+TODO, add causality to industries</p>
 </section>
