@@ -263,7 +263,6 @@ layout: full
   only through their direction, but also through the way they reshape the cross-section
   of sector performance.
 </p>
-</section>
 <p class="ds-lead">
 To move beyond distributions and summarize these effects more directly, we now compare
 average sector returns during oil-shock periods relative to normal conditions.
@@ -297,3 +296,4 @@ reflecting its direct exposure to adverse oil price movements. Other sectors dis
 more muted responses, suggesting that oil shocks primarily reshape the cross-section
 of sector performance rather than uniformly shifting returns.
 </p>
+</section>
