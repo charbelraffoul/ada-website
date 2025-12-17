@@ -191,3 +191,51 @@ layout: full
 </section>
 
 </section>
+<p class="ds-lead">
+  With oil price shocks identified, we now turn to how these events translate into
+  movements across the market.
+</p>
+
+<p class="ds-lead">
+  Before examining individual sectors in detail, we first look at a compact summary
+  of sector behavior across different oil market conditions.
+</p>
+
+<p class="ds-lead">
+  The figure below groups months into negative shocks, normal periods, and positive shocks.
+  Each point corresponds to a sector, while the box plots summarize how sector returns
+  are distributed within each group.
+</p>
+<section class="ds-wrap ds-figure-section">
+
+  <div class="ds-embed">
+    <iframe
+      src="{{ '/assets/interactive/all_sectors_oil_shock_regimes.html' | relative_url }}"
+      width="100%"
+      height="560"
+      style="border: 0; border-radius: 12px;"
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  <p class="ds-caption">
+    <strong>Figure 4.</strong> Sector returns across oil shock regimes. Each point represents a sector (hover to see
+    sector name and value), while the box plots summarize the distribution across sectors within each regime.
+  </p>
+
+</section>
+<p class="ds-lead">
+  Two patterns stand out. During large negative oil shocks, sector returns shift downward
+  and become more dispersed, indicating that adverse oil movements are associated with
+  broad market stress but uneven exposure across sectors. In contrast, positive oil shocks
+  are followed by higher and more tightly clustered sector returns, suggesting a more
+  uniform response when oil prices rise sharply.
+</p>
+
+<p class="ds-lead">
+  Normal periods lie between these extremes, with returns that are generally positive
+  and less volatile. Together, these distributions suggest that oil shocks matter not
+  only through their direction, but also through the way they reshape the cross-section
+  of sector performance.
+</p>
+</section>
