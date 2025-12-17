@@ -98,7 +98,7 @@ layout: full
   </p>
 
   <p class="ds-figure-intro">
-    The figure below shows the evolution of Brent crude oil prices at a monthly frequency from
+    The figure below shows the evolution of crude oil prices at a monthly frequency from
     <strong>1960 to 2025</strong>, providing a long-run view of the environment in which firms and sectors operate.
     While this full history offers useful context, our empirical analysis focuses on the period from
     <strong>January 2000 to April 1, 2020</strong>, the window over which sector and industry data are consistently available.
@@ -114,7 +114,7 @@ layout: full
   </div>
 
   <p class="ds-caption">
-    <strong>Figure 2.</strong> Brent crude oil price (monthly, USD per barrel), 1960–2025.
+    <strong>Figure 2.</strong> Crude oil price (monthly, USD per barrel), 1960–2025.
   </p>
 
 </section>
@@ -163,13 +163,14 @@ layout: full
   how different sectors and industries respond when confronted with unexpected changes
   in a key macroeconomic input.
 </p>
-<p class="ds-lead">
-    To concretize this definition, we identify oil price shocks using monthly
-    Brent crude oil log returns. Months corresponding to unusually large price
-    movements are classified as shocks.
-  </p>
 
 <section class="ds-wrap ds-figure-section">
+
+  <p class="ds-figure-intro">
+    To concretize this definition, we identify oil price shocks using monthly
+    crude oil log returns. Months corresponding to unusually large price
+    movements are classified as shocks.
+  </p>
 
   <div class="ds-embed">
     <iframe
@@ -182,7 +183,7 @@ layout: full
   </div>
 
   <p class="ds-caption">
-    <strong>Figure 3.</strong> Oil price shocks identified from monthly Brent crude oil
+    <strong>Figure 3.</strong> Oil price shocks identified from monthly Crude oil
     log returns over the period January 2000 to April 1, 2020. Shocks correspond to
     extreme movements relative to typical month-to-month variation.
   </p>
