@@ -264,3 +264,36 @@ layout: full
   of sector performance.
 </p>
 </section>
+<p class="ds-lead">
+To move beyond distributions and summarize these effects more directly, we now compare
+average sector returns during oil-shock periods relative to normal conditions.
+</p>
+<section class="ds-wrap ds-figure-section">
+
+  <div class="ds-static-figure">
+    <img
+      src="{{ '/assets/img/shock_vs_non_shock_mean_return_diff.png' | relative_url }}"
+      alt="Shock vs non-shock mean return differences across sectors"
+    />
+  </div>
+
+  <p class="ds-caption">
+    <strong>Figure 5.</strong> Difference in average sector returns during positive and negative
+    oil-shock periods relative to no-shock periods.
+  </p>
+
+</section>
+<p class="ds-lead">
+The figure highlights a clear asymmetry in how sectors respond to oil price disruptions.
+Positive oil shocks are associated with modest improvements in average returns relative
+to normal periods across most sectors. In contrast, negative oil shocks lead to
+substantially larger declines, indicating that downside effects dominate.
+</p>
+
+<p class="ds-lead">
+The <strong>Energy</strong> sector stands out most clearly. While it benefits during positive
+oil shocks, it experiences by far the largest deterioration during negative shocks,
+reflecting its direct exposure to adverse oil price movements. Other sectors display
+more muted responses, suggesting that oil shocks primarily reshape the cross-section
+of sector performance rather than uniformly shifting returns.
+</p>
