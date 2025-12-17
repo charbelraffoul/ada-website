@@ -300,15 +300,24 @@ h2 {
 
 @import "{{ site.theme }}";
 
-/* Oil-drop cursor (SVG data URI) */
+/* Small oil-drop cursor */
 :root {
-  --oil-cursor: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2732%27%20height%3D%2732%27%20viewBox%3D%270%200%2032%2032%27%3E%3Cpath%20d%3D%27M16%202C11%209%206%2014%206%2020a10%2010%200%200%200%2020%200c0-6-5-11-10-18z%27%20fill%3D%27%23101010%27/%3E%3Cpath%20d%3D%27M13%2011c-2%203-3%205-3%207%200%202%201%203%203%203%27%20fill%3D%27%232a2a2a%27%20opacity%3D%270.9%27/%3E%3C/svg%3E");
+  --oil-cursor: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2720%27%20height%3D%2720%27%20viewBox%3D%270%200%2032%2032%27%3E%3Cpath%20d%3D%27M16%202C11%209%206%2014%206%2020a10%2010%200%200%200%2020%200c0-6-5-11-10-18z%27%20fill%3D%27%23101010%27/%3E%3Cpath%20d%3D%27M13%2011c-2%203-3%205-3%207%200%202%201%203%203%203%27%20fill%3D%27%232a2a2a%27%20opacity%3D%270.9%27/%3E%3C/svg%3E");
 }
 
 /* Default cursor */
 html,
 body {
-  cursor: var(--oil-cursor) 16 16, auto; /* 16 16 = hotspot (center) */
+  cursor: var(--oil-cursor) 10 10, auto;
+}
+
+/* Cursor on clickable elements */
+a,
+button,
+[role="button"],
+input[type="submit"],
+summary {
+  cursor: var(--oil-cursor) 10 10, pointer;
 }
 
 /* “Pointer” cursor for clickable things */
