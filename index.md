@@ -167,18 +167,19 @@ layout: full
 <section class="ds-wrap ds-figure-section">
 
   <p class="ds-figure-intro">
-    To operationalize this definition, we identify oil price shocks using monthly
+    To concretize this definition, we identify oil price shocks using monthly
     Brent crude oil log returns. Months corresponding to unusually large price
     movements are classified as shocks.
   </p>
 
-<section class="ds-wrap ds-figure-section">
-
-  <div class="ds-static-figure">
-    <img
-      src="{{ '/assets/img/oil_shocks.png' | relative_url }}"
-      alt="Oil price shocks identified from monthly Brent crude oil log returns"
-    />
+  <div class="ds-embed">
+    <iframe
+      src="{{ '/assets/interactive/oil_shocks.html' | relative_url }}"
+      width="100%"
+      height="520"
+      style="border: 0; border-radius: 12px;"
+      loading="lazy"
+    ></iframe>
   </div>
 
   <p class="ds-caption">
@@ -186,5 +187,7 @@ layout: full
     log returns over the period January 2000 to April 1, 2020. Shocks correspond to
     extreme movements relative to typical month-to-month variation.
   </p>
+
+</section>
 
 </section>
