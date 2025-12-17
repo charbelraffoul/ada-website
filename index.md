@@ -125,13 +125,71 @@ layout: full
   </p>
 
 </section>
+
 <p class="ds-lead">
   From this point onward, our study focuses exclusively on the period from
-  <strong>January 2000 to April 1, 2020</strong>. All sector- and industry-level
+  <strong>January 2000 to April 1, 2020</strong>. All sector and industry level
   analyses, as well as the identification of oil price shocks, are conducted
   within this time window. This choice reflects both data availability and the
   desire to concentrate on a modern market environment characterized by repeated
   episodes of oil market stress and heightened financial integration.
+
+</p><p class="ds-lead">
+  Within this time frame, oil price movements occasionally depart sharply from their
+  usual patterns. These episodes play a central role in what follows and motivate a
+  closer look at how abrupt changes in oil prices propagate through financial markets.
 </p>
+
+<p class="ds-lead">
+  To better understand how oil price movements transmit to the market, we begin by
+  examining how sectors—and, in some cases, industries—react when oil prices experience
+  sudden disruptions. Before turning to these responses, however, it is essential to
+  clarify what we mean by an oil price shock.
+</p>
+
+<h2>What are oil price shocks?</h2>
+
+<p class="ds-lead">
+  Oil prices do not always evolve smoothly. While many changes reflect gradual
+  adjustments in supply and demand, some episodes are characterized by abrupt and
+  unusually large movements that arrive unexpectedly. These moments interrupt the
+  normal pace of adjustment and force market participants to react quickly.
+</p>
+
+<p class="ds-lead">
+  The analogy introduced earlier is useful here. When conditions are stable, decisions
+  unfold predictably and responses are measured. When an unexpected decision arrives,
+  timelines compress and reactions reveal underlying exposures. Oil price shocks
+  correspond to these moments of disruption.
+</p>
+
+<p class="ds-lead">
+  In this study, we use the term <em>oil price shocks</em> to refer to such sudden and
+  pronounced movements in crude oil prices that stand out from typical month-to-month
+  variation. Identifying these episodes provides a natural starting point for examining
+  how different sectors and industries respond when confronted with unexpected changes
+  in a key macroeconomic input.
+</p>
+
+<section class="ds-wrap ds-figure-section">
+
+  <p class="ds-figure-intro">
+    To operationalize this definition, we identify oil price shocks using monthly
+    Brent crude oil log returns. Months corresponding to unusually large price
+    movements are classified as shocks.
+  </p>
+
+  <div class="ds-static-figure">
+    <img
+      src="{{ '/assets/img/oil_shocks.png' | relative_url }}"
+      alt="Oil price shocks identified from monthly Brent crude oil log returns"
+    />
+  </div>
+
+  <p class="ds-caption">
+    <strong>Figure 3.</strong> Oil price shocks identified from monthly Brent crude oil
+    log returns over the period January 2000 to April 1, 2020. Shocks correspond to
+    extreme movements relative to typical month-to-month variation.
+  </p>
 
 </section>
