@@ -286,3 +286,14 @@ h2 {
     justify-content: center;
   }
 }
+
+.figure-block {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.figure-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
