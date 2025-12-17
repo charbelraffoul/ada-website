@@ -190,7 +190,6 @@ layout: full
 
 </section>
 
-</section>
 <p class="ds-lead">
   With oil price shocks identified, we now turn to how these events translate into
   movements across the market.
@@ -238,5 +237,4 @@ layout: full
   only through their direction, but also through the way they reshape the cross-section
   of sector performance.
 </p>
-</section>
 </section>
