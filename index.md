@@ -90,6 +90,41 @@ layout: full
     loading="lazy"
   ></iframe>
 </div>
-**Figure 1.** Stock universe organized by sector, industry, and individual stocks. Tile size reflects median monthly dollar trading volume.
+  <p class="ds-caption">
+    <strong>Figure 1.</strong> Stock universe organized by sector, industry, and individual stocks.
+    Tile size reflects median monthly dollar trading volume.
+  </p>edian monthly dollar trading volume.
+
+<section class="ds-wrap ds-figure-section">
+
+  <p class="ds-figure-intro">
+    With the market structure in place, we now turn to the behavior of oil prices themselves.
+    If oil truly acts as the boss in this setting, its mood is far from stable. Periods of calm
+    are punctuated by sudden swings, sharp spikes, and abrupt reversals, often linked to geopolitical
+    events, demand shifts, or broader economic stress.
+  </p>
+
+  <p class="ds-figure-intro">
+    The figure below shows the evolution of Brent crude oil prices at a monthly frequency from
+    <strong>1960 to 2025</strong>, providing a long-run view of the environment in which firms and sectors operate.
+    While this full history offers useful context, our empirical analysis focuses on the period from
+    <strong>January 2000 to April 1, 2020</strong>, the window over which sector and industry data are consistently available.
+    This interval spans several oil price regimes and major disruptions, making it particularly informative
+    for studying how shocks propagate through the market.
+  </p>
+
+  <div class="ds-static-figure">
+    <img
+      src="{{ '/assets/img/brent_price_monthly.png' | relative_url }}"
+      alt="Brent crude oil price (monthly, USD per barrel)"
+    />
+  </div>
+
+  <p class="ds-caption">
+    <strong>Figure 2.</strong> Brent crude oil price (monthly, USD per barrel), 1960–2025.
+    The analysis in this study focuses on the period January 2000 to April 1, 2020.
+  </p>
+
+</section>
 
 </section>

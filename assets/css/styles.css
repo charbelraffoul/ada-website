@@ -145,6 +145,24 @@ h2 {
   font-family: "Libre Baskerville", Georgia, serif;
   letter-spacing: -0.01em;
 }
+.ds-figure-section {
+  margin: 36px auto 48px auto;
+}
+
+.ds-figure-intro {
+  max-width: 72ch;
+  margin: 0 0 14px 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.ds-caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  max-width: 72ch;
+}
 
 .ds-divider {
   margin: 22px 0 14px 0;
