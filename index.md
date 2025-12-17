@@ -545,6 +545,82 @@ and which teams (industries) performed differently under each management era?
 The key idea is simple: the same oil price movement can lead to different outcomes depending
 on which boss is in charge. Next, we examine sector behavior conditional on these regimes.
 </p>
+<h2>How departments behave under each boss</h2>
+
+<p class="ds-lead">
+Now that we have met the bosses, we can look inside the company. Each boss sets a very
+different tone, and departments do not react in the same way under each management style.
+</p>
+
+<p class="ds-lead">
+The figure below summarizes how sensitive each department is to oil price movements when a
+given boss is in charge. Technically, it shows the <em>oil beta</em> of each sector, estimated
+separately for each regime and controlling for overall market movements.
+</p>
+
+<figure class="ds-figure">
+  <img
+    src="{{ '/assets/img/oil_beta_by_sector_regime.png' | relative_url }}"
+    alt="Oil beta by sector and regime"
+    style="width:100%; border-radius:12px;"
+  >
+  <figcaption class="ds-caption">
+    Sector-level oil exposure by regime. Red indicates positive sensitivity to oil price
+    changes, blue indicates negative sensitivity, and lighter colors indicate weaker
+    relationships.
+  </figcaption>
+</figure>
+
+<p class="ds-lead">
+Think of this as asking a simple question: when the boss moves, which departments tend to
+move with them, which resist, and which barely react at all?
+</p>
+
+<p class="ds-lead">
+Two patterns stand out clearly. First, department behavior is highly regime-dependent.
+The same department can react very differently depending on which boss is in charge.
+Second, some relationships only become visible under specific management styles.
+</p>
+
+<p class="ds-lead">
+For example, the Energy department shows its strongest alignment with oil prices under the
+Shale boss, when supply-side dynamics dominate. During the GFC boss’s tenure, however,
+many departments move together regardless of oil, reflecting broad panic rather than
+sector-specific exposure.
+</p>
+
+<p class="ds-lead">
+The Plateau boss paints yet another picture: oil prices are high but stable, and most
+departments show weaker, more muted responses. In this environment, oil is present in the
+background, but it does not dominate day-to-day performance.
+</p>
+
+<p class="ds-lead">
+In short, the boss matters. Oil price movements do not have a single, fixed meaning for the
+company. Their impact depends on who is in charge and the broader environment they create.
+</p>
+
+<p class="ds-lead">
+But departments are still large units. Just as in any real company, not all teams inside a
+department behave the same way. To understand where these patterns truly come from, we now
+dive one level deeper and examine industry-level behavior.
+</p>
+
+<p class="ds-lead">
+TODO, put industries here. 
+</p>
+<p class="ds-lead">
+In short, the boss matters. Oil price movements do not have a single, fixed meaning for the
+company. Their impact on departments depends on which boss is in charge and the broader
+environment they create.
+</p>
+
+<p class="ds-lead">
+This sector-level view already reveals substantial heterogeneity: some departments move
+closely with oil under certain bosses, while others remain largely insulated. In the next
+section, we build on this perspective to further interpret these sectoral patterns across
+oil market regimes.
+</p>
 
 <!-- OPTIONAL: Your existing regime visualization section can sit right after this -->
 <!-- (keep your iframe block below) -->
