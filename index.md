@@ -296,5 +296,66 @@ reflecting its direct exposure to adverse oil price movements. Other sectors dis
 more muted responses, suggesting that oil shocks primarily reshape the cross-section
 of sector performance rather than uniformly shifting returns.
 </p>
+<h2>From patterns to causality</h2>
+
+<p class="ds-lead">
+The previous sections documented systematic differences in how sectors behave during periods
+of oil price stress. We now take a step further and ask whether these patterns reflect a
+directional mechanism: do oil price movements <em>lead</em> sector returns?
+</p>
+
+<p class="ds-lead">
+Because large oil price changes are typically triggered by events outside financial
+markets—such as geopolitical shocks or supply disruptions—they can reasonably be viewed as
+external disturbances. This makes oil prices a useful candidate for studying directional
+effects on equity sectors.
+</p>
+
+<hr>
+
+<h2>Causal analysis: does oil lead sector returns?</h2>
+
+<div class="figure-block">
+  <img src="matrix_causal_sectors.png"
+       alt="Lagged regression p-values across sectors"
+       class="img-fluid">
+  <p class="figure-caption">
+    Lagged regression p-values for sector returns on past oil price changes. Lower values
+    indicate stronger evidence that oil prices precede sector returns.
+  </p>
+</div>
+
+<p class="ds-lead">
+To examine this question, we test whether past oil price changes help predict future sector
+returns across different horizons. The heatmap reports p-values from lagged regressions of
+sector returns on oil price changes at increasing lags.
+</p>
+
+<p class="ds-lead">
+The results already reveal substantial heterogeneity across sectors, with energy-related
+industries showing stronger and more consistent sensitivity to oil price movements.
+</p>
+
+<div class="figure-block">
+  <img src="p_value_causal.png"
+       alt="Granger causality test results by sector"
+       class="img-fluid">
+  <p class="figure-caption">
+    Granger causality test results (best lag between one and three). Lower p-values indicate
+    stronger evidence that oil price changes lead sector returns.
+  </p>
+</div>
+
+<p class="ds-lead">
+The Energy sector stands out clearly, showing strong evidence that oil price changes lead
+subsequent returns. Most other sectors exhibit weak or no predictive relationship, suggesting
+more limited exposure to oil-driven shocks.
+</p>
+
+<p class="ds-lead">
+Taken together, these results support a causal interpretation in which oil price shocks
+arrive first and affect sectors in proportion to their economic exposure, rather than
+reflecting a uniform shift in overall market sentiment.
+</p>
 
 </section>
