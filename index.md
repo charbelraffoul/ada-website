@@ -34,7 +34,7 @@ layout: full
   <h1 style="margin: 18px 0 10px 0;">Introduction</h1>
 
   <p class="ds-lead">
-    Oil is more than just a commodity — it is a macroeconomic force that quietly shapes costs, expectations,
+    Oil is more than just a commodity, it is a macroeconomic force that quietly shapes costs, expectations,
     and risk across financial markets. When oil prices move abruptly, markets react, but not all in the same way.
     Some sectors feel the impact immediately through input costs and margins, others through demand and investor sentiment,
     while a few appear relatively insulated.
@@ -43,7 +43,7 @@ layout: full
   <p class="ds-lead">
     A simple way to think about it is this: imagine <strong>oil as a boss</strong>.
     On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team
-    to adapt — and not every team is equally exposed.
+    to adapt, and not every team is equally exposed.
   </p>
 
   <blockquote class="ds-quote">
@@ -71,7 +71,7 @@ layout: full
   </p>
 
   <p class="ds-lead">
-    This hierarchy allows us to study how common forces — such as energy price shocks — affect groups of firms with
+    This hierarchy allows us to study how common forces. such as energy price shocks, affect groups of firms with
     similar characteristics rather than individual stocks. In what follows, we focus primarily on sectors, while
     occasionally zooming in on specific industries when finer distinctions are informative. All analyses are conducted
     using monthly data.
@@ -93,7 +93,7 @@ layout: full
   <p class="ds-caption">
     <strong>Figure 1.</strong> Stock universe organized by sector, industry, and individual stocks.
     Tile size reflects median monthly dollar trading volume.
-  </p>edian monthly dollar trading volume.
+  </p>
 
 <section class="ds-wrap ds-figure-section">
 
@@ -122,9 +122,16 @@ layout: full
 
   <p class="ds-caption">
     <strong>Figure 2.</strong> Brent crude oil price (monthly, USD per barrel), 1960–2025.
-    The analysis in this study focuses on the period January 2000 to April 1, 2020.
   </p>
 
 </section>
+<p class="ds-lead">
+  From this point onward, our study focuses exclusively on the period from
+  <strong>January 2000 to April 1, 2020</strong>. All sector- and industry-level
+  analyses, as well as the identification of oil price shocks, are conducted
+  within this time window. This choice reflects both data availability and the
+  desire to concentrate on a modern market environment characterized by repeated
+  episodes of oil market stress and heightened financial integration.
+</p>
 
 </section>
