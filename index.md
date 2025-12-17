@@ -56,13 +56,6 @@ layout: full
   When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
   Watching these responses closely is often the only way to understand how the organization really works.
 </p>
-  </div>
-
-   <p class="ds-lead">
-    In this setting, we step in as consultants inside the firm. When the boss is calm, patterns are easy to read.
-    When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
-    Watching these responses closely is often the only way to understand how the organization really works.
-  </p>
 
   <p class="ds-lead">
     Before looking at how oil shocks propagate through the market, we first need to clarify how the market itself
@@ -178,6 +171,8 @@ layout: full
     Brent crude oil log returns. Months corresponding to unusually large price
     movements are classified as shocks.
   </p>
+
+<section class="ds-wrap ds-figure-section">
 
   <div class="ds-static-figure">
     <img
