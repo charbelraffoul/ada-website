@@ -296,4 +296,5 @@ reflecting its direct exposure to adverse oil price movements. Other sectors dis
 more muted responses, suggesting that oil shocks primarily reshape the cross-section
 of sector performance rather than uniformly shifting returns.
 </p>
+
 </section>
