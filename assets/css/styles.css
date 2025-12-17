@@ -319,19 +319,47 @@ input[type="submit"],
 summary {
   cursor: var(--oil-cursor) 12 12, pointer;
 }
+/* 1) Make the 3 cards align nicely */
 .boss-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
-  margin: 1.5rem 0 2rem;
+  align-items: stretch;
 }
 
+/* 2) Make each card a clean vertical layout */
 .boss-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
   border: 1px solid #e6e6e6;
   border-radius: 16px;
   background: #fff;
-  overflow: hidden;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* 3) Center the barrel image */
+.boss-card img {
+  display: block;
+  margin: 0 auto; /* centers horizontally */
+  max-width: 240px; /* tune this */
+  width: 100%;
+  height: auto;
+}
+
+/* 4) Keep title/paragraph spacing consistent */
+.boss-card h3 {
+  margin: 0.9rem 0 0.6rem;
+}
+
+.boss-card .ds-lead {
+  margin: 0 0 0.9rem;
+}
+
+/* 5) Push the traits to the bottom for equal-height cards */
+.boss-traits {
+  margin-top: auto; /* sticks traits to the bottom */
+  padding-left: 1.2rem;
 }
 
 .boss-media {
@@ -418,14 +446,6 @@ summary {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
   margin: 1.5rem 0 2rem;
-}
-
-.boss-card {
-  border: 1px solid #e6e6e6;
-  border-radius: 16px;
-  background: #fff;
-  overflow: hidden;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
 }
 
 .boss-media {
