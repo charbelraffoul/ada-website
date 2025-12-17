@@ -239,3 +239,4 @@ layout: full
   of sector performance.
 </p>
 </section>
+</section>
