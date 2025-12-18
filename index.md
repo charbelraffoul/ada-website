@@ -490,7 +490,7 @@ which oil shocks play out differently.
 
 <figure class="ds-figure">
   <img
-    src="{{ '/assets/img/brent_level_regimes.png' | relative_url }}"
+    src="{{ '/assets/img/oil_regime.png' | relative_url }}"
     alt="Monthly Brent oil price level with regime markers"
     style="width:100%; border-radius:12px;"
   >
@@ -634,7 +634,7 @@ estimated while controlling for overall market movements.
 
 <div class="ds-figure" style="margin: 2rem 0;">
   <iframe
-    src="{{ '/assets/plots/rolling_oil_betas.html' | relative_url }}"
+    src="{{ '/assets/interactive/rolling_oil_betas.html' | relative_url }}"
     width="100%"
     height="520"
     style="border: none; border-radius: 12px;"
