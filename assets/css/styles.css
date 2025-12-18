@@ -40,17 +40,71 @@ body {
   overflow: hidden;
   background: #111;
 }
-/* Image fills the banner (cropping like the reference) */
+/* Video fills the banner (recommended over GIF for performance) */
+.ds-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+
+  /* Start slightly off-screen + zoomed, then glide into place on load */
+  opacity: 0;
+  transform: translateY(44px) scale(1.06);
+  animation: ds-hero-img-in 900ms cubic-bezier(0.2, 0.8, 0.2, 1) 90ms forwards;
+  will-change: transform, opacity;
+
+  /* Slightly punchier video (optional) */
+  filter: brightness(1.1) contrast(1.05) saturate(1.05);
+}
+
+/* Image fills the banner (fallback / if you switch back) */
 .ds-hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
-  transform: scale(1.02);
+
+  /* Start slightly off-screen + zoomed, then glide into place on load */
+  opacity: 0;
+  transform: translateY(44px) scale(1.06);
+  animation: ds-hero-img-in 900ms cubic-bezier(0.2, 0.8, 0.2, 1) 90ms forwards;
+  will-change: transform, opacity;
 
   /* BRIGHTER + more vivid */
   filter: brightness(1.25) contrast(1.05) saturate(1.1);
+}
+
+@keyframes ds-hero-img-in {
+  from {
+    opacity: 0;
+    transform: translateY(44px) scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1.02);
+  }
+}
+
+/* Respect OS accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  .ds-hero-img,
+  .ds-hero-video,
+  .ds-hero-title,
+  .ds-hero-subtitle {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+    will-change: auto;
+  }
+
+  .ds-hero-img {
+    transform: scale(1.02);
+  }
 }
 
 /* Overlay for readable white text (softened so image isn't too dark) */
@@ -83,14 +137,38 @@ body {
   line-height: 1.02;
   letter-spacing: -0.02em;
   text-shadow: 0 18px 50px rgba(0, 0, 0, 0.65);
+
+  /* Title glide-in (slight rise + de-blur) */
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(10px);
+  animation: ds-hero-text-in 760ms cubic-bezier(0.2, 0.85, 0.2, 1) 260ms forwards;
+  will-change: transform, opacity, filter;
 }
 
 .ds-hero-subtitle {
   margin: 0;
   font-size: clamp(1.1rem, 2.2vw, 1.8rem);
   font-weight: 600;
-  opacity: 0.95;
+  opacity: 0;
+  transform: translateY(14px);
+  filter: blur(8px);
+  animation: ds-hero-text-in 720ms cubic-bezier(0.2, 0.85, 0.2, 1) 420ms forwards;
+  will-change: transform, opacity, filter;
   text-shadow: 0 14px 40px rgba(0, 0, 0, 0.65);
+}
+
+@keyframes ds-hero-text-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 /* Bottom credit line */
@@ -210,7 +288,9 @@ h2 {
   padding: 14px 14px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  transition: transform 160ms ease, box-shadow 160ms ease;
+
+  /* Faster hover */
+  transition: transform 90ms ease, box-shadow 90ms ease;
 }
 
 .ds-card:hover {
@@ -542,5 +622,129 @@ summary {
 @media (max-width: 900px) {
   .ds-two-col-figures {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================
+   Scroll reveal (content glides in as you scroll)
+   =========================== */
+
+.ds-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(8px);
+  transition:
+    opacity 520ms ease,
+    transform 680ms cubic-bezier(0.2, 0.85, 0.2, 1),
+    filter 680ms ease;
+  transition-delay: var(--ds-reveal-delay, 0ms);
+  will-change: transform, opacity, filter;
+}
+
+.ds-reveal.ds-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+    will-change: auto;
+  }
+}
+
+/* ===========================
+   Animated "boss" images + barrel icons
+   =========================== */
+
+@keyframes ds-float {
+  0% {
+    transform: translateY(0) rotate(-0.6deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(0.6deg);
+  }
+}
+
+/* Boss card media (Meet the bosses section) */
+.boss-card .boss-media {
+  position: relative;
+  max-width: 240px;
+  margin: 0 auto;
+  transform-origin: 50% 70%;
+  animation: ds-float 4.8s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.boss-card:nth-child(1) .boss-media {
+  animation-delay: 0ms;
+}
+.boss-card:nth-child(2) .boss-media {
+  animation-delay: 220ms;
+}
+.boss-card:nth-child(3) .boss-media {
+  animation-delay: 440ms;
+}
+
+/* Base media styles */
+.boss-card .boss-img,
+.boss-card .boss-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Video sits on top of the image and fades in on hover */
+.boss-card .boss-video {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.015);
+  transition: opacity 140ms ease, transform 140ms ease;
+  pointer-events: none;
+}
+
+.boss-card .boss-img {
+  transition: opacity 140ms ease;
+}
+
+.boss-card:hover .boss-video {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.boss-card:hover .boss-img {
+  opacity: 0;
+}
+
+/* Barrel icons next to shock regimes */
+.oil-icon img {
+  transform-origin: 50% 70%;
+  animation: ds-float 3.8s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.oil-icon:nth-child(1) img {
+  animation-delay: 0ms;
+}
+.oil-icon:nth-child(2) img {
+  animation-delay: 180ms;
+}
+.oil-icon:nth-child(3) img {
+  animation-delay: 360ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boss-card .boss-media,
+  .oil-icon img {
+    animation: none;
+    transform: none;
+    will-change: auto;
   }
 }

@@ -4,11 +4,17 @@ layout: full
 
 <!-- FULL-BLEED HERO (centered title like reference) -->
 <div class="ds-hero ds-hero--fullbleed">
-  <img
-    class="ds-hero-img"
-    src="{{ '/assets/img/hero_oil.png' | relative_url }}"
-    alt="Oil price shocks and market reactions"
-  />
+  <video
+    class="ds-hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="{{ '/assets/img/hero_oil.png' | relative_url }}"
+  >
+    <source src="{{ '/assets/video/hero.mp4' | relative_url }}" type="video/mp4" />
+  </video>
 
   <div class="ds-hero-overlay"></div>
 
@@ -532,8 +538,11 @@ price environment. To keep things intuitive, we present them as three different 
 <div class="boss-grid">
 
   <!-- GFC -->
-  <article class="boss-card">
-    <img src="{{ '/assets/img/first_regime_orange.png' | relative_url }}" alt="GFC boss">
+  <article class="boss-card" data-hover-video>
+    <div class="boss-media">
+      <img class="boss-img" src="{{ '/assets/img/first_regime_orange.png' | relative_url }}" alt="GFC boss">
+      <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss1.mp4' | relative_url }}"></video>
+    </div>
 
     <h3>Boss #1 — GFC (2008–2009)</h3>
 
@@ -554,8 +563,11 @@ price environment. To keep things intuitive, we present them as three different 
   </article>
 
   <!-- Plateau -->
-  <article class="boss-card">
-    <img src="{{ '/assets/img/second_regime.png' | relative_url }}" alt="Plateau boss">
+  <article class="boss-card" data-hover-video>
+    <div class="boss-media">
+      <img class="boss-img" src="{{ '/assets/img/second_regime.png' | relative_url }}" alt="Plateau boss">
+      <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss2.mp4' | relative_url }}"></video>
+    </div>
 
     <h3>Boss #2 — Plateau (2010–2014)</h3>
 
@@ -576,8 +588,11 @@ price environment. To keep things intuitive, we present them as three different 
   </article>
 
   <!-- Shale -->
-  <article class="boss-card">
-    <img src="{{ '/assets/img/third_regime.png' | relative_url }}" alt="Shale boss">
+  <article class="boss-card" data-hover-video>
+    <div class="boss-media">
+      <img class="boss-img" src="{{ '/assets/img/third_regime.png' | relative_url }}" alt="Shale boss">
+      <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss3.mp4' | relative_url }}"></video>
+    </div>
 
     <h3>Boss #3 — Shale (2014–2016)</h3>
 
