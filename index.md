@@ -478,20 +478,20 @@ think of them as three bosses. Meet them—and pick one to explore.
 <h2>Oil price regimes over time</h2>
 
 <p class="ds-lead">
-Before introducing the bosses, it helps to look at the full picture. The figure below shows
-the monthly Brent oil price level, with the three periods we focus on highlighted.
+Before introducing the bosses, it helps to look at the full picture. The figure below shows the
+monthly Brent oil price level, with the three periods we focus on highlighted.
 </p>
 
 <p class="ds-lead">
-These shaded regions are not based on short-term price movements, but on clear breaks in
-the level, volatility, and persistence of oil prices. Each period reflects a distinct
-market environment in which oil shocks play out differently.
+These shaded regions are not based on short-term price movements, but on clear breaks in the
+level, volatility, and persistence of oil prices. Each period reflects a distinct market environment in
+which oil shocks play out differently.
 </p>
 
 <figure class="ds-figure">
   <img
-    src="{{ '/assets/img/oil_regime.png' | relative_url }}"
-    alt="Brent oil price with regime markers"
+    src="{{ '/assets/img/brent_level_regimes.png' | relative_url }}"
+    alt="Monthly Brent oil price level with regime markers"
     style="width:100%; border-radius:12px;"
   >
   <figcaption class="ds-caption">
@@ -499,6 +499,28 @@ market environment in which oil shocks play out differently.
     the high-price Plateau (2010–2014), and the Shale period (2014–2016).
   </figcaption>
 </figure>
+
+<p class="ds-lead">
+To make the “environment shift” even more concrete, the next figure shows how turbulent the oil market
+is within each period. Volatility spikes during the GFC, falls during the Plateau, and rises again during
+the Shale era as the market adjusts to a new supply regime.
+</p>
+
+<figure class="ds-figure">
+  <img
+    src="{{ '/assets/img/12MonthRollingVol.png' | relative_url }}"
+    alt="Rolling 12-month volatility of Brent log returns"
+    style="width:100%; border-radius:12px;"
+  >
+  <figcaption class="ds-caption">
+    Rolling 12-month volatility of Brent log returns (standard deviation), with the same regime markers.
+    Higher values indicate a more turbulent oil market.
+  </figcaption>
+</figure>
+
+<p class="ds-lead">
+With this timeline in mind, we can now meet the three bosses who ran the company during these periods.
+</p>
 
 <p class="ds-lead">
 With this timeline in mind, we can now meet the three bosses who ran the company during
