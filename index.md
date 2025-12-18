@@ -603,11 +603,38 @@ on which boss is in charge. Next, we examine sector behavior conditional on thes
 Now that we have met the bosses, we can look inside the company. Each boss sets a very
 different tone, and departments do not react in the same way under each management style.
 </p>
+<p class="ds-lead">
+So far, we have treated oil exposure as something that can change over time. Before
+summarizing these relationships by regime, it is useful to look at this time variation
+directly. The interactive figure below shows 36-month rolling oil betas by sector,
+estimated while controlling for overall market movements.
+</p>
+
+<div class="ds-figure" style="margin: 2rem 0;">
+  <iframe
+    src="{{ '/assets/plots/rolling_oil_betas.html' | relative_url }}"
+    width="100%"
+    height="520"
+    style="border: none; border-radius: 12px;"
+    loading="lazy">
+  </iframe>
+  <div class="ds-caption">
+    36-month rolling oil beta by sector. Each line shows how a sector’s sensitivity to oil
+    price changes evolves over time in rolling windows.
+  </div>
+</div>
 
 <p class="ds-lead">
-The figure below summarizes how sensitive each department is to oil price movements when a
-given boss is in charge. Technically, it shows the <em>oil beta</em> of each sector, estimated
-separately for each regime and controlling for overall market movements.
+Several features stand out immediately. Oil exposure is far from stable: sector betas drift,
+switch sign, and occasionally spike during periods of stress. Even traditionally oil-linked
+departments do not move with oil in a uniform way across time.
+</p>
+
+<p class="ds-lead">
+While these rolling estimates reveal rich dynamics, they are difficult to compare across
+broader market environments. To make sense of these patterns, we now aggregate oil
+sensitivities by regime, asking how departments typically respond to oil price movements
+when a given boss is in charge.
 </p>
 
 <figure class="ds-figure">
@@ -624,14 +651,9 @@ separately for each regime and controlling for overall market movements.
 </figure>
 
 <p class="ds-lead">
-Think of this as asking a simple question: when the boss moves, which departments tend to
-move with them, which resist, and which barely react at all?
-</p>
-
-<p class="ds-lead">
-Two patterns stand out clearly. First, department behavior is highly regime-dependent.
-The same department can react very differently depending on which boss is in charge.
-Second, some relationships only become visible under specific management styles.
+Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
+same department can react very differently depending on which boss is in charge. Second,
+some relationships only become visible under specific management styles.
 </p>
 
 <p class="ds-lead">
@@ -649,31 +671,18 @@ background, but it does not dominate day-to-day performance.
 
 <p class="ds-lead">
 In short, the boss matters. Oil price movements do not have a single, fixed meaning for the
-company. Their impact depends on who is in charge and the broader environment they create.
-</p>
-
-<p class="ds-lead">
-But departments are still large units. Just as in any real company, not all teams inside a
-department behave the same way. To understand where these patterns truly come from, we now
-dive one level deeper and examine industry-level behavior.
-</p>
-
-<p class="ds-lead">
-TODO, put industries here. 
-</p>
-<p class="ds-lead">
-In short, the boss matters. Oil price movements do not have a single, fixed meaning for the
-company. Their impact on departments depends on which boss is in charge and the broader
+company. Their impact on departments depends on who is in charge and the broader
 environment they create.
 </p>
 
 <p class="ds-lead">
-This sector-level view already reveals substantial heterogeneity: some departments move
-closely with oil under certain bosses, while others remain largely insulated. In the next
-section, we build on this perspective to further interpret these sectoral patterns across
-oil market regimes.
+But departments are still large units. Just as in any real company, not all teams inside a
+department behave the same way. To understand where these patterns truly come from, we
+now dive one level deeper and examine industry-level behavior.
 </p>
 
-<!-- OPTIONAL: Your existing regime visualization section can sit right after this -->
-<!-- (keep your iframe block below) -->
+<p class="ds-lead">
+TODO: industry-level analysis goes here.
+</p>
+
 </section>
