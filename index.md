@@ -521,11 +521,6 @@ the Shale era as the market adjusts to a new supply regime.
 With this timeline in mind, we can now meet the three bosses who ran the company during these periods.
 </p>
 
-<p class="ds-lead">
-With this timeline in mind, we can now meet the three bosses who ran the company during
-these periods.
-</p>
-
 <h2>Meet the bosses</h2>
 
 <p class="ds-lead">
@@ -692,7 +687,61 @@ background, but it does not dominate day-to-day performance.
 </p>
 
 <p class="ds-lead">
-In short, the boss matters. Oil price movements do not have a single, fixed meaning for the
+Having seen that departments respond differently depending on which boss is in charge, we
+now quantify these differences more precisely. The figure below reports sector-level oil
+betas estimated separately for each management style, while controlling for overall market
+movements.
+</p>
+<section class="ds-wrap ds-figure-section">
+
+  <div class="ds-embed">
+    <iframe
+      src="{{ '/assets/interactive/oil_beta_by_sector_interactive.html' | relative_url }}"
+      width="100%"
+      height="560"
+      style="border:0; border-radius:12px;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <p class="ds-caption">
+    <strong>Figure X.</strong> Sector-level oil betas by regime (β ± 95% confidence intervals),
+    controlling for overall market returns. Each point shows how strongly a department
+    listens to the boss under a given management style.
+  </p>
+
+</section>
+
+<p class="ds-lead">
+Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
+same department can react very differently depending on which boss is in charge. Second,
+the strength and precision of these reactions vary substantially across management styles.
+</p>
+
+<p class="ds-lead">
+The Energy department listens most closely to the boss during the Shale period, when
+supply-side dynamics dominate and oil prices play a central role in firm profitability.
+During the Global Financial Crisis, however, confidence intervals widen and sector responses
+become less distinct, reflecting an environment in which panic and broad market forces
+overshadow oil-specific signals.
+</p>
+
+<p class="ds-lead">
+Other departments display more nuanced behavior. Cyclical sectors such as Industrials and
+Consumer Cyclical show sensitivity to oil under certain bosses but not others, while
+traditionally defensive departments—such as Utilities and Consumer Defensive—remain
+comparatively insulated across regimes.
+</p>
+
+<p class="ds-lead">
+In short, the boss matters—not only in direction, but in credibility. Oil price movements
+do not carry a single, fixed meaning for the company. Their impact on departments depends
+on who is in charge, how stable the environment is, and how clearly the boss’s signals are
+heard amid broader market noise.
+</p>
+
+<p class="ds-lead">
+To summarize, the boss matters. Oil price movements do not have a single, fixed meaning for the
 company. Their impact on departments depends on who is in charge and the broader
 environment they create.
 </p>
