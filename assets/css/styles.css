@@ -626,17 +626,39 @@ summary {
 }
 
 /* ===========================
+   SVG draw (matplotlib-exported SVG line "draws" in)
+   =========================== */
+
+.ds-svg-figure svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ds-svg-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Once SVG is inlined, hide the PNG fallback */
+.ds-svg-figure svg + img,
+.ds-svg-figure svg ~ img {
+  display: none;
+}
+
+/* ===========================
    Scroll reveal (content glides in as you scroll)
    =========================== */
 
 .ds-reveal {
   opacity: 0;
-  transform: translateY(18px);
-  filter: blur(8px);
+  transform: translateY(10px);
+  filter: blur(2px);
   transition:
-    opacity 520ms ease,
-    transform 680ms cubic-bezier(0.2, 0.85, 0.2, 1),
-    filter 680ms ease;
+    opacity 220ms ease-out,
+    transform 320ms cubic-bezier(0.2, 0.85, 0.2, 1),
+    filter 220ms ease-out;
   transition-delay: var(--ds-reveal-delay, 0ms);
   will-change: transform, opacity, filter;
 }

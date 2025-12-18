@@ -113,10 +113,23 @@ layout: full
   </p>
 
   <div class="ds-static-figure">
-    <img
-      src="{{ '/assets/img/brent_price_monthly.png' | relative_url }}"
-      alt="Brent crude oil price (monthly, USD per barrel)"
-    />
+    <!--
+      Animated version (recommended): export an SVG from your matplotlib script
+      and give the main line an id="oil-line" (see notes below).
+
+      Fallback: keep the PNG so the figure still shows if SVG loading fails.
+    -->
+    <div
+      class="ds-svg-figure"
+      data-svg-src="{{ '/assets/img/brent_price_monthly.svg' | relative_url }}"
+      data-path-selector="#oil-line"
+      aria-label="Brent crude oil price (monthly, USD per barrel)"
+    >
+      <img
+        src="{{ '/assets/img/brent_price_monthly.png' | relative_url }}"
+        alt="Brent crude oil price (monthly, USD per barrel)"
+      />
+    </div>
   </div>
 
   <p class="ds-caption">
@@ -276,10 +289,18 @@ average sector returns during oil-shock periods relative to normal conditions.
 <section class="ds-wrap ds-figure-section">
 
   <div class="ds-static-figure">
-    <img
-      src="{{ '/assets/img/shock_vs_non_shock_mean_return_diff.png' | relative_url }}"
-      alt="Shock vs non-shock mean return differences across sectors"
-    />
+    <!-- Animated version: export an SVG and place it at /assets/img/shock_vs_non_shock_mean_return_diff.svg -->
+    <div
+      class="ds-svg-figure"
+      data-svg-src="{{ '/assets/img/shock_vs_non_shock_mean_return_diff.svg' | relative_url }}"
+      data-animate="bars"
+      aria-label="Shock vs non-shock mean return differences across sectors"
+    >
+      <img
+        src="{{ '/assets/img/shock_vs_non_shock_mean_return_diff.png' | relative_url }}"
+        alt="Shock vs non-shock mean return differences across sectors"
+      />
+    </div>
   </div>
 
   <p class="ds-caption">

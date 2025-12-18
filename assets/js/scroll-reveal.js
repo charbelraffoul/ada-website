@@ -58,11 +58,12 @@
     var targets = getRevealTargets();
 
     // Add base class and a small stagger so grouped content feels nicer.
+    // Keep the stagger subtle so content appears quickly.
     for (var i = 0; i < targets.length; i++) {
       var el = targets[i];
       el.classList.add('ds-reveal');
       // Stagger cycles every 10 items to avoid huge delays.
-      el.style.setProperty('--ds-reveal-delay', (i % 10) * 60 + 'ms');
+      el.style.setProperty('--ds-reveal-delay', (i % 10) * 25 + 'ms');
     }
 
     // If IntersectionObserver isn't available, just show everything.
