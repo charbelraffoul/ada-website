@@ -196,7 +196,7 @@ layout: full
 </p>
 
 <p class="ds-lead">
-  Before examining individual sectors in detail, we first look at a compact summary
+  We begin with the high-level view. We look at a compact summary
   of sector behavior across different oil market conditions.
 </p>
 
@@ -478,8 +478,7 @@ think of them as three bosses. Meet them—and pick one to explore.
 <h2>Oil price regimes over time</h2>
 
 <p class="ds-lead">
-Before introducing the bosses, it helps to look at the full picture. The figure below shows the
-monthly Brent oil price level, with the three periods we focus on highlighted.
+To understand these bosses, it helps to look at the full picture, and we must first visualize the timeline they operated in. The figure below shows the monthly Brent oil price level, with the three periods we focus on highlighted.
 </p>
 
 <p class="ds-lead">
