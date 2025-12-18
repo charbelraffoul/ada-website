@@ -385,6 +385,58 @@ price shocks as external disturbances that affect sectors differently depending 
 economic exposure.
 </p>
 
+<h2>Sector-level abnormal returns during oil shocks</h2>
+
+<p class="ds-lead">
+So far, we have shown that oil price movements tend to precede returns in certain sectors.
+We now ask a complementary question: when an oil shock occurs, how large is the abnormal
+performance experienced by each sector?
+</p>
+<p class="ds-lead">
+To answer this, we estimate sector-level regressions of monthly returns on oil price shocks,
+controlling for overall market movements. The coefficients can be interpreted as
+<em>abnormal returns</em> associated with oil-shock months relative to normal periods.
+</p>
+<section class="ds-wrap ds-figure-section">
+
+  <div class="ds-two-col-figures">
+
+    <!-- NEGATIVE SHOCK -->
+    <div class="ds-figure-col">
+      <div class="ds-static-figure">
+        <img
+          src="{{ '/assets/img/LinREGSectorsNeg.png' | relative_url }}"
+          alt="Sector abnormal returns during negative oil shocks"
+        />
+      </div>
+      <p class="ds-caption">
+        <strong>Figure X.a.</strong> Sector-level abnormal returns during <strong>negative</strong>
+        oil-shock months (β ± 95% CI).
+      </p>
+    </div>
+
+    <!-- POSITIVE SHOCK -->
+    <div class="ds-figure-col">
+      <div class="ds-static-figure">
+        <img
+          src="{{ '/assets/img/LinRegSectorsPos.png' | relative_url }}"
+          alt="Sector abnormal returns during positive oil shocks"
+        />
+      </div>
+      <p class="ds-caption">
+        <strong>Figure X.b.</strong> Sector-level abnormal returns during <strong>positive</strong>
+        oil-shock months (β ± 95% CI).
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<p class="ds-lead">
+To highlight the asymmetric nature of oil shocks, Figure X contrasts sector-level abnormal
+returns during negative and positive oil-shock months side by side.
+</p>
+
 <p class="ds-lead">
 
 </p>

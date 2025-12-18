@@ -527,3 +527,20 @@ summary {
     grid-template-columns: 1fr 1fr;
   }
 }
+.ds-two-col-figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.ds-figure-col {
+  text-align: center;
+}
+
+/* Mobile fallback */
+@media (max-width: 900px) {
+  .ds-two-col-figures {
+    grid-template-columns: 1fr;
+  }
+}
