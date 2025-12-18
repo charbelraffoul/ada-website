@@ -635,8 +635,9 @@ estimated while controlling for overall market movements.
   <iframe
     src="{{ '/assets/interactive/rolling_oil_betas.html' | relative_url }}"
     width="100%"
-    height="520"
+    height="600"
     style="border: none; border-radius: 12px;"
+    scrolling="no"
     loading="lazy">
   </iframe>
   <div class="ds-caption">
