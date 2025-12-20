@@ -39,27 +39,27 @@ layout: full
 
   <div style="max-width: 820px; margin: 0 auto; font-size: 0.95rem; text-align: center;">
 
-    <p class="ds-lead" style="text-align: center;">
-      Oil is more than just a commodity; it is a macroeconomic force that quietly shapes costs, expectations,
-      and risk across financial markets. When oil prices move abruptly, markets react, but not all in the same way.
-      Some sectors feel the impact immediately through input costs and margins, others through demand and investor sentiment, while a few appear relatively insulated.
-    </p>
+  <p class="ds-lead" style="text-align: center;">
+    Oil is more than just a commodity; it is a macroeconomic force that quietly shapes costs, expectations,
+    and risk across financial markets. When oil prices move abruptly, markets react, but not all in the same way.
+    Some sectors feel the impact immediately through input costs and margins, others through demand and investor sentiment, while a few appear relatively insulated.
+  </p>
 
-    <p class="ds-lead" style="text-align: center;">
-      A simple way to think about this is to imagine <strong>oil as a boss</strong>, the central decision maker within a firm. On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team to adapt. But not every team is equally exposed: some of them are directly exposed and must react immediately, while others are affected more indirectly or remain relatively protected. This leads us to an essential question:
-    </p>
+  <p class="ds-lead" style="text-align: center;">
+    A simple way to think about this is to imagine <strong>oil as a boss</strong>, the central decision maker within a firm. On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team to adapt. But not every team is equally exposed: some of them are directly exposed and must react immediately, while others are affected more indirectly or remain relatively protected. This leads us to an essential question:
+  </p>
 
-    <blockquote class="ds-quote" style="text-align: center; font-size: 1.15rem; line-height: 1.6; margin: 26px auto;">
-      <strong>How do oil price shocks reshape sector performance, and what does this imply for portfolio design?</strong>
-    </blockquote>
+  <blockquote class="ds-quote" style="text-align: center; font-size: 1.15rem; line-height: 1.6; margin: 26px auto;">
+    <strong>How do oil price shocks reshape sector performance, and what does this imply for portfolio design?</strong>
+  </blockquote>
 
-    <p class="ds-lead" style="text-align: center;">
-      In this setting, we step in as consultants inside the firm. When the boss is calm, patterns are easy to read.
-      When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
-      Observing these responses closely is often the only way to understand how the organization really functions.
-    </p>
+  <p class="ds-lead" style="text-align: center;">
+    In this setting, we step in as consultants inside the firm. When the boss is calm, patterns are easy to read.
+    When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
+    Observing these responses closely is often the only way to understand how the organization really functions.
+  </p>
 
-    <hr style="margin: 46px 0 10px 0; opacity: 0.3;">
+  <hr style="margin: 46px 0 10px 0; opacity: 0.3;">
 
   </div>
 
@@ -105,8 +105,6 @@ layout: full
   <hr style="margin: 44px 0; opacity: 0.25;">
 
 </section>
-
-
 
 
 <section class="ds-wrap ds-figure-section">
