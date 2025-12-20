@@ -34,10 +34,9 @@ layout: full
   </div>
 </div>
 
-<!-- PAGE CONTENT (contained) -->
+<!-- INTRO -->
 <section class="ds-wrap ds-top" id="intro">
 
-  <!-- Centered container to control width + font size -->
   <div style="max-width: 820px; margin: 0 auto; font-size: 0.95rem; text-align: center;">
 
     <p class="ds-lead" style="text-align: center;">
@@ -66,23 +65,29 @@ layout: full
 
 </section>
 
+<!-- MARKET STRUCTURE -->
+<section class="ds-wrap" id="market-structure" style="padding-top: 10px;">
+
+  <h2 style="margin: 10px 0 12px 0;">Market structure</h2>
+
   <p class="ds-lead">
-    Before looking at how oil shocks propagate through the market, we first need to clarify how the market itself
-    is structured.No stock is an island. Every company sits within an industry, and industries are grouped
+    Before looking at how oil shocks propagate through the market, we first clarify how the market itself
+    is structured. No stock is an island. Every company sits within an industry, and industries are grouped
     into broader sectors that capture shared economic exposure.
   </p>
 
   <p class="ds-lead">
-    This hierarchy allows us to study how common forces. such as energy price shocks, affect groups of firms with
-    similar characteristics rather than individual stocks. In what follows, we focus primarily on sectors, while
-    occasionally zooming in on specific industries when finer distinctions are informative. All analyses are conducted
-    using monthly data.
+    This hierarchy allows us to study how common forces, such as energy price shocks, affect groups of firms
+    with similar characteristics rather than individual stocks. In what follows, we focus primarily on sectors,
+    while occasionally zooming in on specific industries when finer distinctions are informative. All analyses
+    are conducted using monthly data.
   </p>
 
-<p class="ds-lead">
-    To make this structure concrete, the figure below shows how the stock universe is organized, from broad sectors down to individual stocks.
-
+  <p class="ds-lead">
+    To make this structure concrete, the figure below shows how the stock universe is organized, from broad
+    sectors down to individual stocks.
   </p>
+
 <div class="ds-embed">
   <iframe
     src="{{ '/assets/interactive/treemap.html' | relative_url }}"
@@ -96,6 +101,13 @@ layout: full
     <strong>Figure 1.</strong> Stock universe organized by sector, industry, and individual stocks.
     Tile size reflects median monthly dollar trading volume.
   </p>
+
+  <hr style="margin: 44px 0; opacity: 0.25;">
+
+</section>
+
+
+
 
 <section class="ds-wrap ds-figure-section">
 
