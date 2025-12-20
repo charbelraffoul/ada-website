@@ -736,12 +736,16 @@ summary {
   transition: opacity 140ms ease;
 }
 
-.boss-card:hover .boss-video {
+/*
+  Only swap once the video has loaded its first frame.
+  This avoids a "blank" hover if a video is slower to become ready (common when moov atom isn't optimized).
+*/
+.boss-card.is-hover .boss-video.is-ready {
   opacity: 1;
   transform: scale(1);
 }
 
-.boss-card:hover .boss-img {
+.boss-card.is-hover .boss-img {
   opacity: 0;
 }
 

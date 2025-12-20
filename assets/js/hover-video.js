@@ -22,13 +22,36 @@
     return true;
   }
 
+  function markReady(video) {
+    if (!video || !video.classList) return;
+    video.classList.add('is-ready');
+  }
+
+  function unmarkReady(video) {
+    if (!video || !video.classList) return;
+    video.classList.remove('is-ready');
+  }
+
   function playVideo(video) {
     if (!video) return;
     if (!ensureSource(video)) return;
 
+    // Mark ready when we have the first frame.
+    // Use {once:true} so we don't accumulate listeners.
+    try {
+      video.addEventListener('loadeddata', function () {
+        markReady(video);
+      }, { once: true });
+    } catch (e) {
+      // Ignore (older browsers)
+    }
+
     // If we just appended a <source>, load it.
     if (video.readyState === 0) {
       video.load();
+    } else if (video.readyState >= 2) {
+      // HAVE_CURRENT_DATA
+      markReady(video);
     }
 
     var p = video.play();
@@ -44,29 +67,30 @@
       video.pause();
       video.currentTime = 0;
     } catch (e) {}
+    unmarkReady(video);
   }
 
   function initCard(card) {
     var video = card.querySelector('.boss-video');
     if (!video) return;
 
-    // Desktop hover
-    card.addEventListener('mouseenter', function () {
+    function start() {
+      if (card.classList) card.classList.add('is-hover');
       playVideo(video);
-    });
+    }
 
-    card.addEventListener('mouseleave', function () {
+    function stop() {
+      if (card.classList) card.classList.remove('is-hover');
       stopVideo(video);
-    });
+    }
+
+    // Desktop hover
+    card.addEventListener('mouseenter', start);
+    card.addEventListener('mouseleave', stop);
 
     // Keyboard accessibility: focus within card
-    card.addEventListener('focusin', function () {
-      playVideo(video);
-    });
-
-    card.addEventListener('focusout', function () {
-      stopVideo(video);
-    });
+    card.addEventListener('focusin', start);
+    card.addEventListener('focusout', stop);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
