@@ -96,14 +96,14 @@ layout: full
 
 <section class="ds-wrap ds-figure-section">
 
-  <p class="ds-figure-intro">
+  <p class="ds-lead">
     With the market structure in place, we now turn to the behavior of oil prices themselves.
     If oil truly acts as the boss in this setting, its mood is far from stable. Periods of calm
     are punctuated by sudden swings, sharp spikes, and abrupt reversals, often linked to geopolitical
     events, demand shifts, or broader economic stress.
   </p>
 
-  <p class="ds-figure-intro">
+  <p class="ds-lead">
     The figure below shows the evolution of crude oil prices at a monthly frequency from
     <strong>1960 to 2025</strong>, providing a long-run view of the environment in which firms and sectors operate.
     While this full history offers useful context, our empirical analysis focuses on the period from
@@ -139,23 +139,7 @@ layout: full
 </section>
 
 <p class="ds-lead">
-  For this analysis, we zoom in on the period from 
-  <strong>January 2000 to April 1, 2020</strong>. All sector and industry level
-  analyses, as well as the identification of oil price shocks, are conducted
-  within this time window. This choice reflects both data availability and the
-  desire to concentrate on a modern market environment characterized by repeated
-  episodes of oil market stress and heightened financial integration.
-
-</p><p class="ds-lead">
-  Within this time frame, oil price movements occasionally depart sharply from their
-  usual patterns. These episodes play a central role in what follows and motivate a
-  closer look at how abrupt changes in oil prices propagate through financial markets.
-</p>
-
-<p class="ds-lead">
-  To better understand how oil price movements transmit to the market, we begin by
-  examining how sectors—and, in some cases, industries—react when oil prices experience
-  sudden disruptions. Before turning to these responses, however, it is essential to
+  Before interpreting these market reactions, it is essential to
   clarify what we mean by an oil price shock.
 </p>
 
