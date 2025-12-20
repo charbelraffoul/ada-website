@@ -39,31 +39,36 @@ layout: full
 
   <div style="max-width: 820px; margin: 0 auto; font-size: 0.95rem; text-align: center;">
 
-  <p class="ds-lead" style="text-align: center;">
+  <p style="margin: 0 0 18px 0; text-align: center;">
     Oil is more than just a commodity; it is a macroeconomic force that quietly shapes costs, expectations,
     and risk across financial markets. When oil prices move abruptly, markets react, but not all in the same way.
-    Some sectors feel the impact immediately through input costs and margins, others through demand and investor sentiment, while a few appear relatively insulated.
+    Some sectors feel the impact immediately through input costs and margins, others through demand and investor sentiment,
+    while a few appear relatively insulated.
   </p>
 
-  <p class="ds-lead" style="text-align: center;">
-    A simple way to think about this is to imagine <strong>oil as a boss</strong>, the central decision maker within a firm. On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team to adapt. But not every team is equally exposed: some of them are directly exposed and must react immediately, while others are affected more indirectly or remain relatively protected. This leads us to an essential question:
+  <p style="margin: 0 0 22px 0; text-align: center;">
+    A simple way to think about this is to imagine <strong>oil as a boss</strong>, the central decision maker within a firm.
+    On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team to adapt.
+    But not every team is equally exposed: some are directly exposed and must react immediately, while others are affected more indirectly
+    or remain relatively protected. This leads us to an essential question:
   </p>
 
-  <blockquote class="ds-quote" style="text-align: center; font-size: 1.15rem; line-height: 1.6; margin: 26px auto;">
-    <strong>How do oil price shocks reshape sector performance, and what does this imply for portfolio design?</strong>
-  </blockquote>
+  <p style="margin: 26px auto; text-align: center; line-height: 1.6;">
+    <strong><em>How do oil price shocks reshape sector performance, and what does this imply for portfolio design?</em></strong>
+  </p>
 
-  <p class="ds-lead" style="text-align: center;">
+  <p style="margin: 22px 0 0 0; text-align: center;">
     In this setting, we step in as consultants inside the firm. When the boss is calm, patterns are easy to read.
     When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
     Observing these responses closely is often the only way to understand how the organization really functions.
   </p>
 
-  <hr style="margin: 46px 0 10px 0; opacity: 0.3;">
+  <hr style="margin: 46px 0 10px 0; opacity: 0.5;">
 
   </div>
 
 </section>
+
 
 <!-- MARKET STRUCTURE -->
 <section class="ds-wrap" id="market-structure" style="padding-top: 10px;">
@@ -102,36 +107,29 @@ layout: full
     Tile size reflects median monthly dollar trading volume.
   </p>
 
-  <hr style="margin: 44px 0; opacity: 0.25;">
+  <hr style="margin: 44px 0; opacity: 0.3;">
 
 </section>
 
 
-<section class="ds-wrap ds-figure-section">
+<!-- OIL PRICES AND SHOCKS -->
+<section class="ds-wrap" id="oil-prices" style="padding-top: 10px;">
+
+  <h2 style="margin: 10px 0 12px 0;">Oil prices and Shocks</h2>
 
   <p class="ds-lead">
-    With the market structure in place, we now turn to the behavior of oil prices themselves.
-    If oil truly acts as the boss in this setting, its mood is far from stable. Periods of calm
-    are punctuated by sudden swings, sharp spikes, and abrupt reversals, often linked to geopolitical
-    events, demand shifts, or broader economic stress.
+    With the market structure in place, we now turn to the behavior of oil prices themselves. If oil acts as the central decision-maker in this setting, its behavior is far from stable. Extended periods of relative calm are punctuated by sudden swings, sharp spikes, and abrupt reversals, often associated with geopolitical events, shifts in global demand, or episodes of broader economic stress.
   </p>
 
   <p class="ds-lead">
-    The figure below shows the evolution of crude oil prices at a monthly frequency from
-    <strong>1960 to 2025</strong>, providing a long-run view of the environment in which firms and sectors operate.
-    While this full history offers useful context, our empirical analysis focuses on the period from
-    <strong>January 2000 to April 1, 2020</strong>, the window over which sector and industry data are consistently available.
-    This interval spans several oil price regimes and major disruptions, making it particularly informative
-    for studying how shocks propagate through the market.
+    The figure below illustrates the evolution of crude oil prices at a monthly frequency from <strong>1960 to 2025</strong>, providing a long-run perspective on the environment in which firms and sectors operate. While this extended history offers valuable context, our empirical analysis focuses on the period from <strong>January 2000 to April 1, 2020</strong>, during which sector- and industry-level data are consistently available. This window spans multiple oil price regimes as well as several major disruptions, making it particularly informative for studying how oil price shocks propagate through the market.
   </p>
 
   <div class="ds-static-figure">
     <!--
       Animated version (recommended): export an SVG from your matplotlib script
       and give the main line an id="oil-line" (see notes below).
-
-      Fallback: keep the PNG so the figure still shows if SVG loading fails.
-    -->
+      Fallback: keep the PNG so the figure still shows if SVG loading fails.-->
     <div
       class="ds-svg-figure"
       data-svg-src="{{ '/assets/img/brent_price_monthly.svg' | relative_url }}"
@@ -149,43 +147,39 @@ layout: full
     <strong>Figure 2.</strong> Crude oil price (monthly, USD per barrel), 1960–2025.
   </p>
 
-</section>
+  <p class="ds-lead">
+    Before interpreting these market reactions, it is essential to
+    clarify what we mean by an oil price shock.
+  </p>
 
-<p class="ds-lead">
-  Before interpreting these market reactions, it is essential to
-  clarify what we mean by an oil price shock.
-</p>
+  <h3>What are oil price shocks?</h3>
 
-<h2>What are oil price shocks?</h2>
+  <p class="ds-lead">
+    Oil prices do not always evolve smoothly. While many changes reflect gradual
+    adjustments in supply and demand, some episodes are characterized by abrupt and
+    unusually large movements that arrive unexpectedly. These moments interrupt the
+    normal pace of adjustment and force market participants to react quickly.
+  </p>
 
-<p class="ds-lead">
-  Oil prices do not always evolve smoothly. While many changes reflect gradual
-  adjustments in supply and demand, some episodes are characterized by abrupt and
-  unusually large movements that arrive unexpectedly. These moments interrupt the
-  normal pace of adjustment and force market participants to react quickly.
-</p>
+  <p class="ds-lead">
+    The analogy introduced earlier is useful here. When conditions are stable, decisions
+    unfold predictably and responses are measured. When an unexpected decision arrives,
+    timelines compress and reactions reveal underlying exposures. Oil price shocks
+    correspond to these moments of disruption.
+  </p>
 
-<p class="ds-lead">
-  The analogy introduced earlier is useful here. When conditions are stable, decisions
-  unfold predictably and responses are measured. When an unexpected decision arrives,
-  timelines compress and reactions reveal underlying exposures. Oil price shocks
-  correspond to these moments of disruption.
-</p>
+  <p class="ds-lead">
+    In this study, we use the term <em>oil price shocks</em> to refer to such sudden and
+    pronounced movements in crude oil prices that stand out from typical month-to-month
+    variation. Identifying these episodes provides a natural starting point for examining
+    how different sectors and industries respond when confronted with unexpected changes
+    in a key macroeconomic input.
+  </p>
 
-<p class="ds-lead">
-  In this study, we use the term <em>oil price shocks</em> to refer to such sudden and
-  pronounced movements in crude oil prices that stand out from typical month-to-month
-  variation. Identifying these episodes provides a natural starting point for examining
-  how different sectors and industries respond when confronted with unexpected changes
-  in a key macroeconomic input.
-</p>
-
-<section class="ds-wrap ds-figure-section">
-
-  <p class="ds-figure-intro">
+  <p class="ds-lead">
     To concretize this definition, we identify oil price shocks using monthly
-    crude oil log returns. Months corresponding to unusually large price
-    movements are classified as shocks.
+      crude oil log returns. Months corresponding to unusually large price
+      movements are classified as shocks.
   </p>
 
   <div class="ds-embed">
@@ -204,27 +198,26 @@ layout: full
     extreme movements relative to typical month-to-month variation.
   </p>
 
+  <hr style="margin: 44px 0; opacity: 0.5;">
+
 </section>
 
-<p class="ds-lead">
-  With oil price shocks identified, we now turn to how these events translate into
-  movements across the market.
-</p>
+<section class="ds-wrap" id="rq1" style="padding-top: 10px;">
 
-<p class="ds-lead">
-  We begin with the high-level view. We look at a compact summary
-  of sector behavior across different oil market conditions.
-</p>
+  <h2 style="margin: 10px 0 12px 0;">Which sectors are most sensitive to oil shocks?</h2>
 
-<p class="ds-lead">
-  The figure below groups months into negative shocks, normal periods, and positive shocks.
-  Each point corresponds to a sector, while the box plots summarize how sector returns
-  are distributed within each group.
-</p>
-<section class="ds-figure-section">
+  <p class="ds-lead">
+    With oil price shocks identified, we now turn to how these events translate into movements across the market. We begin with the high-level view: we look at a compact summary of sector behavior across different oil market conditions.
+  </p>
 
-  <div class="oil-regime-layout">
+  <p class="ds-lead">
+    The figure below groups months into negative shocks, normal periods, and positive shocks.
+    Each point corresponds to a sector, while the box plots summarize how sector returns
+    are distributed within each group.
+  </p>
 
+  <section class="ds-figure-section">
+    <div class="oil-regime-layout">
     <!-- LEFT: Plot -->
     <div class="oil-regime-plot">
       <iframe
@@ -235,35 +228,29 @@ layout: full
         loading="lazy"
       ></iframe>
     </div>
-
     <!-- RIGHT: Barrels -->
     <div class="oil-regime-icons">
       <div class="oil-icon">
         <img src="{{ '/assets/img/red_barrel_transparent.png' | relative_url }}" alt="Negative shock">
         <span>Negative shock</span>
       </div>
-
       <div class="oil-icon">
         <img src="{{ '/assets/img/grey_barrel_transparent.png' | relative_url }}" alt="No shock">
         <span>No shock</span>
       </div>
-
       <div class="oil-icon">
         <img src="{{ '/assets/img/green_barrel_transparent.png' | relative_url }}" alt="Positive shock">
         <span>Positive shock</span>
       </div>
     </div>
-
-  </div>
-
-  <p class="ds-caption">
-    <strong>Figure 4.</strong> Sector returns across oil shock regimes.
-  </p>
-  <p class="ds-note">
-  <em>Tip:</em> Double-click a sector in the legend (e.g. <strong>Energy</strong>) to isolate its performance across oil-shock regimes.
-</p>
-
-</section>
+    </div>
+    <p class="ds-caption">
+      <strong>Figure 4.</strong> Sector returns across oil shock regimes.
+    </p>
+    <p class="ds-note">
+    <em>Tip: Double-click a sector in the legend (e.g. Energy) to isolate its performance across oil-shock regimes.</em>
+    </p>
+  </section>
 
 <p class="ds-lead">
   Two patterns stand out. During large negative oil shocks, sector returns shift downward
@@ -279,6 +266,7 @@ layout: full
   only through their direction, but also through the way they reshape the cross-section
   of sector performance.
 </p>
+
 <p class="ds-lead">
 To move beyond distributions and summarize these effects more directly, we now compare
 average sector returns during oil-shock periods relative to normal conditions.
