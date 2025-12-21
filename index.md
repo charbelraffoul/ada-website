@@ -62,8 +62,8 @@ layout: full
   When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
   Watching these responses closely is often the only way to understand how the organization really works.
 </p>
-
-
+</section>
+<section>
 <!-- MARKET STRUCTURE -->
 <section class="ds-wrap" id="market-structure" style="padding-top: 10px;">
 
