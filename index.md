@@ -686,27 +686,8 @@ when a given boss is in charge.
 </figure>
 
 <p class="ds-lead">
-Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
-same department can react very differently depending on which boss is in charge. Second,
-some relationships only become visible under specific management styles.
-</p>
-
-<p class="ds-lead">
-For example, the Energy department shows its strongest alignment with oil prices under the
-Shale boss, when supply-side dynamics dominate. During the GFC boss’s tenure, however,
-many departments move together regardless of oil, reflecting broad panic rather than
-sector-specific exposure.
-</p>
-
-<p class="ds-lead">
-The Plateau boss paints yet another picture: oil prices are high but stable, and most
-departments show weaker, more muted responses. In this environment, oil is present in the
-background, but it does not dominate day-to-day performance.
-</p>
-
-<p class="ds-lead">
 Having seen that departments respond differently depending on which boss is in charge, we
-now quantify these differences more precisely. The figure below reports sector-level oil
+now quantify these differences more precisely. The interactive figure below reports sector-level oil
 betas estimated separately for each management style, while controlling for overall market
 movements.
 </p>
