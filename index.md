@@ -110,8 +110,12 @@ layout: full
   <h2 style="margin: 10px 0 12px 0;">Oil prices and Shocks</h2>
 
   <p class="ds-lead">
-    With the market structure in place, we now turn to the behavior of oil prices themselves. If oil acts as the central decision-maker in this setting, its behavior is far from stable. Extended periods of relative calm are punctuated by sudden swings, sharp spikes, and abrupt reversals, often associated with geopolitical events, shifts in global demand, or episodes of broader economic stress.
+    With the market structure in place, we now turn to the behavior of oil prices themselves. If oil acts as the central decision-maker in this setting, its behavior is far from stable.
   </p>
+
+  <blockquote class="ds-quote">
+  Extended periods of relative calm are punctuated by sudden swings, sharp spikes, and abrupt reversals, often associated with geopolitical events, shifts in global demand, or episodes of broader economic stress.
+  </blockquote>
 
   <p class="ds-lead">
     The figure below illustrates the evolution of crude oil prices at a monthly frequency from <strong>1960 to 2025</strong>, providing a long-run perspective on the environment in which firms and sectors operate. While this extended history offers valuable context, our empirical analysis focuses on the period from <strong>January 2000 to April 1, 2020</strong>, during which sector- and industry-level data are consistently available. This window spans multiple oil price regimes as well as several major disruptions, making it particularly informative for studying how oil price shocks propagate through the market.
@@ -160,26 +164,67 @@ layout: full
     correspond to these moments of disruption.
   </p>
 
-  <p class="ds-lead">
+  <blockquote class="ds-quote">
     In this study, we use the term <em>oil price shocks</em> to refer to such sudden and
     pronounced movements in crude oil prices that stand out from typical month-to-month
-    variation. Identifying these episodes provides a natural starting point for examining
+    variation.
+  </blockquote>
+
+  <p class="ds-lead">
+    Identifying these episodes provides a natural starting point for examining
     how different sectors and industries respond when confronted with unexpected changes
     in a key macroeconomic input.
   </p>
 
   <p class="ds-lead">
     To concretize this definition, we identify oil price shocks using monthly
-      crude oil log returns. Months corresponding to unusually large price
-      movements are classified as shocks.
+    crude oil log returns. Months corresponding to unusually large price
+    movements are classified as shocks.
   </p>
 
-  <div class="ds-embed">
+  <style>
+  /* Conteneur pour gérer le débordement */
+  .ds-embed-wrapper {
+    width: 100%;
+    overflow: hidden; 
+    border-radius: 12px;
+    background: #f9f9f9; /* Optionnel : fond léger pendant le chargement */
+  }
+
+  .responsive-oil-shocks {
+    border: 0;
+    width: 900px;  /* On force une largeur "Desktop" */
+    height: 520px; /* On garde votre hauteur */
+    
+    /* Le secret : on réduit la taille à 40% sur très petits écrans */
+    transform: scale(0.4); 
+    transform-origin: 0 0;
+  }
+
+  /* Ajustements selon la taille de l'écran */
+  @media (max-width: 400px) {
+    .ds-embed-wrapper { height: 210px; } /* Hauteur ajustée (520 * 0.4) */
+    .responsive-oil-shocks { transform: scale(0.4); width: 900px; }
+  }
+
+  @media (min-width: 401px) and (max-width: 768px) {
+    .ds-embed-wrapper { height: 310px; } /* Hauteur ajustée (520 * 0.6) */
+    .responsive-oil-shocks { transform: scale(0.6); width: 900px; }
+  }
+
+  @media (min-width: 769px) {
+    .ds-embed-wrapper { height: 520px; }
+    .responsive-oil-shocks { 
+      transform: none; 
+      width: 100%; /* Retour au mode normal sur PC */
+    }
+  }
+  </style>
+
+  <div class="ds-embed-wrapper">
     <iframe
+      class="responsive-oil-shocks"
       src="{{ '/assets/interactive/oil_shocks.html' | relative_url }}"
-      width="100%"
-      height="520"
-      style="border: 0; border-radius: 12px;"
       loading="lazy"
     ></iframe>
   </div>
@@ -208,19 +253,76 @@ layout: full
     are distributed within each group.
   </p>
 
+  <style>
+  /* 1. Conteneur global pour limiter les débordements */
+  .oil-regime-layout {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux icônes de passer dessous sur mobile */
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* 2. Le wrapper pour le zoom du graphique */
+  .oil-regime-plot-wrapper {
+    flex: 1; /* Prend l'espace disponible */
+    min-width: 300px;
+    overflow: hidden; 
+    border-radius: 12px;
+  }
+
+  .responsive-regime-iframe {
+    border: 0;
+    width: 100%; /* Par défaut sur PC */
+    height: 560px;
+  }
+
+  /* --- AJUSTEMENTS MOBILE (Zoom arrière) --- */
+  @media (max-width: 768px) {
+    .oil-regime-plot-wrapper {
+      /* On ajuste la hauteur du conteneur selon l'échelle choisie */
+      /* Si scale 0.5, hauteur = 560 * 0.5 = 280px */
+      height: 310px; 
+    }
+
+    .responsive-regime-iframe {
+      width: 900px; /* On dessine en large comme sur PC */
+      transform: scale(0.55); /* On dézoome */
+      transform-origin: 0 0;
+    }
+
+    /* On s'assure que les icônes passent bien en dessous et soient centrées */
+    .oil-regime-icons {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+  }
+
+  /* Sur PC, on remet tout à plat */
+  @media (min-width: 769px) {
+    .responsive-regime-iframe {
+      width: 100%;
+      transform: none;
+    }
+    .oil-regime-plot-wrapper {
+        height: 560px;
+    }
+  }
+  </style>
+
   <section class="ds-figure-section">
-    <div class="oil-regime-layout">
+  <div class="oil-regime-layout">
     <!-- LEFT: Plot -->
-    <div class="oil-regime-plot">
+    <div class="oil-regime-plot-wrapper">
       <iframe
+        class="responsive-regime-iframe"
         src="{{ '/assets/interactive/all_sectors_oil_shock_regimes.html' | relative_url }}"
-        width="100%"
-        height="560"
-        style="border: 0; border-radius: 12px;"
         loading="lazy"
       ></iframe>
     </div>
-    <!-- RIGHT: Barrels -->
+
+    <!-- DROITE: Plot -->
     <div class="oil-regime-icons">
       <div class="oil-icon">
         <img src="{{ '/assets/img/red_barrel_transparent.png' | relative_url }}" alt="Negative shock">
@@ -235,13 +337,14 @@ layout: full
         <span>Positive shock</span>
       </div>
     </div>
-    </div>
-    <p class="ds-caption">
-      <strong>Figure 4.</strong> Sector returns across oil shock regimes.
-    </p>
-    <p class="ds-note">
+  </div>
+
+  <p class="ds-caption">
+    <strong>Figure 4.</strong> Sector returns across oil shock regimes.
+  </p>
+  <p class="ds-note">
     <em>Tip: Double-click a sector in the legend (e.g. Energy) to isolate its performance across oil-shock regimes.</em>
-    </p>
+  </p>
   </section>
 
   <p class="ds-lead">
@@ -300,467 +403,544 @@ layout: full
     of sector performance rather than uniformly shifting returns.
   </p>
 
-<h3>From patterns to causality</h3>
+  <h3>From patterns to causality</h3>
 
-<p class="ds-lead">
-  Up to this point, we have documented clear differences in how sectors behave during periods
-  of oil price stress. These patterns are visible in the data, but they raise a natural next
-  question: are oil price movements simply occurring at the same time as sector returns, or
-  do they tend to happen first and trigger the responses we observe?
-</p>
-
-<p class="ds-lead">
-  To address this question, we shift our focus from co-movements to timing. If changes in oil
-  prices consistently occur before changes in sector returns, this provides evidence that
-  oil price shocks act as a leading force rather than merely reflecting broader market
-  conditions.
-</p>
-
-<p class="ds-lead">
-  Because large oil price changes are often driven by events outside equity markets—such as
-  geopolitical tensions or supply disruptions—oil prices can reasonably be treated as
-  external shocks. This makes them a useful starting point for examining directional effects
-  across sectors.
-</p>
-
-<h3>Who moves first?</h3>
-
-<div class="figure-block">
-  <img src="{{ '/assets/img/matrix_causal_sectors.png' | relative_url }}"
-       alt="Lagged regression p-values across sectors"
-       class="img-fluid">
-</div>
-
-<p class="ds-caption">
-    <strong>Figure 6.</strong> Lagged regressions of sector returns on past oil price changes. Lower values indicate
-    stronger evidence that oil prices move before sector returns.
+  <p class="ds-lead">
+    Up to this point, we have documented clear differences in how sectors behave during periods
+    of oil price stress. These patterns are visible in the data, but they raise a natural next
+    question: 
   </p>
 
-<p class="ds-lead">
-  The heatmap above examines whether past oil price changes help explain sector returns at
-  different time delays. Each row corresponds to a sector, and each column represents how many
-  periods earlier the oil price change occurred.
-</p>
+  <blockquote class="ds-quote">
+    are oil price movements simply occurring at the same time as sector returns, or
+    do they tend to happen first and trigger the responses we observe?
+  </blockquote>
 
-<p class="ds-lead">
-  The results vary substantially across sectors. The Energy sector shows consistently low
-  p-values at short lags, indicating that oil price movements are often followed by changes
-  in energy-sector returns. Other sectors display weaker, less consistent patterns, with
-  significance appearing only at certain lags or not at all.
-</p>
+  <p class="ds-lead">
+    To address this question, we shift our focus from co-movements to timing. If changes in oil
+    prices consistently occur before changes in sector returns, this provides evidence that
+    oil price shocks act as a leading force rather than merely reflecting broader market
+    conditions.
+  </p>
 
-<div class="figure-block">
-  <img src="{{ '/assets/img/p_value_causal.png' | relative_url }}"
-       alt="Granger causality results for oil and sector returns"
-       class="img-fluid">
-</div>
+  <p class="ds-lead">
+    Because large oil price changes are often driven by events outside equity markets—such as
+    geopolitical tensions or supply disruptions—oil prices can reasonably be treated as
+    external shocks. This makes them a useful starting point for examining directional effects
+    across sectors.
+  </p>
 
-<p class="ds-caption">
-    <strong>Figure 7.</strong> Granger causality test results summarizing whether oil price changes help predict future
-    sector returns. Lower bars indicate stronger evidence of oil leading sector performance.
-</p>
+  <h3>Who moves first?</h3>
 
-<p class="ds-lead">
-  The bar chart provides a more direct summary of timing. Each bar shows the strength of
-  evidence that oil price changes help predict future sector returns after accounting for the
-  sector’s own past behavior. The dashed line marks the conventional 5% significance level.
-</p>
+  <div class="figure-block">
+    <img src="{{ '/assets/img/matrix_causal_sectors.png' | relative_url }}"
+        alt="Lagged regression p-values across sectors"
+        class="img-fluid">
+  </div>
 
-<p class="ds-lead">
-  The Energy sector stands out with very strong evidence that oil prices precede returns.
-  Healthcare, Financial Services, and Real Estate also show some evidence of a leading
-  relationship, although less strongly. Industrials sits close to the significance threshold,
-  while sectors such as Technology and Utilities show no evidence that oil prices lead their
-  returns.
-</p>
-
-<p class="ds-lead">
-  Overall, the results are clearly heterogeneous. Oil price movements do not lead the entire
-  market in the same way. Instead, their effects are strongest in sectors with direct or
-  meaningful exposure to oil prices, and weak or absent elsewhere.
-</p>
-
-<p class="ds-lead">
-  These findings do not prove causality in a strict structural sense. However, they reveal a
-  consistent timing pattern: oil prices tend to move first, and certain sectors—especially
-  energy-related ones—tend to react afterward. This pattern is consistent with viewing oil
-  price shocks as external disturbances that affect sectors differently depending on their
-  economic exposure.
-</p>
-
-<h3>Sector-level abnormal returns during oil shocks</h3>
-
-<p class="ds-lead">
-  So far, we have shown that oil price movements tend to precede returns in certain sectors.
-  We now ask a complementary question: when an oil shock occurs, how large is the abnormal
-  performance experienced by each sector?
-</p>
-
-<p class="ds-lead">
-  To answer this, we estimate sector-level regressions of monthly returns on oil price shocks,
-  controlling for overall market movements. The coefficients can be interpreted as
-  <em>abnormal returns</em> associated with oil-shock months relative to normal periods.
-</p>
-
-<section class="ds-wrap ds-figure-section">
-  <div class="ds-two-col-figures">
-  <!-- NEGATIVE SHOCK -->
-  <div class="ds-figure-col">
-    <div class="ds-static-figure">
-      <img
-        src="{{ '/assets/img/LinREGSectorsNeg.png' | relative_url }}"
-        alt="Sector abnormal returns during negative oil shocks"
-      />
-    </div>
-    <p class="ds-caption">
-      <strong>Figure 8.a.</strong> Sector-level abnormal returns during <strong>negative</strong>
-      oil-shock months (β ± 95% CI).
+  <p class="ds-caption">
+      <strong>Figure 6.</strong> Lagged regressions of sector returns on past oil price changes. Lower values indicate
+      stronger evidence that oil prices move before sector returns.
     </p>
+
+  <p class="ds-lead">
+    The heatmap above examines whether past oil price changes help explain sector returns at
+    different time delays. Each row corresponds to a sector, and each column represents how many
+    periods earlier the oil price change occurred.
+  </p>
+
+  <p class="ds-lead">
+    The results vary substantially across sectors. The Energy sector shows consistently low
+    p-values at short lags, indicating that oil price movements are often followed by changes
+    in energy-sector returns. Other sectors display weaker, less consistent patterns, with
+    significance appearing only at certain lags or not at all.
+  </p>
+
+  <div class="figure-block">
+    <img src="{{ '/assets/img/p_value_causal.png' | relative_url }}"
+        alt="Granger causality results for oil and sector returns"
+        class="img-fluid">
   </div>
-  <!-- POSITIVE SHOCK -->
-  <div class="ds-figure-col">
-    <div class="ds-static-figure">
-      <img
-        src="{{ '/assets/img/LinRegSectorsPos.png' | relative_url }}"
-        alt="Sector abnormal returns during positive oil shocks"
-      />
+
+  <p class="ds-caption">
+      <strong>Figure 7.</strong> Granger causality test results summarizing whether oil price changes help predict future
+      sector returns. Lower bars indicate stronger evidence of oil leading sector performance.
+  </p>
+
+  <p class="ds-lead">
+    The bar chart provides a more direct summary of timing. Each bar shows the strength of
+    evidence that oil price changes help predict future sector returns after accounting for the
+    sector’s own past behavior. The dashed line marks the conventional 5% significance level.
+  </p>
+
+  <p class="ds-lead">
+    The Energy sector stands out with very strong evidence that oil prices precede returns.
+    Healthcare, Financial Services, and Real Estate also show some evidence of a leading
+    relationship, although less strongly. Industrials sits close to the significance threshold,
+    while sectors such as Technology and Utilities show no evidence that oil prices lead their
+    returns.
+  </p>
+
+  <p class="ds-lead">
+    Overall, the results are clearly heterogeneous. Oil price movements do not lead the entire
+    market in the same way. Instead, their effects are strongest in sectors with direct or
+    meaningful exposure to oil prices, and weak or absent elsewhere.
+  </p>
+
+  <p class="ds-lead">
+    These findings do not prove causality in a strict structural sense. However, they reveal a
+    consistent timing pattern: oil prices tend to move first, and certain sectors—especially
+    energy-related ones—tend to react afterward. This pattern is consistent with viewing oil
+    price shocks as external disturbances that affect sectors differently depending on their
+    economic exposure.
+  </p>
+
+  <h3>Sector-level abnormal returns during oil shocks</h3>
+
+  <p class="ds-lead">
+    So far, we have shown that oil price movements tend to precede returns in certain sectors.
+    We now ask a complementary question: 
+  </p>
+
+  <blockquote class="ds-quote">
+    when an oil shock occurs, how large is the abnormal
+    performance experienced by each sector?
+  </blockquote>
+
+  <p class="ds-lead">
+    To answer this, we estimate sector-level regressions of monthly returns on oil price shocks,
+    controlling for overall market movements. The coefficients can be interpreted as
+    <em>abnormal returns</em> associated with oil-shock months relative to normal periods.
+  </p>
+
+  <section class="ds-wrap ds-figure-section">
+    <div class="ds-two-col-figures">
+    <!-- NEGATIVE SHOCK -->
+    <div class="ds-figure-col">
+      <div class="ds-static-figure">
+        <img
+          src="{{ '/assets/img/LinREGSectorsNeg.png' | relative_url }}"
+          alt="Sector abnormal returns during negative oil shocks"
+        />
+      </div>
+      <p class="ds-caption">
+        <strong>Figure 8.a.</strong> Sector-level abnormal returns during <strong>negative</strong>
+        oil-shock months (β ± 95% CI).
+      </p>
     </div>
-    <p class="ds-caption">
-      <strong>Figure 8.b.</strong> Sector-level abnormal returns during <strong>positive</strong>
-      oil-shock months (β ± 95% CI).
-    </p>
-  </div>
-  </div>
+    <!-- POSITIVE SHOCK -->
+    <div class="ds-figure-col">
+      <div class="ds-static-figure">
+        <img
+          src="{{ '/assets/img/LinRegSectorsPos.png' | relative_url }}"
+          alt="Sector abnormal returns during positive oil shocks"
+        />
+      </div>
+      <p class="ds-caption">
+        <strong>Figure 8.b.</strong> Sector-level abnormal returns during <strong>positive</strong>
+        oil-shock months (β ± 95% CI).
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <p class="ds-lead">
+  To highlight the asymmetric nature of oil shocks, Figure 8 contrasts sector-level abnormal
+  returns during negative and positive oil-shock months side by side.
+  </p>
+
+  <hr>
+
+  <h2>At this point, it is tempting to stop at the sector level.</h2>
+
+  <p class="ds-lead">
+    You wouldn't fire an entire department just because one employee underperformed. Yet, looking only at Sectors does exactly that.
+  </p>
+
+  <p class="ds-lead">
+  Looking at industries lets us see which teams are actually driving the sector-level results.
+  Some are highly exposed to oil prices, others much less so. Let’s dive deeper and see where these effects really come from.
+  </p>
+
+  <p class="ds-lead">
+  TODO, add causality to industries (Figure 9)
+  </p>
+
+  <p class="ds-lead">
+    As good consultants, we know that numbers alone rarely tell the full story. Once the
+    patterns are clear, the next step is to step back and understand the broader context in
+    which they emerge.
+  </p>
+  <hr>
 </section>
 
-<p class="ds-lead">
-To highlight the asymmetric nature of oil shocks, Figure 8 contrasts sector-level abnormal
-returns during negative and positive oil-shock months side by side.
-</p>
 
-<hr>
+<section class="ds-wrap" id="rq2" style="padding-top: 10px;">
 
-<h2>At this point, it is tempting to stop at the sector level.</h2>
+  <h2 style="margin: 10px 0 12px 0;">Choose your oil regime</h2>
 
-<p class="ds-lead">
-  You wouldn't fire an entire department just because one employee underperformed. Yet, looking only at Sectors does exactly that.
-</p>
+  <p class="ds-lead">
+  Looking back, the company goes through three very different management styles. You can
+  think of them as three bosses. Meet them—and pick one to explore.
+  </p>
+  <h3>Oil price regimes over time</h3>
 
-<p class="ds-lead">
-Looking at industries lets us see which teams are actually driving the sector-level results.
-Some are highly exposed to oil prices, others much less so. Let’s dive deeper and see where these effects really come from.
-</p>
+  <p class="ds-lead">
+  To understand these bosses, it helps to look at the full picture, and we must first visualize the timeline they operated in. The figure below shows the monthly Brent oil price level, with the three periods we focus on highlighted.
+  </p>
 
-<p class="ds-lead">
-TODO, add causality to industries (Figure 9)
-</p>
+  <p class="ds-lead">
+  These shaded regions are not based on short-term price movements, but on clear breaks in the
+  level, volatility, and persistence of oil prices. Each period reflects a distinct market environment in
+  which oil shocks play out differently.
+  </p>
 
-<p class="ds-lead">
-  As good consultants, we know that numbers alone rarely tell the full story. Once the
-  patterns are clear, the next step is to step back and understand the broader context in
-  which they emerge.
-</p>
+  <figure class="ds-figure">
+    <img
+      src="{{ '/assets/img/oil_regime.png' | relative_url }}"
+      alt="Monthly Brent oil price level with regime markers"
+      style="width:100%; border-radius:12px;"
+    >
+  </figure>
 
-<hr>
+  <p class="ds-caption">
+      <strong>Figure 10.</strong> Monthly Brent oil prices with regime markers: the Global Financial Crisis (2008–2009),
+      the high-price Plateau (2010–2014), and the Shale period (2014–2016).
+  </p>
 
-<h2>Choose your oil regime</h2>
+  <p class="ds-lead">
+  To make the “environment shift” even more concrete, the next figure shows how turbulent the oil market
+  is within each period. Volatility spikes during the GFC, falls during the Plateau, and rises again during
+  the Shale era as the market adjusts to a new supply regime.
+  </p>
 
-<p class="ds-lead">
-Looking back, the company goes through three very different management styles. You can
-think of them as three bosses. Meet them—and pick one to explore.
-</p>
-<h3>Oil price regimes over time</h3>
+  <figure class="ds-figure">
+    <img
+      src="{{ '/assets/img/12MonthRollingVol.png' | relative_url }}"
+      alt="Rolling 12-month volatility of Brent log returns"
+      style="width:100%; border-radius:12px;"
+    >
+  </figure>
 
-<p class="ds-lead">
-To understand these bosses, it helps to look at the full picture, and we must first visualize the timeline they operated in. The figure below shows the monthly Brent oil price level, with the three periods we focus on highlighted.
-</p>
+  <p class="ds-caption">
+      <strong>Figure 11.</strong> Rolling 12-month volatility of Brent log returns (standard deviation), with the same regime markers.
+      Higher values indicate a more turbulent oil market.
+  </p>
 
-<p class="ds-lead">
-These shaded regions are not based on short-term price movements, but on clear breaks in the
-level, volatility, and persistence of oil prices. Each period reflects a distinct market environment in
-which oil shocks play out differently.
-</p>
+  <p class="ds-lead">
+  With this timeline in mind, we can now meet the three bosses who ran the company during these periods.
+  </p>
 
-<figure class="ds-figure">
-  <img
-    src="{{ '/assets/img/oil_regime.png' | relative_url }}"
-    alt="Monthly Brent oil price level with regime markers"
-    style="width:100%; border-radius:12px;"
-  >
-</figure>
+  <h3>Meet the bosses</h3>
 
-<p class="ds-caption">
-    <strong>Figure 10.</strong> Monthly Brent oil prices with regime markers: the Global Financial Crisis (2008–2009),
-    the high-price Plateau (2010–2014), and the Shale period (2014–2016).
-</p>
+  <p class="ds-lead">
+  Looking back at oil price history, we can clearly distinguish three short but very different
+  management periods. Each one corresponds to a specific type of shock and a distinct oil
+  price environment. To keep things intuitive, we present them as three different bosses.
+  </p>
 
-<p class="ds-lead">
-To make the “environment shift” even more concrete, the next figure shows how turbulent the oil market
-is within each period. Volatility spikes during the GFC, falls during the Plateau, and rises again during
-the Shale era as the market adjusts to a new supply regime.
-</p>
+  <div class="boss-grid">
 
-<figure class="ds-figure">
-  <img
-    src="{{ '/assets/img/12MonthRollingVol.png' | relative_url }}"
-    alt="Rolling 12-month volatility of Brent log returns"
-    style="width:100%; border-radius:12px;"
-  >
-</figure>
+    <!-- GFC -->
+    <article class="boss-card" data-hover-video>
+      <div class="boss-media">
+        <img class="boss-img" src="{{ '/assets/img/first_regime_orange.png' | relative_url }}" alt="GFC boss">
+        <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss1.mp4' | relative_url }}"></video>
+      </div>
 
-<p class="ds-caption">
-    <strong>Figure 11.</strong> Rolling 12-month volatility of Brent log returns (standard deviation), with the same regime markers.
-    Higher values indicate a more turbulent oil market.
-</p>
+      <h3>Boss #1 — GFC (2008–2009)</h3>
 
-<p class="ds-lead">
-With this timeline in mind, we can now meet the three bosses who ran the company during these periods.
-</p>
+      <p class="ds-lead">
+        This boss takes over during a demand shock. Oil prices spike and then collapse rapidly
+        as global demand disappears. The reaction is chaotic, driven by panic rather than
+        gradual adjustment.
+      </p>
 
-<h3>Meet the bosses</h3>
+      <ul class="boss-traits">
+        <li><strong>Shock type:</strong> demand shock</li>
+        <li><strong>Craziness:</strong> very high</li>
+        <li><strong>Predictability:</strong> very low</li>
+        <li><strong>Market mood:</strong> panic-driven</li>
+        <li><strong>Overall vibe:</strong> crisis management</li>
+      </ul>
 
-<p class="ds-lead">
-Looking back at oil price history, we can clearly distinguish three short but very different
-management periods. Each one corresponds to a specific type of shock and a distinct oil
-price environment. To keep things intuitive, we present them as three different bosses.
-</p>
+    </article>
 
-<div class="boss-grid">
+    <!-- Plateau -->
+    <article class="boss-card" data-hover-video>
+      <div class="boss-media">
+        <img class="boss-img" src="{{ '/assets/img/second_regime.png' | relative_url }}" alt="Plateau boss">
+        <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss2.mp4' | relative_url }}"></video>
+      </div>
 
-  <!-- GFC -->
-  <article class="boss-card" data-hover-video>
-    <div class="boss-media">
-      <img class="boss-img" src="{{ '/assets/img/first_regime_orange.png' | relative_url }}" alt="GFC boss">
-      <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss1.mp4' | relative_url }}"></video>
-    </div>
+      <h3>Boss #2 — Plateau (2010–2014)</h3>
 
-    <h3>Boss #1 — GFC (2008–2009)</h3>
+      <p class="ds-lead">
+        This boss presides over a period of relative stability. Oil prices remain high—around
+        $100 per barrel—but fluctuate within a narrow range. Shocks occur, but the environment
+        itself is steady.
+      </p>
 
-    <p class="ds-lead">
-      This boss takes over during a demand shock. Oil prices spike and then collapse rapidly
-      as global demand disappears. The reaction is chaotic, driven by panic rather than
-      gradual adjustment.
-    </p>
+      <ul class="boss-traits">
+        <li><strong>Shock type:</strong> none dominant</li>
+        <li><strong>Craziness:</strong> low</li>
+        <li><strong>Predictability:</strong> high</li>
+        <li><strong>Market mood:</strong> stable</li>
+        <li><strong>Overall vibe:</strong> steady pressure</li>
+      </ul>
 
-    <ul class="boss-traits">
-      <li><strong>Shock type:</strong> demand shock</li>
-      <li><strong>Craziness:</strong> very high</li>
-      <li><strong>Predictability:</strong> very low</li>
-      <li><strong>Market mood:</strong> panic-driven</li>
-      <li><strong>Overall vibe:</strong> crisis management</li>
-    </ul>
+    </article>
 
-  </article>
+    <!-- Shale -->
+    <article class="boss-card" data-hover-video>
+      <div class="boss-media">
+        <img class="boss-img" src="{{ '/assets/img/third_regime.png' | relative_url }}" alt="Shale boss">
+        <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss3.mp4' | relative_url }}"></video>
+      </div>
 
-  <!-- Plateau -->
-  <article class="boss-card" data-hover-video>
-    <div class="boss-media">
-      <img class="boss-img" src="{{ '/assets/img/second_regime.png' | relative_url }}" alt="Plateau boss">
-      <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss2.mp4' | relative_url }}"></video>
-    </div>
+      <h3>Boss #3 — Shale (2014–2016)</h3>
 
-    <h3>Boss #2 — Plateau (2010–2014)</h3>
+      <p class="ds-lead">
+        This boss arrives during a supply shock. Rapid growth in U.S. shale production floods
+        the market, triggering a sharp drop in oil prices followed by continued volatility at
+        lower levels.
+      </p>
 
-    <p class="ds-lead">
-      This boss presides over a period of relative stability. Oil prices remain high—around
-      $100 per barrel—but fluctuate within a narrow range. Shocks occur, but the environment
-      itself is steady.
-    </p>
+      <ul class="boss-traits">
+        <li><strong>Shock type:</strong> supply shock</li>
+        <li><strong>Craziness:</strong> medium</li>
+        <li><strong>Predictability:</strong> medium</li>
+        <li><strong>Market mood:</strong> adjustment phase</li>
+        <li><strong>Overall vibe:</strong> rebalancing</li>
+      </ul>
 
-    <ul class="boss-traits">
-      <li><strong>Shock type:</strong> none dominant</li>
-      <li><strong>Craziness:</strong> low</li>
-      <li><strong>Predictability:</strong> high</li>
-      <li><strong>Market mood:</strong> stable</li>
-      <li><strong>Overall vibe:</strong> steady pressure</li>
-    </ul>
+    </article>
 
-  </article>
+  </div>
 
-  <!-- Shale -->
-  <article class="boss-card" data-hover-video>
-    <div class="boss-media">
-      <img class="boss-img" src="{{ '/assets/img/third_regime.png' | relative_url }}" alt="Shale boss">
-      <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss3.mp4' | relative_url }}"></video>
-    </div>
+  <p class="ds-lead">
+  These three bosses differ in both the source of the shock and the behavior of oil prices.
+  In the next step, we examine how departments and teams respond under each of these distinct
+  management environments.
+  </p>
 
-    <h3>Boss #3 — Shale (2014–2016)</h3>
+  <p class="ds-lead">
+    With the bosses introduced, we can now ask a sharper question: which departments (sectors)
+    and which teams (industries) performed differently under each management era?
+  </p>
 
-    <p class="ds-lead">
-      This boss arrives during a supply shock. Rapid growth in U.S. shale production floods
-      the market, triggering a sharp drop in oil prices followed by continued volatility at
-      lower levels.
-    </p>
+  <blockquote class="ds-quote">
+    The key idea is simple: the same oil price movement can lead to different outcomes depending
+    on which boss is in charge.
+  </blockquote>
 
-    <ul class="boss-traits">
-      <li><strong>Shock type:</strong> supply shock</li>
-      <li><strong>Craziness:</strong> medium</li>
-      <li><strong>Predictability:</strong> medium</li>
-      <li><strong>Market mood:</strong> adjustment phase</li>
-      <li><strong>Overall vibe:</strong> rebalancing</li>
-    </ul>
+  <p class="ds-lead">
+    Next, we examine sector behavior conditional on these regimes.
+  </p>
 
-  </article>
+  <h3>How departments behave under each boss</h3>
 
-</div>
+  <p class="ds-lead">
+  Now that we have met the bosses, we can look inside the company. Each boss sets a very
+  different tone, and departments do not react in the same way under each management style.
+  </p>
+  <p class="ds-lead">
+  So far, we have treated oil exposure as something that can change over time. Before
+  summarizing these relationships by regime, it is useful to look at this time variation
+  directly. The interactive figure below shows 36-month rolling oil betas by sector,
+  estimated while controlling for overall market movements.
+  </p>
 
-<p class="ds-lead">
-These three bosses differ in both the source of the shock and the behavior of oil prices.
-In the next step, we examine how departments and teams respond under each of these distinct
-management environments.
-</p>
+  <style>
+    /* Conteneur principal */
+    .rolling-betas-wrapper {
+      width: 100%;
+      overflow: hidden; 
+      border-radius: 12px;
+      margin: 2rem 0;
+    }
 
-<p class="ds-lead">
-With the bosses introduced, we can now ask a sharper question: which departments (sectors)
-and which teams (industries) performed differently under each management era?
-</p>
-<p class="ds-lead">
-The key idea is simple: the same oil price movement can lead to different outcomes depending
-on which boss is in charge. Next, we examine sector behavior conditional on these regimes.
-</p>
-<h3>How departments behave under each boss</h3>
+    .rolling-betas-iframe {
+      border: none;
+      width: 100%; /* Défaut Desktop */
+      height: 420px;
+    }
 
-<p class="ds-lead">
-Now that we have met the bosses, we can look inside the company. Each boss sets a very
-different tone, and departments do not react in the same way under each management style.
-</p>
-<p class="ds-lead">
-So far, we have treated oil exposure as something that can change over time. Before
-summarizing these relationships by regime, it is useful to look at this time variation
-directly. The interactive figure below shows 36-month rolling oil betas by sector,
-estimated while controlling for overall market movements.
-</p>
+    /* --- OPTIMISATION MOBILE --- */
+    @media (max-width: 768px) {
+      .rolling-betas-wrapper {
+        /* Hauteur calculée : 420px * 0.5 (scale) = 210px (+ un peu de marge) */
+        height: 230px; 
+      }
 
-<div class="ds-figure" style="margin: 2rem 0;">
-  <iframe
-    src="{{ '/assets/interactive/rolling_oil_betas.html' | relative_url }}"
-    width="100%"
-    height="420"
-    style="border: none; border-radius: 12px;"
-    scrolling="no"
-    loading="lazy">
-  </iframe>
-</div>
+      .rolling-betas-iframe {
+        width: 850px; /* On force une largeur confortable pour les axes */
+        transform: scale(0.5); /* On dézoome de moitié */
+        transform-origin: 0 0;
+      }
+    }
 
-<p class="ds-caption">
-    <strong>Figure 12.</strong> 36-month rolling oil beta by sector. Each line shows how a sector’s sensitivity to oil
-    price changes evolves over time in rolling windows.
-</p>
+    @media (min-width: 769px) {
+      .rolling-betas-wrapper {
+        height: 420px;
+      }
+      .rolling-betas-iframe {
+        transform: none;
+        width: 100%;
+      }
+    }
+  </style>
 
-<p class="ds-lead">
-Several features stand out immediately. Oil exposure is far from stable: sector betas drift,
-switch sign, and occasionally spike during periods of stress. Even traditionally oil-linked
-departments do not move with oil in a uniform way across time.
-</p>
-
-<p class="ds-lead">
-While these rolling estimates reveal rich dynamics, they are difficult to compare across
-broader market environments. To make sense of these patterns, we now aggregate oil
-sensitivities by regime, asking how departments typically respond to oil price movements
-when a given boss is in charge.
-</p>
-
-<figure class="ds-figure">
-  <img
-    src="{{ '/assets/img/oil_beta_by_sector_regime.png' | relative_url }}"
-    alt="Oil beta by sector and regime"
-    style="width:100%; border-radius:12px;"
-  >
-</figure>
-
-<p class="ds-caption">
-    <strong>Figure 13.</strong> Sector-level oil exposure by regime. Red indicates positive sensitivity to oil price
-    changes, blue indicates negative sensitivity, and lighter colors indicate weaker
-    relationships.
-</p>
-
-<p class="ds-lead">
-Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
-same department can react very differently depending on which boss is in charge. Second,
-some relationships only become visible under specific management styles.
-</p>
-
-<p class="ds-lead">
-For example, the Energy department shows its strongest alignment with oil prices under the
-Shale boss, when supply-side dynamics dominate. During the GFC boss’s tenure, however,
-many departments move together regardless of oil, reflecting broad panic rather than
-sector-specific exposure.
-</p>
-
-<p class="ds-lead">
-The Plateau boss paints yet another picture: oil prices are high but stable, and most
-departments show weaker, more muted responses. In this environment, oil is present in the
-background, but it does not dominate day-to-day performance.
-</p>
-
-<p class="ds-lead">
-Having seen that departments respond differently depending on which boss is in charge, we
-now quantify these differences more precisely. The figure below reports sector-level oil
-betas estimated separately for each management style, while controlling for overall market
-movements.
-</p>
-<section class="ds-wrap ds-figure-section">
-
-  <div class="ds-embed">
+  <div class="rolling-betas-wrapper">
     <iframe
-      src="{{ '/assets/interactive/oil_beta_by_sector_interactive.html' | relative_url }}"
-      width="100%"
-      height="560"
-      style="border:0; border-radius:12px;"
+      class="rolling-betas-iframe"
+      src="{{ '/assets/interactive/rolling_oil_betas.html' | relative_url }}"
+      scrolling="no"
       loading="lazy">
     </iframe>
   </div>
 
   <p class="ds-caption">
-    <strong>Figure 14.</strong> Sector-level oil betas by regime (β ± 95% confidence intervals),
-    controlling for overall market returns. Each point shows how strongly a department
-    listens to the boss under a given management style.
+      <strong>Figure 12.</strong> 36-month rolling oil beta by sector. Each line shows how a sector’s sensitivity to oil
+      price changes evolves over time in rolling windows.
   </p>
 
-</section>
+  <p class="ds-lead">
+  Several features stand out immediately. Oil exposure is far from stable: sector betas drift,
+  switch sign, and occasionally spike during periods of stress. Even traditionally oil-linked
+  departments do not move with oil in a uniform way across time.
+  </p>
 
-<p class="ds-lead">
-Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
-same department can react very differently depending on which boss is in charge. Second,
-the strength and precision of these reactions vary substantially across management styles.
-</p>
+  <p class="ds-lead">
+  While these rolling estimates reveal rich dynamics, they are difficult to compare across
+  broader market environments. To make sense of these patterns, we now aggregate oil
+  sensitivities by regime, asking how departments typically respond to oil price movements
+  when a given boss is in charge.
+  </p>
 
-<p class="ds-lead">
-The Energy department listens most closely to the boss during the Shale period, when
-supply-side dynamics dominate and oil prices play a central role in firm profitability.
-During the Global Financial Crisis, however, confidence intervals widen and sector responses
-become less distinct, reflecting an environment in which panic and broad market forces
-overshadow oil-specific signals.
-</p>
+  <figure class="ds-figure">
+    <img
+      src="{{ '/assets/img/oil_beta_by_sector_regime.png' | relative_url }}"
+      alt="Oil beta by sector and regime"
+      style="width:100%; border-radius:12px;"
+    >
+  </figure>
 
-<p class="ds-lead">
-Other departments display more nuanced behavior. Cyclical sectors such as Industrials and
-Consumer Cyclical show sensitivity to oil under certain bosses but not others, while
-traditionally defensive departments—such as Utilities and Consumer Defensive—remain
-comparatively insulated across regimes.
-</p>
+  <p class="ds-caption">
+      <strong>Figure 13.</strong> Sector-level oil exposure by regime. Red indicates positive sensitivity to oil price
+      changes, blue indicates negative sensitivity, and lighter colors indicate weaker
+      relationships.
+  </p>
 
-<p class="ds-lead">
-In short, the boss matters—not only in direction, but in credibility. Oil price movements
-do not carry a single, fixed meaning for the company. Their impact on departments depends
-on who is in charge, how stable the environment is, and how clearly the boss’s signals are
-heard amid broader market noise.
-</p>
+  <p class="ds-lead">
+  Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
+  same department can react very differently depending on which boss is in charge. Second,
+  some relationships only become visible under specific management styles.
+  </p>
 
-<p class="ds-lead">
-To summarize, the boss matters. Oil price movements do not have a single, fixed meaning for the
-company. Their impact on departments depends on who is in charge and the broader
-environment they create.
-</p>
+  <p class="ds-lead">
+  For example, the Energy department shows its strongest alignment with oil prices under the
+  Shale boss, when supply-side dynamics dominate. During the GFC boss’s tenure, however,
+  many departments move together regardless of oil, reflecting broad panic rather than
+  sector-specific exposure.
+  </p>
 
-<p class="ds-lead">
-But departments are still large units. Just as in any real company, not all teams inside a
-department behave the same way. To understand where these patterns truly come from, we
-now dive one level deeper and examine industry-level behavior.
-</p>
+  <p class="ds-lead">
+  The Plateau boss paints yet another picture: oil prices are high but stable, and most
+  departments show weaker, more muted responses. In this environment, oil is present in the
+  background, but it does not dominate day-to-day performance.
+  </p>
 
-<p class="ds-lead">
-TODO: industry-level analysis goes here.
-</p>
+  <p class="ds-lead">
+  Having seen that departments respond differently depending on which boss is in charge, we
+  now quantify these differences more precisely. The figure below reports sector-level oil
+  betas estimated separately for each management style, while controlling for overall market
+  movements.
+  </p>
 
+  <style>
+    /* Conteneur pour gérer le zoom */
+    .ds-beta-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .ds-beta-iframe {
+      border: 0;
+      width: 100%; /* Défaut Desktop */
+      height: 560px;
+    }
+
+    /* --- OPTIMISATION MOBILE --- */
+    @media (max-width: 768px) {
+      .ds-beta-wrapper {
+        /* Hauteur calculée : 560px * 0.6 (scale) = 336px */
+        height: 350px; 
+      }
+
+      .ds-beta-iframe {
+        width: 900px; /* On force une largeur Desktop pour éviter l'écrasement */
+        transform: scale(0.6); /* Zoom arrière */
+        transform-origin: 0 0;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .ds-beta-wrapper { height: 560px; }
+      .ds-beta-iframe { transform: none; width: 100%; }
+    }
+  </style>
+
+  <section class="ds-wrap ds-figure-section">
+
+    <!-- Changement ici : Ajout de la classe ds-beta-wrapper -->
+    <div class="ds-embed ds-beta-wrapper">
+      <iframe
+        class="ds-beta-iframe"
+        src="{{ '/assets/interactive/oil_beta_by_sector_interactive.html' | relative_url }}"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <p class="ds-caption">
+      <strong>Figure 14.</strong> Sector-level oil betas by regime (β ± 95% confidence intervals),
+      controlling for overall market returns. Each point shows how strongly a department
+      listens to the boss under a given management style.
+    </p>
+
+  </section>
+
+  <p class="ds-lead">
+  Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
+  same department can react very differently depending on which boss is in charge. Second,
+  the strength and precision of these reactions vary substantially across management styles.
+  </p>
+
+  <p class="ds-lead">
+  The Energy department listens most closely to the boss during the Shale period, when
+  supply-side dynamics dominate and oil prices play a central role in firm profitability.
+  During the Global Financial Crisis, however, confidence intervals widen and sector responses
+  become less distinct, reflecting an environment in which panic and broad market forces
+  overshadow oil-specific signals.
+  </p>
+
+  <p class="ds-lead">
+  Other departments display more nuanced behavior. Cyclical groups, such as Industrials and Consumer Cyclical, show significant sensitivity to oil under specific regimes but not others. Meanwhile, traditionally defensive sectors—including Utilities and Consumer Defensive—remain comparatively insulated regardless of who is in charge.
+  </p>
+
+  <blockquote class="ds-quote">
+  <strong>The takeaway is clear: the boss matters.</strong> Oil price movements do not have a fixed meaning; their impact on a department depends entirely on the regime in charge and the credibility of the signal they send.
+  </blockquote>
+
+
+  <p class="ds-lead">
+  But departments are still large units. Just as in any real company, not all teams inside a
+  department behave the same way. To understand where these patterns truly come from, we
+  now dive one level deeper and examine industry-level behavior.
+  </p>
+
+  <p class="ds-lead">
+  TODO: industry-level analysis goes here.
+  </p>
 </section>
