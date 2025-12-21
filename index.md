@@ -450,31 +450,27 @@ returns during negative and positive oil-shock months side by side.
 
 <h2>At this point, it is tempting to stop at the sector level.</h2>
 
-<div class="ds-transition-box">
-  <p>
-    You wouldn't fire an entire department just because one employee underperformed. Yet, looking only at Sectors does exactly that.
-  </p>
-</div>
+<p class="ds-lead">
+  You wouldn't fire an entire department just because one employee underperformed. Yet, looking only at Sectors does exactly that.
+</p>
 
 <p class="ds-lead">
 Looking at industries lets us see which teams are actually driving the sector-level results.
-Some are highly exposed to oil prices, others much less so.
+Some are highly exposed to oil prices, others much less so. Let’s dive deeper and see where these effects really come from.
 </p>
 
 <p class="ds-lead">
-Let’s dive deeper and see where these effects really come from.
+TODO, add causality to industries (Figure 9)
 </p>
 
 <p class="ds-lead">
-TODO, add causality to industries</p>
+  As good consultants, we know that numbers alone rarely tell the full story. Once the
+  patterns are clear, the next step is to step back and understand the broader context in
+  which they emerge.
+</p>
 
-<div class="ds-transition-box">
-  <p>
-    As good consultants, we know that numbers alone rarely tell the full story. Once the
-    patterns are clear, the next step is to step back and understand the broader context in
-    which they emerge.
-  </p>
-</div>
+<hr>
+<h1>Oil regimes</h1>
 
 <h2>Choose your oil regime</h2>
 
@@ -503,7 +499,7 @@ which oil shocks play out differently.
 </figure>
 
 <p class="ds-caption">
-    <strong>Figure 9.</strong> Monthly Brent oil prices with regime markers: the Global Financial Crisis (2008–2009),
+    <strong>Figure 10.</strong> Monthly Brent oil prices with regime markers: the Global Financial Crisis (2008–2009),
     the high-price Plateau (2010–2014), and the Shale period (2014–2016).
 </p>
 
@@ -522,7 +518,7 @@ the Shale era as the market adjusts to a new supply regime.
 </figure>
 
 <p class="ds-caption">
-    <strong>Figure 10.</strong> Rolling 12-month volatility of Brent log returns (standard deviation), with the same regime markers.
+    <strong>Figure 11.</strong> Rolling 12-month volatility of Brent log returns (standard deviation), with the same regime markers.
     Higher values indicate a more turbulent oil market.
 </p>
 
