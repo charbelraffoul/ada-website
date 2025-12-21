@@ -325,8 +325,8 @@ conditions.
 </p>
 
 <p class="ds-lead">
-Because large oil price changes are often driven by events outside equity markets — such as
-geopolitical tensions or supply disruptions — oil prices can reasonably be treated as
+Because large oil price changes are often driven by events outside equity markets, such as
+geopolitical tensions or supply disruptions, oil prices can reasonably be treated as
 external shocks. This makes them a useful starting point for examining directional effects
 across sectors.
 </p>
@@ -390,8 +390,8 @@ meaningful exposure to oil prices, and weak or absent elsewhere.
 
 <p class="ds-lead">
 These findings do not prove causality in a strict structural sense. However, they reveal a
-consistent timing pattern: oil prices tend to move first, and certain sectors — especially
-energy-related ones — tend to react afterward. This pattern is consistent with viewing oil
+consistent timing pattern: oil prices tend to move first, and certain sectors, especially
+energy-related ones, tend to react afterward. This pattern is consistent with viewing oil
 price shocks as external disturbances that affect sectors differently depending on their
 economic exposure.
 </p>
@@ -400,8 +400,8 @@ economic exposure.
 
 <p class="ds-lead">
 So far, we have shown that oil price movements tend to precede returns in certain sectors.
-We now ask a more direct question: when the boss makes a sudden, dramatic announcement — a sharp
-oil price shock — which departments and teams experience abnormal performance?
+We now ask a more direct question: when the boss makes a sudden, dramatic announcement, a sharp
+oil price shock, which departments and teams experience abnormal performance?
 </p>
 
 <p class="ds-lead">
@@ -441,7 +441,7 @@ sectors and their underlying industries.
 
 <p class="ds-lead">
 The map reveals striking patterns. When you look at individual industries, the asymmetries become clear.
-Oil & Gas E&P and Oil & Gas Integrated show the strongest positive response to oil price surges — when
+Oil & Gas E&P and Oil & Gas Integrated show the strongest positive response to oil price surges, when
 the boss announces good news (higher oil prices), these teams celebrate with abnormal gains of 5-9%.
 But when oil crashes, their losses are more contained (around -3% to -6%), showing they've learned to
 weather the bad announcements.
@@ -451,13 +451,13 @@ weather the bad announcements.
 Other teams tell different stories. Airlines sit in the opposite corner: when oil prices collapse,
 they benefit from cheaper fuel costs. Marine Shipping and Oil & Gas Refining show strong negative
 exposure to oil price crashes, losing roughly 7-10% during negative shock months. Meanwhile,
-defensive teams like Grocery Stores and regulated Utilities cluster near the origin — these departments
+defensive teams like Grocery Stores and regulated Utilities cluster near the origin, these departments
 barely react to the boss's announcements, operating steadily regardless of oil market drama.
 </p>
 
 <p class="ds-lead">
 At the sector level, the Energy department shows a moderate positive tilt: it gains about 5% when
-oil surges but loses only 3% when oil crashes — a relatively resilient department overall. Consumer
+oil surges but loses only 3% when oil crashes, a relatively resilient department overall. Consumer
 Cyclical sits slightly below the diagonal, reflecting the airline and transportation teams within it
 that benefit from oil price drops.
 </p>
@@ -466,7 +466,7 @@ that benefit from oil price drops.
 Crucially, looking only at sectors would mask these stories. The Energy sector's moderate profile
 hides industries with 9% upside exposure. The Consumer Cyclical sector's near-zero response conceals
 airlines with strong asymmetric behavior. The industry-level granularity reveals who is truly listening
-to the boss — and who can afford to ignore the announcement entirely.
+to the boss, and who can afford to ignore the announcement entirely.
 </p>
 
 <h2>At this point, it is tempting to stop at the sector level.</h2>
@@ -498,7 +498,7 @@ Let's dive deeper and see where these effects really come from.
 
 <p class="ds-lead">
 Looking back, the company goes through three very different management styles. You can
-think of them as three bosses. Meet them — and pick one to explore.
+think of them as three bosses. Meet them, and pick one to explore.
 </p>
 <h2>Oil price regimes over time</h2>
 
@@ -563,7 +563,7 @@ price environment. To keep things intuitive, we present them as three different 
  <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss1.mp4' | relative_url }}"></video>
  </div>
 
- <h3>Boss #1 — GFC (2008–2009)</h3>
+ <h3>Boss #1, GFC (2008–2009)</h3>
 
  <p class="ds-lead">
  This boss takes over during a demand shock. Oil prices spike and then collapse rapidly
@@ -588,11 +588,11 @@ price environment. To keep things intuitive, we present them as three different 
  <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss2.mp4' | relative_url }}"></video>
  </div>
 
- <h3>Boss #2 — Plateau (2010–2014)</h3>
+ <h3>Boss #2, Plateau (2010–2014)</h3>
 
  <p class="ds-lead">
- This boss presides over a period of relative stability. Oil prices remain high — around
- $100 per barrel — but fluctuate within a narrow range. Shocks occur, but the environment
+ This boss presides over a period of relative stability. Oil prices remain high, around
+ $100 per barrel, but fluctuate within a narrow range. Shocks occur, but the environment
  itself is steady.
  </p>
 
@@ -613,7 +613,7 @@ price environment. To keep things intuitive, we present them as three different 
  <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/boss3.mp4' | relative_url }}"></video>
  </div>
 
- <h3>Boss #3 — Shale (2014–2016)</h3>
+ <h3>Boss #3, Shale (2014–2016)</h3>
 
  <p class="ds-lead">
  This boss arrives during a supply shock. Rapid growth in U. S. shale production floods
@@ -763,12 +763,12 @@ overshadow oil-specific signals.
 <p class="ds-lead">
 Other departments display more nuanced behavior. Cyclical sectors such as Industrials and
 Consumer Cyclical show sensitivity to oil under certain bosses but not others, while
-traditionally defensive departments — such as Utilities and Consumer Defensive — remain
+traditionally defensive departments, such as Utilities and Consumer Defensive, remain
 comparatively insulated across regimes.
 </p>
 
 <p class="ds-lead">
-In short, the boss matters — not only in direction, but in credibility. Oil price movements
+In short, the boss matters, not only in direction, but in credibility. Oil price movements
 do not carry a single, fixed meaning for the company. Their impact on departments depends
 on who is in charge, how stable the environment is, and how clearly the boss’s signals are
 heard amid broader market noise.
@@ -797,7 +797,7 @@ that arrives. These patterns are real, but they remain abstract.
 <p class="ds-lead">
 Now, we ask a more practical question: <strong>what happens to your money when you invest
 before a major oil shock?</strong> If oil truly acts as a boss whose decisions reshape
-performance across the company, then choosing which teams to back should matter — especially
+performance across the company, then choosing which teams to back should matter, especially
 when the boss is about to make a major, disruptive announcement.
 </p>
 
@@ -827,7 +827,7 @@ The goal is to make the abstract patterns we documented earlier concrete and act
 <p class="ds-lead">
 Before you simulate what happens to your money, meet the five portfolio strategies. Each one
 represents a different way to position yourself when the boss is about to make a major move.
-Think of them as different bets on which employees will thrive — or survive — when oil prices shift.
+Think of them as different bets on which employees will thrive, or survive, when oil prices shift.
 </p>
 
 <div class="boss-grid">
@@ -1001,7 +1001,7 @@ Each portfolio corresponds to a different strategy for navigating oil-driven env
   oil prices. High upside when oil surges, severe downside when it collapses.</li>
   
   <li><strong>Oil users (transport & airlines):</strong> Bet on teams for whom fuel is a
-  major cost. Benefit when oil prices fall, suffer when they rise — unless broader demand
+  major cost. Benefit when oil prices fall, suffer when they rise, unless broader demand
   collapses.</li>
   
   <li><strong>Defensive staples:</strong> Bet on essential goods and regulated utilities.
@@ -1076,7 +1076,7 @@ fluctuations, but it cannot fully shield portfolios from large, systemic disrupt
 We began this analysis with a simple premise: oil acts like a boss whose decisions ripple
 through the entire company. When the boss is calm, patterns are predictable and responses
 are measured. When the boss makes sudden, disruptive announcements, departments and teams
-react — but not all in the same way, and not all with the same intensity.
+react, but not all in the same way, and not all with the same intensity.
 </p>
 
 <p class="ds-lead">
@@ -1120,7 +1120,7 @@ more accurate models of how energy markets interact with financial markets.
 <p class="ds-lead">
 Ultimately, oil remains what it has always been: a macroeconomic force that shapes costs,
 expectations, and risk across the global economy. When oil prices move abruptly, markets
-react — but those reactions reveal deeper structures. By studying them carefully, we gain
+react, but those reactions reveal deeper structures. By studying them carefully, we gain
 insight not only into oil itself, but into how interconnected economic forces propagate
 through complex systems.
 </p>
@@ -1133,7 +1133,7 @@ something essential about the organization itself.
 <div class="ds-transition-box">
  <p>
  One final note: our analysis ends in March 2020. That's when COVID-19 hit and the entire
- company went into lockdown. All employees went home — not because of the boss's mood, but
+ company went into lockdown. All employees went home, not because of the boss's mood, but
  because the office building itself shut down. That story deserves its own analysis.
  </p>
  <p style="text-align: center; margin-top: 1.5rem; font-weight: 600; font-size: 1.1em;">
