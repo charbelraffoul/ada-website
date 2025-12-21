@@ -20,9 +20,9 @@ layout: full
 
  <div class="ds-hero-center">
  <div>
- <h1 class="ds-hero-title">Oil shocks, sectors, and portfolio design</h1>
+ <h1 class="ds-hero-title">Crude Connections</h1>
  <p class="ds-hero-subtitle">
- How do oil shocks reshape sector performance and portfolio design?
+ When the boss (oil) makes a move, who thrives and who survives?
  </p>
  </div>
  </div>
