@@ -1,0 +1,18 @@
+current directory: /workspaces/ada-website/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/local/rvm/rubies/ruby-3.4.7/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /workspaces/ada-website/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251221-3806-j9z0r6 sitelibdir\=./.gem.20251221-3806-j9z0r6 clean
+
+current directory: /workspaces/ada-website/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251221-3806-j9z0r6 sitelibdir\=./.gem.20251221-3806-j9z0r6
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /workspaces/ada-website/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251221-3806-j9z0r6 sitelibdir\=./.gem.20251221-3806-j9z0r6 install
+/usr/bin/install -m 0755 cparse.so ./.gem.20251221-3806-j9z0r6/racc
+
+current directory: /workspaces/ada-website/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251221-3806-j9z0r6 sitelibdir\=./.gem.20251221-3806-j9z0r6 clean

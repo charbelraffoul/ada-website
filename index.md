@@ -37,27 +37,27 @@ layout: full
 <!-- INTRO -->
 <section class="ds-wrap ds-top" id="intro">
 
-  <div style="max-width: 820px; margin: 0 auto; font-size: 0.95rem; text-align: center;">
+  <div style="max-width: 820px; margin: 0 auto; text-align: center;">
 
-  <p style="margin: 0 0 18px 0; text-align: center;">
+  <p class="ds-lead" style="margin: 0 0 18px 0;">
     Oil is more than just a commodity; it is a macroeconomic force that quietly shapes costs, expectations,
     and risk across financial markets. When oil prices move abruptly, markets react, but not all in the same way.
     Some sectors feel the impact immediately through input costs and margins, others through demand and investor sentiment,
     while a few appear relatively insulated.
   </p>
 
-  <p style="margin: 0 0 22px 0; text-align: center;">
+  <p class="ds-lead" style="margin: 0 0 22px 0;">
     A simple way to think about this is to imagine <strong>oil as a boss</strong>, the central decision maker within a firm.
     On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team to adapt.
     But not every team is equally exposed: some are directly exposed and must react immediately, while others are affected more indirectly
     or remain relatively protected. This leads us to an essential question:
   </p>
 
-  <p style="margin: 26px auto; text-align: center; line-height: 1.6;">
+  <p class="ds-lead" style="margin: 26px auto; line-height: 1.6;">
     <strong><em>How do oil price shocks reshape sector performance, and what does this imply for portfolio design?</em></strong>
   </p>
 
-  <p style="margin: 22px 0 0 0; text-align: center;">
+  <p class="ds-lead" style="margin: 22px 0 0 0;">
     In this setting, we step in as consultants inside the firm. When the boss is calm, patterns are easy to read.
     When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
     Observing these responses closely is often the only way to understand how the organization really functions.
