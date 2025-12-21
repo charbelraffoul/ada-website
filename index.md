@@ -4,18 +4,11 @@ layout: full
 
 <!-- FULL-BLEED HERO (centered title like reference) -->
 <div class="ds-hero ds-hero--fullbleed">
-  <video
-    class="ds-hero-video"
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="metadata"
-    poster="{{ '/assets/img/hero_oil.png' | relative_url }}"
-  >
-    <source src="{{ '/assets/video/hero.mp4' | relative_url }}" type="video/mp4" />
+  <video width="100%" controls>
+    <source src="{{ '/assets/video/hero.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
-
+  
   <div class="ds-hero-overlay"></div>
 
   <div class="ds-hero-center">
