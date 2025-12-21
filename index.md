@@ -469,23 +469,6 @@ airlines with strong asymmetric behavior. The industry-level granularity reveals
 to the boss, and who can afford to ignore the announcement entirely.
 </p>
 
-<h2>At this point, it is tempting to stop at the sector level.</h2>
-
-<div class="ds-transition-box">
- <p>
- You wouldn't fire an entire department just because one employee underperformed. Yet, looking only at Sectors does exactly that.
- </p>
-</div>
-
-<p class="ds-lead">
-Looking at industries lets us see which teams are actually driving the sector-level results.
-Some are highly exposed to oil prices, others much less so.
-</p>
-
-<p class="ds-lead">
-Let's dive deeper and see where these effects really come from.
-</p>
-
 <div class="ds-transition-box">
  <p>
  As good consultants, we know that numbers alone rarely tell the full story. Once the
