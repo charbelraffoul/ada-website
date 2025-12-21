@@ -1,0 +1,902 @@
+{
+  "2002-12": {
+    "label": "2002-12 - Oil supply collapsed after a major strike in Venezuela",
+    "oil_shock": 0.17929432149326063,
+    "entry_month_ret": -0.12210863954805903,
+    "oil_cumulative": {
+      "-1": -0.12210863954805906,
+      "0": 0.035292296268967016,
+      "1": 0.1342339783048383,
+      "3": 0.10128798844457076,
+      "6": -0.00010822169215063404,
+      "12": 0.08631882411146652
+    },
+    "portfolios": {
+      "Energy producers": {
+        "horizons": {
+          "1": {
+            "final": 1133.565848098606,
+            "pnl": 133.565848098606,
+            "pnl_pct": 0.13356584809860594
+          },
+          "3": {
+            "final": 1178.5160512389941,
+            "pnl": 178.51605123899412,
+            "pnl_pct": 0.17851605123899406
+          },
+          "6": {
+            "final": 1330.597036702078,
+            "pnl": 330.59703670207796,
+            "pnl_pct": 0.33059703670207785
+          },
+          "12": {
+            "final": 1467.0792221043814,
+            "pnl": 467.0792221043814,
+            "pnl_pct": 0.46707922210438135
+          }
+        },
+        "cumulative": {
+          "-1": 0.015921638729764265,
+          "0": 0.13356584809860594,
+          "1": 0.11669652443432232,
+          "3": 0.15473812794719,
+          "6": 0.34266999265201314,
+          "12": 0.6347592461541209
+        },
+        "specific_notes": "1 month\nOil prices jumped immediately after the supply disruption, and energy producers reacted fast, delivering strong short-term gains.\n\n3 months\nAs oil prices stayed elevated, energy companies continued to benefit from higher revenues, reinforcing the initial gains.\n\n6 months\nThe supply shock translated into sustained profitability, with energy firms steadily compounding gains over the following months.\n\n12 months\nEven one year later, energy producers remained significantly ahead, showing that the shock had lasting effects rather than a short-lived spike."
+      },
+      "Oil users (transport & airlines)": {
+        "horizons": {
+          "1": {
+            "final": 1072.761047503821,
+            "pnl": 72.76104750382092,
+            "pnl_pct": 0.07276104750382095
+          },
+          "3": {
+            "final": 1004.4817876191789,
+            "pnl": 4.481787619178931,
+            "pnl_pct": 0.004481787619178945
+          },
+          "6": {
+            "final": 1240.401937357048,
+            "pnl": 240.40193735704793,
+            "pnl_pct": 0.24040193735704785
+          },
+          "12": {
+            "final": 1509.4672325045572,
+            "pnl": 509.46723250455716,
+            "pnl_pct": 0.509467232504557
+          }
+        },
+        "cumulative": {
+          "-1": 0.059605127157255966,
+          "0": 0.07276104750382095,
+          "1": 0.07128349843269288,
+          "3": 0.029394705293838586,
+          "6": 0.28134097903997435,
+          "12": 0.5488979678598238
+        },
+        "specific_notes": "1 month - Small gain despite higher oil\nFuel costs rise immediately, but companies haven\u2019t adjusted yet.\nTransport firms still benefit from pre-shock contracts and delayed pricing, so the portfolio stays slightly positive in the first month.\n\n3 months - Shock starts to bite\nHigher oil prices begin to hurt margins.\nAirlines and shippers feel the cost pressure, wiping out most gains as fuel expenses slowly pass through.\n\n6 months - Adaptation kicks in\nCompanies adjust prices and operations.\nTicket prices, shipping rates, and efficiency measures improve profitability, leading to a clear recovery.\n\n12 months - Strong recovery\nThe sector fully adapts to the new oil price level.\nHigher transport prices and normalized demand outweigh fuel costs, resulting in strong gains over the year."
+      },
+      "Defensive staples": {
+        "horizons": {
+          "1": {
+            "final": 1032.2745584225438,
+            "pnl": 32.274558422543805,
+            "pnl_pct": 0.0322745584225439
+          },
+          "3": {
+            "final": 958.6398705479833,
+            "pnl": -41.360129452016736,
+            "pnl_pct": -0.041360129452016725
+          },
+          "6": {
+            "final": 1123.9460265800549,
+            "pnl": 123.94602658005488,
+            "pnl_pct": 0.12394602658005494
+          },
+          "12": {
+            "final": 1235.7704150701495,
+            "pnl": 235.7704150701495,
+            "pnl_pct": 0.23577041507014962
+          }
+        },
+        "cumulative": {
+          "-1": 0.021209011255687082,
+          "0": 0.0322745584225439,
+          "1": 0.0027795266152386144,
+          "3": 0.0004333571440449102,
+          "6": 0.14432234813497047,
+          "12": 0.2939077507961718
+        },
+        "specific_notes": "1 month - Short-term resilience\nEssential goods demand stays stable.\nEven as oil prices jump, consumers keep buying food and household products, limiting the immediate impact.\n\n3 months - Cost pressure shows up\nHigher transport and input costs squeeze margins.\nCompanies are slower to raise prices, leading to a temporary dip in performance.\n\n6 months - Gradual pass-through\nFirms begin adjusting prices and supply chains.\nCost increases are partially passed on to consumers, allowing profits to recover.\n\n12 months - Steady, defensive recovery\nStability beats sensitivity.\nStaples don\u2019t benefit from oil shocks, but their predictable demand delivers steady gains once costs are absorbed."
+      },
+      "Mixed exposure (producers + users)": {
+        "horizons": {
+          "1": {
+            "final": 1102.4688237934731,
+            "pnl": 102.46882379347312,
+            "pnl_pct": 0.10246882379347322
+          },
+          "3": {
+            "final": 1087.1017079807393,
+            "pnl": 87.10170798073932,
+            "pnl_pct": 0.08710170798073924
+          },
+          "6": {
+            "final": 1287.1126137451365,
+            "pnl": 287.1126137451365,
+            "pnl_pct": 0.2871126137451365
+          },
+          "12": {
+            "final": 1486.662810005968,
+            "pnl": 486.6628100059679,
+            "pnl_pct": 0.486662810005968
+          }
+        },
+        "cumulative": {
+          "-1": 0.03869401382360982,
+          "0": 0.10246882379347322,
+          "1": 0.09395042252191121,
+          "3": 0.08978590619065963,
+          "6": 0.3136987607257029,
+          "12": 0.5938793938214908
+        },
+        "specific_notes": "1 month - Immediate benefit from balance\nWinners offset losers.\nHigher oil prices help producers right away, while users are only mildly hurt, leading to a solid early gain.\n\n3 months - Short-term stabilization\nOpposite forces cancel out.\nProducer gains slow as oil stabilizes, while users face higher costs, keeping returns positive but muted.\n\n6 months - Broad recovery\nBoth sides start contributing.\nProducers benefit from sustained oil prices, and users adapt through pricing and efficiency, pushing returns higher.\n\n12 months - Strong, diversified outcome\nDiversification pays off.\nExposure to both sides of the oil market delivers strong gains with less volatility than pure producer or user portfolios."
+      },
+      "Broad diversified mix": {
+        "horizons": {
+          "1": {
+            "final": 1087.732688600565,
+            "pnl": 87.7326886005651,
+            "pnl_pct": 0.08773268860056516
+          },
+          "3": {
+            "final": 1061.256981664945,
+            "pnl": 61.25698166494499,
+            "pnl_pct": 0.06125698166494509
+          },
+          "6": {
+            "final": 1248.443121159121,
+            "pnl": 248.4431211591209,
+            "pnl_pct": 0.24844312115912093
+          },
+          "12": {
+            "final": 1425.9194378259442,
+            "pnl": 425.9194378259442,
+            "pnl_pct": 0.4259194378259443
+          }
+        },
+        "cumulative": {
+          "-1": 0.03303119256805065,
+          "0": 0.08773268860056516,
+          "1": 0.07303249725702465,
+          "3": 0.07374795391635414,
+          "6": 0.27490429737566235,
+          "12": 0.5191811178733621
+        },
+        "specific_notes": "(Oil +17.9% in the shock month; portfolio entry one month before)\n1 month - Shock absorbed\nThe oil jump is cushioned.\nEnergy gains help, but exposure to non-energy sectors limits both upside and downside, resulting in a modest gain.\n(+8.8%)\n\n3 months - Balanced adjustment\nDifferent sectors react at different speeds.\nOil-linked stocks cool off while the rest of the portfolio stabilizes, keeping returns positive but contained.\n(+6.1%)\n\n6 months - Broad recovery\nThe economy catches up.\nAs higher energy prices feed through the system, most sectors adapt, lifting the diversified portfolio.\n(+24.8%)\n\n12 months - Steady, diversified growth\nNo single bet, but strong overall performance.\nExposure across energy and non-energy sectors delivers solid long-term gains with lower volatility.\n(+42.6%)"
+      }
+    }
+  },
+  "2003-04": {
+    "label": "2003-04 - Oil prices fell as the Iraq war disrupted markets and oil demand",
+    "oil_shock": -0.1754520341537564,
+    "entry_month_ret": -0.07073686022175592,
+    "oil_cumulative": {
+      "-1": -0.07073686022175596,
+      "0": -0.23377796835995535,
+      "1": -0.20947363584850776,
+      "3": -0.13018175813375854,
+      "6": -0.09366633129822233,
+      "12": 0.021862343668774376
+    },
+    "portfolios": {
+      "Energy producers": {
+        "horizons": {
+          "1": {
+            "final": 1029.9778843878964,
+            "pnl": 29.977884387896438,
+            "pnl_pct": 0.029977884387896392
+          },
+          "3": {
+            "final": 1139.2886768410506,
+            "pnl": 139.28867684105057,
+            "pnl_pct": 0.13928867684105062
+          },
+          "6": {
+            "final": 1129.0863079905887,
+            "pnl": 129.0863079905887,
+            "pnl_pct": 0.12908630799058862
+          },
+          "12": {
+            "final": 1542.3834875365571,
+            "pnl": 542.3834875365571,
+            "pnl_pct": 0.5423834875365572
+          }
+        },
+        "cumulative": {
+          "-1": -0.020176155655076577,
+          "0": 0.029977884387896392,
+          "1": 0.12904447529857443,
+          "3": 0.0836331044275005,
+          "6": 0.18444458016845533,
+          "12": 0.5591785357578856
+        },
+        "specific_notes": "(Oil \u221217.5% in the shock month; entry one month before)\n1 month - Mild gain despite oil crash\nOil prices drop sharply, but producers don\u2019t collapse.\nMarkets had already priced in much of the conflict risk, and large energy firms benefit from diversification and hedging, limiting short-term damage.\n(+3.0%)\n\n3 months - Relief rally\nUncertainty fades faster than prices.\nAs the war outcome becomes clearer, investor confidence returns and energy stocks rebound strongly, even though oil prices remain weak.\n(+13.9%)\n\n6 months - Stabilization phase\nLower oil prices hurt revenues, but costs adjust.\nProducers scale back investment and operations, stabilizing profits and maintaining solid gains despite softer oil markets.\n(+12.9%)\n\n12 months - Strong long-term recovery\nEquities decouple from oil prices.\nBy one year out, broader market recovery and firm-level adjustments dominate, delivering strong gains even though oil prices only slowly recover.\n(+54.2%)"
+      },
+      "Oil users (transport & airlines)": {
+        "horizons": {
+          "1": {
+            "final": 1129.449159325233,
+            "pnl": 129.44915932523304,
+            "pnl_pct": 0.12944915932523293
+          },
+          "3": {
+            "final": 1275.6239036219927,
+            "pnl": 275.62390362199267,
+            "pnl_pct": 0.27562390362199274
+          },
+          "6": {
+            "final": 1396.372858552448,
+            "pnl": 396.37285855244795,
+            "pnl_pct": 0.39637285855244797
+          },
+          "12": {
+            "final": 1393.4874585915466,
+            "pnl": 393.48745859154656,
+            "pnl_pct": 0.39348745859154666
+          }
+        },
+        "cumulative": {
+          "-1": 0.02480176144727153,
+          "0": 0.12944915932523293,
+          "1": 0.23486752337943995,
+          "3": 0.30655922814680236,
+          "6": 0.5057186520329877,
+          "12": 0.4117955105124762
+        },
+        "specific_notes": "(Oil \u221217.5% in the shock month; entry one month before)\n1 month - Immediate relief\nFalling oil prices quickly help costs.\nAs oil prices drop sharply, fuel expenses fall almost immediately for airlines and transport companies, boosting margins and driving a strong short-term gain.\n(+12.9%)\n\n3 months - Strong cost-driven rebound\nCheaper fuel feeds directly into profits.\nWith oil remaining low, operating costs stay depressed while demand stabilizes, leading to a powerful continuation of gains.\n(+27.6%)\n\n6 months - Peak benefit from low oil\nOil users enjoy the sweet spot.\nSustained low fuel costs significantly improve profitability, pushing the portfolio to its strongest performance as cost savings fully materialize.\n(+39.6%)\n\n12 months - Gains stabilize\nBenefits remain, but momentum slows.\nAs oil prices begin to recover and competitive pressures return, margins normalize, leaving the sector with solid-but no longer accelerating-gains.\n(+39.3%)"
+      },
+      "Defensive staples": {
+        "horizons": {
+          "1": {
+            "final": 1099.5187350915585,
+            "pnl": 99.51873509155848,
+            "pnl_pct": 0.09951873509155851
+          },
+          "3": {
+            "final": 1193.6936729752815,
+            "pnl": 193.69367297528152,
+            "pnl_pct": 0.19369367297528162
+          },
+          "6": {
+            "final": 1243.2005168744336,
+            "pnl": 243.20051687443356,
+            "pnl_pct": 0.24320051687443356
+          },
+          "12": {
+            "final": 1389.7630410500726,
+            "pnl": 389.7630410500726,
+            "pnl_pct": 0.38976304105007253
+          }
+        },
+        "cumulative": {
+          "-1": 0.043596649670090803,
+          "0": 0.09951873509155851,
+          "1": 0.17243822326895142,
+          "3": 0.17538335685614714,
+          "6": 0.2907024334172792,
+          "12": 0.3738578472850358
+        },
+        "specific_notes": "(Oil \u221217.5% in the shock month; entry one month before)\n1 month - Immediate resilience\nEssential spending stays steady.\nEven as oil prices fall sharply, demand for food and household goods barely changes. Lower transport and input costs help margins, producing a clear early gain.\n(+10.0%)\n\n3 months - Cost relief supports profits\nCheaper energy quietly boosts earnings.\nFalling fuel and logistics costs gradually improve profitability, allowing staples companies to compound gains despite limited sensitivity to oil prices.\n(+19.4%)\n\n6 months - Stable, defensive growth\nEfficiency gains accumulate.\nWith energy costs still low and consumer demand unchanged, defensive firms continue to grow steadily without relying on economic cycles.\n(+24.3%)\n\n12 months - Strong defensive outcome\nSlow and steady wins.\nStaples don\u2019t surge on oil shocks, but sustained cost advantages and predictable demand deliver solid long-term gains with low volatility.\n(+39.0%)"
+      },
+      "Mixed exposure (producers + users)": {
+        "horizons": {
+          "1": {
+            "final": 1078.9353565715535,
+            "pnl": 78.93535657155348,
+            "pnl_pct": 0.0789353565715536
+          },
+          "3": {
+            "final": 1208.4414467215415,
+            "pnl": 208.44144672154152,
+            "pnl_pct": 0.20844144672154163
+          },
+          "6": {
+            "final": 1258.2598836474317,
+            "pnl": 258.2598836474317,
+            "pnl_pct": 0.2582598836474317
+          },
+          "12": {
+            "final": 1468.5818289432495,
+            "pnl": 468.58182894324955,
+            "pnl_pct": 0.4685818289432495
+          }
+        },
+        "cumulative": {
+          "-1": 0.002469132547778141,
+          "0": 0.0789353565715536,
+          "1": 0.18398545811864486,
+          "3": 0.19321927604770828,
+          "6": 0.33651515057122783,
+          "12": 0.4868835420482016
+        },
+        "specific_notes": "(Oil \u221217.5% in the shock month; entry one month before)\n1 month - Balanced reaction\nLosses are cushioned, gains still appear.\nFalling oil prices hurt producers but immediately help oil users. These opposing forces largely offset each other, resulting in a moderate but positive early gain.\n(+7.9%)\n\n3 months - Net benefit emerges\nUsers start to dominate the balance.\nAs lower fuel costs increasingly support transport and industrial firms, their gains outweigh the pressure on producers, pushing returns higher.\n(+20.8%)\n\n6 months - Broad-based improvement\nBoth sides contribute.\nOil users continue to benefit from cheaper energy, while producers stabilize as oil prices recover. The combination leads to strong, steady portfolio growth.\n(+25.8%)\n\n12 months - Diversification delivers\nNo extreme bets, strong outcome.\nExposure to both oil-sensitive winners and losers smooths volatility while still capturing upside, resulting in a solid long-term gain.\n(+46.9%)"
+      },
+      "Broad diversified mix": {
+        "horizons": {
+          "1": {
+            "final": 1082.0052563442557,
+            "pnl": 82.00525634425571,
+            "pnl_pct": 0.0820052563442557
+          },
+          "3": {
+            "final": 1201.3153452951028,
+            "pnl": 201.31534529510282,
+            "pnl_pct": 0.20131534529510287
+          },
+          "6": {
+            "final": 1247.5824566977867,
+            "pnl": 247.5824566977867,
+            "pnl_pct": 0.24758245669778667
+          },
+          "12": {
+            "final": 1453.4896455821417,
+            "pnl": 453.48964558214175,
+            "pnl_pct": 0.4534896455821418
+          }
+        },
+        "cumulative": {
+          "-1": 0.01176997887148179,
+          "0": 0.0820052563442557,
+          "1": 0.1763815388055303,
+          "3": 0.1824885863433714,
+          "6": 0.3194564680527796,
+          "12": 0.4616437498213759
+        },
+        "specific_notes": "(Oil \u221217.5% in the shock month; entry one month before)\n1 month - Immediate relief\nLower oil prices help the economy overall.\nThe oil price drop quickly benefits transport, industry, and consumers, while losses in energy stocks are diluted by broad diversification, resulting in a clear early gain.\n(+8.2%)\n\n3 months - Widespread benefits\nCheaper energy spreads through many sectors.\nLower fuel and input costs support profits across the economy, pushing diversified returns higher despite continued weakness in oil producers.\n(+20.1%)\n\n6 months - Sustained expansion\nMost sectors move in the same direction.\nAs companies fully adjust to lower energy costs, economic activity strengthens and the diversified portfolio continues to grow steadily.\n(+24.8%)\n\n12 months - Stable, economy-wide recovery\nDiversification captures the upside without sharp swings.\nBroad exposure allows the portfolio to benefit from cheaper oil and improving growth while avoiding reliance on any single sector, leading to strong long-term gains.\n(+45.3%)"
+      }
+    }
+  },
+  "2008-05": {
+    "label": "2008-05 - Oil prices surged as global demand outpaced oil production",
+    "oil_shock": 0.12477308992344173,
+    "entry_month_ret": 0.06690931977177991,
+    "oil_cumulative": {
+      "-1": 0.06690931977177983,
+      "0": 0.20003089226782222,
+      "1": 0.2882628978099777,
+      "3": 0.1023606072866785,
+      "6": -0.48448597225920453,
+      "12": -0.4389779731214448
+    },
+    "portfolios": {
+      "Energy producers": {
+        "horizons": {
+          "1": {
+            "final": 1194.1895081739865,
+            "pnl": 194.1895081739865,
+            "pnl_pct": 0.1941895081739864
+          },
+          "3": {
+            "final": 1003.2484512877522,
+            "pnl": 3.248451287752232,
+            "pnl_pct": 0.0032484512877521965
+          },
+          "6": {
+            "final": 578.3748834491054,
+            "pnl": -421.62511655089463,
+            "pnl_pct": -0.42162511655089463
+          },
+          "12": {
+            "final": 454.5944524865355,
+            "pnl": -545.4055475134645,
+            "pnl_pct": -0.5454055475134645
+          }
+        },
+        "cumulative": {
+          "-1": 0.09467785254952354,
+          "0": 0.1941895081739864,
+          "1": 0.21780538560626406,
+          "3": 0.016422493964218354,
+          "6": -0.4990766298556494,
+          "12": -0.4659959423940593
+        },
+        "specific_notes": "(Oil +12.5% in the shock month; entry one month before)\n1 month - Late-stage oil rally lifts stocks\nOil prices spike further, and energy producers ride the momentum.\nHigher spot prices immediately boost revenue expectations, leading to strong short-term gains as the oil boom continues.\n(+19.4%)\n\n3 months - Momentum fades\nOil prices remain high, but warning signs appear.\nConcerns about slowing global demand and rising costs start to weigh on energy stocks, flattening gains despite still-elevated oil prices.\n(+0.3%)\n\n6 months - Oil boom turns into bust\nThe shock reverses violently.\nAs the global financial crisis intensifies, oil prices collapse and energy demand falls sharply. Producer stocks suffer massive losses as revenues and investment plans break down.\n(\u221242.2%)\n\n12 months - Crisis dominates fundamentals\nOil is no longer the main driver.\nEven though oil prices stabilize somewhat, the broader financial crisis overwhelms the sector. Credit stress, collapsing demand, and balance-sheet pressure keep energy producers deeply underwater one year later.\n(\u221254.5%)"
+      },
+      "Oil users (transport & airlines)": {
+        "horizons": {
+          "1": {
+            "final": 974.0766901130063,
+            "pnl": -25.923309886993707,
+            "pnl_pct": -0.02592330988699376
+          },
+          "3": {
+            "final": 995.5287969279185,
+            "pnl": -4.471203072081494,
+            "pnl_pct": -0.004471203072081487
+          },
+          "6": {
+            "final": 915.9265616980131,
+            "pnl": -84.07343830198693,
+            "pnl_pct": -0.08407343830198688
+          },
+          "12": {
+            "final": 695.4892950134581,
+            "pnl": -304.5107049865419,
+            "pnl_pct": -0.30451070498654187
+          }
+        },
+        "cumulative": {
+          "-1": 0.05659124467759158,
+          "0": -0.02592330988699365,
+          "1": -0.16475546001399688,
+          "3": 0.07331745424794023,
+          "6": -0.2834616954151984,
+          "12": -0.28448774413844624
+        },
+        "specific_notes": "(Oil +12.5% in the shock month; entry one month before)\n1 month - Immediate cost shock\nFuel prices jump overnight.\nAirlines and transport firms feel the pain instantly, as higher fuel costs hit margins before prices or contracts can adjust.\n(\u22122.6%)\n\n3 months - Temporary stabilization\nDamage pauses, but relief doesn\u2019t arrive.\nSome companies hedge fuel or delay pass-through to customers, limiting further losses, but profitability remains under pressure.\n(\u22120.4%)\n\n6 months - Macro collapse overwhelms the sector\nIt\u2019s no longer just about oil.\nAs the financial crisis unfolds, demand for travel and shipping collapses. Even if oil starts falling later, revenues drop faster than costs, driving deep losses.\n(\u22128.4%)\n\n12 months - Demand shock dominates\nCheap oil can\u2019t save collapsing demand.\nBy one year out, the global recession has crushed transport volumes. Lower fuel prices arrive too late, leaving the sector with severe cumulative losses.\n(\u221230.5%)"
+      },
+      "Defensive staples": {
+        "horizons": {
+          "1": {
+            "final": 1057.7046075131866,
+            "pnl": 57.7046075131866,
+            "pnl_pct": 0.05770460751318662
+          },
+          "3": {
+            "final": 1047.3582440756838,
+            "pnl": 47.35824407568384,
+            "pnl_pct": 0.0473582440756839
+          },
+          "6": {
+            "final": 880.734542675924,
+            "pnl": -119.26545732407601,
+            "pnl_pct": -0.11926545732407601
+          },
+          "12": {
+            "final": 885.4469045660541,
+            "pnl": -114.55309543394594,
+            "pnl_pct": -0.11455309543394598
+          }
+        },
+        "cumulative": {
+          "-1": 0.0020478964827381763,
+          "0": 0.05770460751318662,
+          "1": 0.020248322750059167,
+          "3": 0.051606128041431054,
+          "6": -0.1400030784398223,
+          "12": -0.11877343865692491
+        },
+        "specific_notes": "(Oil +12.5% in the shock month; entry one month before)\n1 month - Initial resilience\nPeople keep buying essentials.\nEven as oil prices jump, demand for food and household goods remains stable, allowing staples to post a modest early gain.\n(+5.8%)\n\n3 months - Costs creep in\nMargins start feeling the pressure.\nHigher transport and energy costs slowly work their way into expenses, but companies are not yet fully passing them on to consumers.\n(+4.7%)\n\n6 months - Defensive, not immune\nStability helps, but can\u2019t offset the crisis.\nAs the financial crisis deepens, overall consumption weakens. Staples fall less than cyclical sectors, but still move into negative territory.\n(\u221211.9%)\n\n12 months - Capital preservation role\nLosses remain contained.\nOne year out, defensive stocks have absorbed the shock better than most sectors. While returns are negative, the drawdown is limited compared to energy or transport.\n(\u221211.5%)"
+      },
+      "Mixed exposure (producers + users)": {
+        "horizons": {
+          "1": {
+            "final": 1091.0941503765757,
+            "pnl": 91.09415037657573,
+            "pnl_pct": 0.09109415037657564
+          },
+          "3": {
+            "final": 1030.571507665743,
+            "pnl": 30.571507665742956,
+            "pnl_pct": 0.030571507665742903
+          },
+          "6": {
+            "final": 765.0411880415684,
+            "pnl": -234.95881195843162,
+            "pnl_pct": -0.2349588119584316
+          },
+          "12": {
+            "final": 596.9104083630591,
+            "pnl": -403.0895916369409,
+            "pnl_pct": -0.4030895916369409
+          }
+        },
+        "cumulative": {
+          "-1": 0.08103474260401855,
+          "0": 0.09109415037657564,
+          "1": 0.02648977803055419,
+          "3": 0.07461340504596636,
+          "6": -0.3664715184702939,
+          "12": -0.3413682539616072
+        },
+        "specific_notes": "(Oil +12.5% in the shock month; entry one month before)\n1 month - Early balance\nWinners and losers offset each other.\nHigher oil prices help producers, while users are not yet fully hit by costs, resulting in a solid early gain.\n(+9.1%)\n\n3 months - Tension builds\nThe balance starts to crack.\nRising fuel costs begin to hurt users, while producer gains slow, leaving only modest positive returns.\n(+3.1%)\n\n6 months - Crisis overwhelms diversification\nSystemic stress dominates sector effects.\nAs the financial crisis intensifies, both producers and users fall together, pulling the portfolio sharply into negative territory.\n(\u221223.5%)\n\n12 months - Partial protection, but no escape\nDiversification helps-but can\u2019t fully shield the shock.\nExposure to both sides of the oil market limits losses compared to pure energy bets, but the global downturn still drives large losses over the year.\n(\u221240.3%)"
+      },
+      "Broad diversified mix": {
+        "horizons": {
+          "1": {
+            "final": 1077.6373689551458,
+            "pnl": 77.6373689551458,
+            "pnl_pct": 0.07763736895514572
+          },
+          "3": {
+            "final": 1029.308749982226,
+            "pnl": 29.30874998222589,
+            "pnl_pct": 0.02930874998222599
+          },
+          "6": {
+            "final": 782.6805641372257,
+            "pnl": -217.3194358627743,
+            "pnl_pct": -0.21731943586277425
+          },
+          "12": {
+            "final": 649.4897145904728,
+            "pnl": -350.5102854095272,
+            "pnl_pct": -0.3505102854095272
+          }
+        },
+        "cumulative": {
+          "-1": 0.0572458174693391,
+          "0": 0.07763736895514572,
+          "1": 0.022031441316066713,
+          "3": 0.0659193811125629,
+          "6": -0.32316300368142925,
+          "12": -0.30067732609573317
+        },
+        "specific_notes": "(Oil +12.5% in the shock month; entry one month before)\n1 month - Initial resilience\nOil strength lifts part of the portfolio.\nEnergy gains and still-stable economic conditions support a clear early gain despite rising cost pressures.\n(+7.8%)\n\n3 months - Momentum fades\nEarly gains start to stall.\nRising oil prices begin to weigh on consumers and non-energy sectors, reducing overall portfolio momentum.\n(+2.9%)\n\n6 months - Global downturn dominates\nMacro shock overwhelms diversification.\nAs the financial crisis unfolds, losses spread across most sectors, pushing the diversified portfolio sharply lower despite oil exposure.\n(\u221221.7%)\n\n12 months - Diversification limits-but doesn\u2019t prevent-losses\nBroad exposure softens the blow.\nWhile diversification cushions losses compared to concentrated portfolios, the systemic collapse still drives substantial declines over the year.\n(\u221235.1%)"
+      }
+    }
+  },
+  "2014-12": {
+    "label": "2014-12 - Oil prices collapsed after producers flooded the market with excess supply",
+    "oil_shock": -0.20537990821009697,
+    "entry_month_ret": -0.10118024521599657,
+    "oil_cumulative": {
+      "-1": -0.10118024521599656,
+      "0": -0.28577976395095706,
+      "1": -0.449180703563653,
+      "3": -0.36071960582101537,
+      "6": -0.28566517703678274,
+      "12": -0.5677781597341585
+    },
+    "portfolios": {
+      "Energy producers": {
+        "horizons": {
+          "1": {
+            "final": 882.3571953101846,
+            "pnl": -117.64280468981542,
+            "pnl_pct": -0.11764280468981547
+          },
+          "3": {
+            "final": 946.0670999978234,
+            "pnl": -53.93290000217655,
+            "pnl_pct": -0.05393290000217654
+          },
+          "6": {
+            "final": 1007.818204182126,
+            "pnl": 7.81820418212601,
+            "pnl_pct": 0.007818204182125976
+          },
+          "12": {
+            "final": 822.0980848936903,
+            "pnl": -177.90191510630973,
+            "pnl_pct": -0.1779019151063097
+          }
+        },
+        "cumulative": {
+          "-1": -0.04621938712455942,
+          "0": -0.11764280468981547,
+          "1": -0.15042861659337559,
+          "3": -0.06720914725339655,
+          "6": -0.0492684343943991,
+          "12": -0.27176872146035447
+        },
+        "specific_notes": "(Oil \u221220.5% in the shock month; entry one month before)\n1 month - Immediate hit\nOil prices collapse suddenly.\nRevenues expectations fall fast, and energy producers sell off sharply as the market prices in weaker cash flows.\n(\u221211.8%)\n\n3 months - Pain continues\nOversupply persists.\nWith no quick rebound in oil prices, producers face sustained pressure on margins and investment plans, keeping returns negative.\n(\u22125.4%)\n\n6 months - Temporary stabilization\nCost cuts slow the damage.\nCompanies slash spending and delay projects, allowing losses to pause and performance to briefly stabilize.\n(+0.8%)\n\n12 months - Structural damage dominates\nThe shock proves long-lasting.\nProlonged low oil prices force write-downs, bankruptcies, and dividend cuts, leaving energy producers significantly lower one year later.\n(\u221217.8%)"
+      },
+      "Oil users (transport & airlines)": {
+        "horizons": {
+          "1": {
+            "final": 1034.331212443996,
+            "pnl": 34.33121244399604,
+            "pnl_pct": 0.03433121244399606
+          },
+          "3": {
+            "final": 1051.5294487935596,
+            "pnl": 51.529448793559595,
+            "pnl_pct": 0.051529448793559585
+          },
+          "6": {
+            "final": 988.1401104749095,
+            "pnl": -11.859889525090466,
+            "pnl_pct": -0.011859889525090428
+          },
+          "12": {
+            "final": 917.124515933467,
+            "pnl": -82.87548406653298,
+            "pnl_pct": -0.082875484066533
+          }
+        },
+        "cumulative": {
+          "-1": 0.05994789122531885,
+          "0": 0.03433121244399606,
+          "1": 0.013747210586474434,
+          "3": 0.04245731169509881,
+          "6": -0.0485588380769123,
+          "12": -0.12983446054850123
+        },
+        "specific_notes": "(Oil \u221220.5% in the shock month; entry one month before)\n1 month - Immediate relief\nFuel prices fall sharply.\nLower oil costs quickly improve margins for airlines and transport firms, leading to an early gain despite market uncertainty.\n(+3.4%)\n\n3 months - Cost savings dominate\nCheaper fuel feeds through operations.\nWith oil still low, operating costs stay compressed, allowing profits to improve further in the short run.\n(+5.2%)\n\n6 months - Benefits start to fade\nLow oil is no longer enough.\nWhile fuel remains cheap, weak global demand and competitive pressure limit upside, pushing returns slightly negative.\n(\u22121.2%)\n\n12 months - Demand weakness outweighs cheap oil\nLower prices can\u2019t fully offset slower growth.\nAs the global economy softens, transport volumes stagnate and the initial cost advantage fades, leaving oil users modestly down over the year.\n(\u22128.3%)"
+      },
+      "Defensive staples": {
+        "horizons": {
+          "1": {
+            "final": 1118.8014127507702,
+            "pnl": 118.80141275077017,
+            "pnl_pct": 0.11880141275077016
+          },
+          "3": {
+            "final": 1133.119398508421,
+            "pnl": 133.119398508421,
+            "pnl_pct": 0.13311939850842092
+          },
+          "6": {
+            "final": 1055.5406385751648,
+            "pnl": 55.54063857516485,
+            "pnl_pct": 0.05554063857516489
+          },
+          "12": {
+            "final": 996.4064554073866,
+            "pnl": -3.593544592613398,
+            "pnl_pct": -0.003593544592613407
+          }
+        },
+        "cumulative": {
+          "-1": 0.04539979722138776,
+          "0": 0.11880141275077016,
+          "1": 0.17606535150618874,
+          "3": 0.11593780143669674,
+          "6": -0.019222591870225902,
+          "12": 0.02996547369966107
+        },
+        "specific_notes": "(Oil \u221220.5% in shock month; entry one month before)\n1 month - Cost relief kicks in\nLower energy and transport costs quickly boost margins.\n(+11.9%)\n\n3 months - Gains consolidate\nSustained cost savings support steady profitability.\n(+13.3%)\n\n6 months - Benefits fade\nEnergy tailwinds weaken as broader growth slows.\n(+5.6%)\n\n12 months - Flat outcome\nDefensive demand holds, but gains fully unwind over the year.\n(\u22120.4%)"
+      },
+      "Mixed exposure (producers + users)": {
+        "horizons": {
+          "1": {
+            "final": 954.0838049135749,
+            "pnl": -45.91619508642509,
+            "pnl_pct": -0.04591619508642508
+          },
+          "3": {
+            "final": 992.678485034719,
+            "pnl": -7.32151496528104,
+            "pnl_pct": -0.007321514965280995
+          },
+          "6": {
+            "final": 998.5294808208372,
+            "pnl": -1.4705191791628067,
+            "pnl_pct": -0.0014705191791628547
+          },
+          "12": {
+            "final": 868.0599640680754,
+            "pnl": -131.94003593192463,
+            "pnl_pct": -0.1319400359319246
+          }
+        },
+        "cumulative": {
+          "-1": 0.004364674269393687,
+          "0": -0.04591619508642508,
+          "1": -0.07528419908445627,
+          "3": -0.01945300691540297,
+          "6": -0.049116420696929564,
+          "12": -0.20237008173429438
+        },
+        "specific_notes": "(Oil \u221220.5% in shock month; entry one month before)\n1 month - Offsetting forces\nProducer losses are partly cushioned by gains for oil users.\n(\u22124.6%)\n\n3 months - Near balance\nBenefits from cheaper oil almost fully offset producer weakness.\n(\u22120.7%)\n\n6 months - Flat adjustment\nCost relief stabilizes users while producers remain under pressure.\n(\u22120.1%)\n\n12 months - Slow deterioration\nProducer drag dominates over time despite earlier diversification benefits.\n(\u221213.2%)"
+      },
+      "Broad diversified mix": {
+        "horizons": {
+          "1": {
+            "final": 995.6822217976962,
+            "pnl": -4.317778202303771,
+            "pnl_pct": -0.004317778202303724
+          },
+          "3": {
+            "final": 1035.1242229949244,
+            "pnl": 35.12422299492437,
+            "pnl_pct": 0.03512422299492446
+          },
+          "6": {
+            "final": 1024.0434781860897,
+            "pnl": 24.043478186089715,
+            "pnl_pct": 0.02404347818608965
+          },
+          "12": {
+            "final": 916.7490492726986,
+            "pnl": -83.25095072730142,
+            "pnl_pct": -0.08325095072730138
+          }
+        },
+        "cumulative": {
+          "-1": 0.015589673105481205,
+          "0": -0.004317778202303724,
+          "1": -0.012498167487036138,
+          "3": 0.022844080604276007,
+          "6": -0.030623486137005718,
+          "12": -0.1332052715377825
+        },
+        "specific_notes": "(Oil \u221220.5% in shock month; entry one month before)\n1 month - Mild shock absorption\nEnergy losses are diluted by exposure to oil users and non-energy sectors.\n(\u22120.4%)\n\n3 months - Diversification pays off\nCheaper oil supports consumers and industry, stabilizing the portfolio.\n(+3.5%)\n\n6 months - Temporary balance\nGains from lower energy costs offset weakness in producers.\n(+2.4%)\n\n12 months - Gradual drag emerges\nProlonged stress in energy weighs on returns despite diversification.\n(\u22128.3%)"
+      }
+    }
+  },
+  "2016-01": {
+    "label": "2016-01 - Oil prices hit multi-year lows due to excess supply and weak demand",
+    "oil_shock": -0.18345705196182366,
+    "entry_month_ret": -0.15083295812697003,
+    "oil_cumulative": {
+      "-1": -0.15083295812697006,
+      "0": -0.3066186402521387,
+      "1": -0.25258892390814947,
+      "3": -0.048851868527690745,
+      "6": 0.014633048176496688,
+      "12": 0.23570463755065196
+    },
+    "portfolios": {
+      "Energy producers": {
+        "horizons": {
+          "1": {
+            "final": 842.8701839338498,
+            "pnl": -157.12981606615017,
+            "pnl_pct": -0.15712981606615017
+          },
+          "3": {
+            "final": 977.1454811135471,
+            "pnl": -22.854518886452865,
+            "pnl_pct": -0.022854518886452846
+          },
+          "6": {
+            "final": 1141.9921557539717,
+            "pnl": 141.9921557539717,
+            "pnl_pct": 0.14199215575397162
+          },
+          "12": {
+            "final": 1298.987613052939,
+            "pnl": 298.98761305293897,
+            "pnl_pct": 0.29898761305293897
+          }
+        },
+        "cumulative": {
+          "-1": -0.11417957063624973,
+          "0": -0.15712981606615017,
+          "1": -0.26018018320881053,
+          "3": 0.1708322661399062,
+          "6": 0.11703300177465037,
+          "12": 0.2598079479171347
+        },
+        "specific_notes": "(Oil \u221218.3% in the shock month; entry one month before)\n1 month - Capitulation sell-off\nOil hits multi-year lows and pessimism peaks.\nProducers are aggressively sold as investors price in bankruptcies and prolonged cash-flow stress.\n(\u221215.7%)\n\n3 months - Selling pressure eases\nBad news is largely priced in.\nOil stabilizes and producer stocks stop falling, but confidence remains fragile.\n(\u22122.3%)\n\n6 months - Rebound from extreme pessimism\nSurvivors start to stand out.\nCost cuts, shut-ins, and balance-sheet repair fuel a sharp recovery as oil prices rebound off the lows.\n(+14.2%)\n\n12 months - Strong cyclical recovery\nThe cycle turns.\nAs oil prices recover and weaker players exit, remaining producers benefit from higher margins and improved sentiment.\n(+29.9%)"
+      },
+      "Oil users (transport & airlines)": {
+        "horizons": {
+          "1": {
+            "final": 837.496883556832,
+            "pnl": -162.50311644316798,
+            "pnl_pct": -0.16250311644316795
+          },
+          "3": {
+            "final": 946.2610148743913,
+            "pnl": -53.73898512560868,
+            "pnl_pct": -0.05373898512560871
+          },
+          "6": {
+            "final": 834.6402283645139,
+            "pnl": -165.35977163548614,
+            "pnl_pct": -0.1653597716354861
+          },
+          "12": {
+            "final": 1187.0586642376106,
+            "pnl": 187.05866423761063,
+            "pnl_pct": 0.18705866423761064
+          }
+        },
+        "cumulative": {
+          "-1": -0.0512024001824577,
+          "0": -0.16250311644316795,
+          "1": -0.10026778564804661,
+          "3": -0.016957598776786265,
+          "6": -0.07625617554596631,
+          "12": 0.32203098519134987
+        },
+        "specific_notes": "(Oil \u221218.3% in the shock month; entry one month before)\n1 month - Demand shock dominates cost relief\nOil falls, but economic weakness hits volumes immediately.\nLower fuel prices can\u2019t offset falling demand, leading to sharp losses.\n(\u221216.3%)\n\n3 months - No quick relief\nCheap oil isn\u2019t enough yet.\nTransport activity remains weak and uncertainty persists, keeping returns negative.\n(\u22125.4%)\n\n6 months - Uneven adjustment\nCosts fall, but revenues lag.\nWhile fuel savings help, demand recovery is slow, resulting in renewed weakness.\n(\u221216.5%)\n\n12 months - Recovery finally takes hold\nCheaper oil plus stabilizing growth lift the sector.\nAs global demand improves, oil users benefit strongly from sustained low fuel costs.\n(+18.7%)"
+      },
+      "Defensive staples": {
+        "horizons": {
+          "1": {
+            "final": 1007.6081477415202,
+            "pnl": 7.608147741520156,
+            "pnl_pct": 0.007608147741520188
+          },
+          "3": {
+            "final": 1181.896273032779,
+            "pnl": 181.89627303277894,
+            "pnl_pct": 0.1818962730327789
+          },
+          "6": {
+            "final": 1123.9134772783914,
+            "pnl": 123.91347727839138,
+            "pnl_pct": 0.12391347727839142
+          },
+          "12": {
+            "final": 1035.548257455111,
+            "pnl": 35.54825745511107,
+            "pnl_pct": 0.03554825745511114
+          }
+        },
+        "cumulative": {
+          "-1": 0.03368004905041855,
+          "0": 0.007608147741520188,
+          "1": 0.11182462864898257,
+          "3": 0.1371242122349825,
+          "6": 0.12577720166737505,
+          "12": 0.0314618086805154
+        },
+        "specific_notes": "(Oil \u221218.3% in the shock month; entry one month before)\n1 month - Shock absorbed\nEssentials stay resilient.\nLower energy costs help margins, offsetting broader uncertainty and keeping returns slightly positive.\n(+0.8%)\n\n3 months - Cost tailwind peaks\nCheaper oil fully feeds through costs.\nLogistics and input savings boost profitability, delivering a strong short-term gain.\n(+18.2%)\n\n6 months - Normalization phase\nBenefits begin to fade.\nCost relief remains, but growth stabilizes and gains moderate as markets normalize.\n(+12.4%)\n\n12 months - Defensive fade-out\nStability, not growth.\nAs the economy recovers and cyclicals outperform, staples lag, leaving only a modest positive return over the year.\n(+3.6%)"
+      },
+      "Mixed exposure (producers + users)": {
+        "horizons": {
+          "1": {
+            "final": 844.1699927022265,
+            "pnl": -155.83000729777348,
+            "pnl_pct": -0.15583000729777352
+          },
+          "3": {
+            "final": 981.2390946889863,
+            "pnl": -18.760905311013744,
+            "pnl_pct": -0.01876090531101371
+          },
+          "6": {
+            "final": 1004.617186250669,
+            "pnl": 4.617186250668965,
+            "pnl_pct": 0.004617186250668981
+          },
+          "12": {
+            "final": 1281.188008803984,
+            "pnl": 281.1880088039841,
+            "pnl_pct": 0.281188008803984
+          }
+        },
+        "cumulative": {
+          "-1": -0.0811350007115943,
+          "0": -0.15583000729777352,
+          "1": -0.17467341817789317,
+          "3": 0.10065399672468733,
+          "6": 0.047730562842509316,
+          "12": 0.3357493827511193
+        },
+        "specific_notes": "(Oil \u221218.3% in the shock month; entry one month before)\n1 month - Producer drag dominates\nOil users benefit, but producer losses overwhelm early.\n(\u221215.6%)\n\n3 months - Near balance\nCheaper oil supports users as producers stabilize, narrowing losses.\n(\u22121.9%)\n\n6 months - Stabilization\nCost relief and early recovery offset producer weakness.\n(+0.5%)\n\n12 months - Recovery wins\nRebound in energy equities plus sustained user benefits drive strong gains.\n(+28.1%)"
+      },
+      "Broad diversified mix": {
+        "horizons": {
+          "1": {
+            "final": 882.5392670999562,
+            "pnl": -117.46073290004381,
+            "pnl_pct": -0.11746073290004377
+          },
+          "3": {
+            "final": 1029.007960326986,
+            "pnl": 29.007960326985994,
+            "pnl_pct": 0.029007960326985938
+          },
+          "6": {
+            "final": 1038.224669372346,
+            "pnl": 38.22466937234594,
+            "pnl_pct": 0.03822466937234603
+          },
+          "12": {
+            "final": 1223.7257401265056,
+            "pnl": 223.72574012650557,
+            "pnl_pct": 0.2237257401265056
+          }
+        },
+        "cumulative": {
+          "-1": -0.05449072551546397,
+          "0": -0.11746073290004377,
+          "1": -0.11440493376351835,
+          "3": 0.1120851704231478,
+          "6": 0.06857133970892404,
+          "12": 0.25376188093435803
+        },
+        "specific_notes": "(Oil \u221218.3% in the shock month; entry one month before)\n1 month - Shock absorbed, but still negative\nEnergy weakness dominates despite diversification.\n(\u221211.7%)\n\n3 months - Recovery starts\nLower energy costs support the broader economy.\n(+2.9%)\n\n6 months - Broad-based rebound\nMost sectors benefit as oil stabilizes and growth improves.\n(+3.8%)\n\n12 months - Strong diversified recovery\nEconomy-wide gains outweigh early energy losses.\n(+22.4%)"
+      }
+    }
+  }
+}

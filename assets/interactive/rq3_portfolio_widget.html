@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background-color: transparent;
+        }
+        .widget-container {
+            max-width: 100%;
+        }
+        .help-text {
+            background-color: #f0f7ff;
+            border-left: 4px solid #2c7fb8;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 14px;
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #2c7fb8;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #1a5a8a;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        #output {
+            margin-top: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+        }
+        h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 20px;
+        }
+        h4 {
+            color: #34495e;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .narrative {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            white-space: pre-line;
+            line-height: 1.6;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e5e5e5;
+            margin: 20px 0;
+        }
+        .error {
+            color: #d73027;
+            padding: 15px;
+            background-color: #fee;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        #plot-container {
+            margin: 20px 0;
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <div class="help-text">
+            <p style="margin: 0;">
+                <b>Scenario tool:</b> What happens to your money when you invest before a major oil shock?
+                Choose an initial amount, an oil <b>shock month</b> (month 0), and a portfolio recipe.
+                The tool assumes you enter at the start of month −1.
+            </p>
+        </div>
+
+        <div class="input-group">
+            <label for="initial-money">Initial money (CHF)</label>
+            <input type="number" id="initial-money" value="1000" step="100" min="100">
+        </div>
+
+        <div class="input-group">
+            <label for="oil-event">Oil event month</label>
+            <select id="oil-event">
+                <option value="">Loading...</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="portfolio">Portfolio</label>
+            <select id="portfolio">
+                <option value="Energy producers">Energy producers</option>
+                <option value="Oil users (transport & airlines)">Oil users (transport & airlines)</option>
+                <option value="Defensive staples">Defensive staples</option>
+                <option value="Mixed exposure (producers + users)">Mixed exposure (producers + users)</option>
+                <option value="Broad diversified mix">Broad diversified mix</option>
+            </select>
+        </div>
+
+        <button id="run-button" onclick="runScenario()">Run scenario</button>
+
+        <div id="output">
+            <i>Loading data...</i>
+        </div>
+    </div>
+
+    <script>
+        let DATA = null;
+
+        // Load data from JSON file
+        fetch('../data/rq3_widget_data.json')
+            .then(response => response.json())
+            .then(data => {
+                DATA = data;
+                populateEventDropdown();
+                document.getElementById('output').innerHTML = '<i>Pick inputs and click Run scenario.</i>';
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                document.getElementById('output').innerHTML = 
+                    '<div class="error"><b>Error:</b> Could not load widget data. Please check that rq3_widget_data.json exists.</div>';
+            });
+
+        function populateEventDropdown() {
+            const select = document.getElementById('oil-event');
+            select.innerHTML = '';
+            
+            for (const [month, eventData] of Object.entries(DATA)) {
+                const option = document.createElement('option');
+                option.value = month;
+                option.textContent = eventData.label;
+                select.appendChild(option);
+            }
+        }
+
+        function formatMoney(x) {
+            return x.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+        }
+
+        function formatPct(x) {
+            const sign = x >= 0 ? '+' : '';
+            return sign + (x * 100).toFixed(1) + '%';
+        }
+
+        function runScenario() {
+            if (!DATA) {
+                document.getElementById('output').innerHTML = '<div class="error">Data not yet loaded.</div>';
+                return;
+            }
+
+            const button = document.getElementById('run-button');
+            button.disabled = true;
+
+            const initial = parseFloat(document.getElementById('initial-money').value);
+            const shockMonth = document.getElementById('oil-event').value;
+            const portfolio = document.getElementById('portfolio').value;
+            const output = document.getElementById('output');
+
+            if (!shockMonth) {
+                output.innerHTML = '<div class="error">Please select an oil event.</div>';
+                button.disabled = false;
+                return;
+            }
+
+            // Compute immediately
+            (() => {
+                const shockData = DATA[shockMonth];
+                const portfolioData = shockData.portfolios[portfolio];
+
+                if (!portfolioData) {
+                    output.innerHTML = '<div class="error">Portfolio data not available.</div>';
+                    button.disabled = false;
+                    return;
+                }
+
+                // Scale by initial investment
+                const scaleFactor = initial / 1000.0;
+
+                // Generate results table
+                let tableRows = '';
+                ['1', '3', '6', '12'].forEach(h => {
+                    const row = portfolioData.horizons[h];
+                    if (!row) return;
+                    
+                    const finalValue = row.final * scaleFactor;
+                    const pnlAbs = row.pnl * scaleFactor;
+                    const pnlPct = row.pnl_pct;
+                    const color = pnlAbs >= 0 ? 'green' : 'red';
+                    const hLabel = h === '1' ? 'month' : 'months';
+
+                    tableRows += `
+                        <tr>
+                            <td>${h} ${hLabel}</td>
+                            <td style="font-size:1.4em;">${formatMoney(finalValue)}</td>
+                            <td style="color:${color};font-size:1.2em;">${formatMoney(pnlAbs)}</td>
+                            <td style="color:${color};font-size:1.2em;">${formatPct(pnlPct)}</td>
+                        </tr>
+                    `;
+                });
+
+                // Generate full HTML output FIRST
+                const html = `
+                    <h3 style="margin-bottom:0.25em;">What happens to your money when you invest before a major oil shock?</h3>
+                    <p style="margin-top:0;color:#555;font-size:14px;">Selected shock month: <b>${shockMonth}</b> (month 0). Entry is month −1.</p>
+                    ${shockData.oil_shock !== null ? `
+                    <p style="font-size:1.1em;margin:0.25em 0 0.75em 0;">
+                        <b>Oil shock size (event month Δoil):</b> ${formatPct(shockData.oil_shock)}
+                    </p>` : ''}
+                    ${shockData.entry_month_ret !== null ? `
+                    <p style="margin:-0.5em 0 0.75em 0;color:#555;font-size:13px;">
+                        Oil move at the end of entry month (month −1): ${formatPct(shockData.entry_month_ret)}
+                    </p>` : ''}
+                    <div id="plot-container"></div>
+                    <p style="margin:0.5em 0 0 0;color:#555;font-size:0.95em;">
+                        P&amp;L at month −1 reflects returns earned during the entry month (investment made at the start of month −1).
+                    </p>
+                    <h4 style="margin-top:1.5em;">Outcomes at fixed horizons</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Horizon</th>
+                                <th>Final value</th>
+                                <th>P&amp;L</th>
+                                <th>P&amp;L %</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${tableRows}
+                        </tbody>
+                    </table>
+                    <div class="narrative">
+                        <b>How to interpret the horizons (general intuition)</b>
+                        
+                        <b>1 month:</b> Immediate market reaction to the oil shock and short-term repricing.
+                        
+                        <b>3 months:</b> Early adjustment dynamics as oil prices and expectations evolve.
+                        
+                        <b>6 months:</b> Medium-term effects driven by operating leverage and earnings revisions.
+                        
+                        <b>12 months:</b> Longer-run outcome reflecting whether the shock was temporary or regime-shifting.
+                    </div>
+                    ${portfolioData.specific_notes ? `
+                    <hr style="border: none; border-top: 1px solid #e5e5e5; margin: 1.5em 0;">
+                    <div class="narrative" style="background-color: #fff8e1; border-left: 4px solid #ff9800;">
+                        <b>In this specific shock (${shockMonth}, ${portfolio}), we observe:</b>
+                        
+                        ${portfolioData.specific_notes}
+                    </div>` : ''}
+                    <p style="margin-top:1.0em;font-size:13px;color:#666;"><i>This scenario illustrates historical outcomes and is not a forecast.</i></p>
+                `;
+
+                output.innerHTML = html;
+                
+                // NOW render Plotly chart (after container exists)
+                const relMonths = [-1, 0, 1, 3, 6, 12];
+                const portReturns = relMonths.map(m => portfolioData.cumulative[m] || 0);
+                const oilReturns = relMonths.map(m => shockData.oil_cumulative[m] || 0);
+                const portColors = portReturns.map(r => r >= 0 ? '#1a9850' : '#d73027');
+                const oilSizes = relMonths.map(m => m === 0 ? 14 : 9);
+
+                const trace1 = {
+                    x: relMonths,
+                    y: portReturns,
+                    mode: 'lines+markers',
+                    name: 'Portfolio cumulative P&L %',
+                    line: {color: '#2c7fb8', width: 2},
+                    marker: {
+                        size: 10,
+                        color: portColors,
+                        line: {color: 'white', width: 1}
+                    },
+                    hovertemplate: 'Rel month: %{x}<br>Portfolio: %{y:.1%}<extra></extra>'
+                };
+
+                const trace2 = {
+                    x: relMonths,
+                    y: oilReturns,
+                    mode: 'lines+markers',
+                    name: 'Oil cumulative return %',
+                    line: {color: '#6a3d9a', width: 2, dash: 'dash'},
+                    marker: {
+                        size: oilSizes,
+                        color: '#6a3d9a',
+                        line: {color: 'white', width: 1}
+                    },
+                    hovertemplate: 'Rel month: %{x}<br>Oil: %{y:.1%}<extra></extra>'
+                };
+
+                const layout = {
+                    title: {
+                        text: 'Portfolio vs Oil cumulative move (entry = one month before shock)',
+                        font: {size: 14}
+                    },
+                    xaxis: {
+                        title: 'Relative month (0 = shock month)',
+                        tickmode: 'array',
+                        tickvals: relMonths,
+                        ticktext: ['−1 (Entry)', '0 (Shock)', '+1', '+3', '+6', '+12']
+                    },
+                    yaxis: {
+                        title: 'Cumulative return / P&L',
+                        tickformat: '+.0%'
+                    },
+                    template: 'plotly_white',
+                    margin: {l: 60, r: 20, t: 50, b: 90},
+                    legend: {
+                        orientation: 'h',
+                        xanchor: 'center',
+                        x: 0.5,
+                        yanchor: 'top',
+                        y: -0.25
+                    },
+                    shapes: [
+                        {
+                            type: 'line',
+                            x0: 0, x1: 0,
+                            y0: 0, y1: 1,
+                            yref: 'paper',
+                            line: {color: '#d73027', width: 1.2, dash: 'dash'}
+                        },
+                        {
+                            type: 'line',
+                            x0: -1, x1: 12,
+                            y0: 0, y1: 0,
+                            line: {color: '#666666', width: 1, dash: 'dot'}
+                        }
+                    ],
+                    annotations: shockData.oil_shock !== null ? [{
+                        x: 0,
+                        y: shockData.oil_cumulative[0] || 0,
+                        text: `Oil shock: ${formatPct(shockData.oil_shock)}`,
+                        showarrow: true,
+                        arrowhead: 2,
+                        ax: 30,
+                        ay: -30,
+                        bgcolor: 'rgba(255,255,255,0.9)',
+                        bordercolor: '#d73027',
+                        borderwidth: 1
+                    }] : []
+                };
+
+                Plotly.newPlot('plot-container', [trace1, trace2], layout, {responsive: true});
+                
+                button.disabled = false;
+            })();
+        }
+    </script>
+</body>
+</html>

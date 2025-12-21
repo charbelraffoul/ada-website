@@ -4,23 +4,23 @@ Oil price shocks are a recurring source of macroeconomic stress, yet their impac
 
 This project investigates how oil price shocks affect sector-level returns, how these effects vary across economic regimes, and what this implies for cyclical versus defensive investment strategies. We complement our empirical analysis with a causal perspective to better distinguish correlation from structural effects.
 
-This website presents the **main findings and visual insights** of our study.  
+This website presents the **main findings and visual insights** of our study. 
 All methodological details, statistical models, and robustness checks are fully documented in the accompanying Jupyter notebooks.
 
 ---
 
 ## Research Questions
 
-**RQ1 — Sector Responses to Oil Shocks**  
+**RQ1 - Sector Responses to Oil Shocks** 
 How do different economic sectors respond to oil price shocks? Which sectors experience the largest drawdowns, and which display defensive behavior?
 
-**RQ2 — Regime-Dependent Effects**  
+**RQ2 - Regime-Dependent Effects** 
 Do sector responses to oil shocks differ across economic regimes? Are some regimes more vulnerable to energy price fluctuations than others?
 
-**RQ3 — Portfolio Implications**  
+**RQ3 - Portfolio Implications** 
 How do cyclical and defensive portfolios perform around oil shock events? Can portfolio composition reduce downside risk during periods of stress?
 
-**Causal Analysis**  
+**Causal Analysis** 
 Under which assumptions can oil price shocks be interpreted as having a causal effect on sector returns?
 
 ---
@@ -33,7 +33,7 @@ To complement the empirical analysis, we provide an **interactive portfolio sand
 
 ## Reproducibility
 
-All results are fully reproducible.  
+All results are fully reproducible. 
 The complete analysis is available in the following notebooks:
 
 - `11_rq1_sector_shocks.ipynb`
