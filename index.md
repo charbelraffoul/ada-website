@@ -37,8 +37,6 @@ layout: full
 <!-- PAGE CONTENT (contained) -->
 <section class="ds-wrap ds-top">
 
-  <h1 style="margin: 18px 0 10px 0;">Introduction</h1>
-
   <p class="ds-lead">
     Oil is more than just a commodity, it is a macroeconomic force that quietly shapes costs, expectations,
     and risk across financial markets. When oil prices move abruptly, markets react, but not all in the same way.
