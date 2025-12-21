@@ -494,6 +494,7 @@ Let's dive deeper and see where these effects really come from.
  </p>
 </div>
 
+<hr>
 <h2>Choose your oil regime</h2>
 
 <p class="ds-lead">
@@ -774,18 +775,7 @@ on who is in charge, how stable the environment is, and how clearly the boss’s
 heard amid broader market noise.
 </p>
 
-<p class="ds-lead">
-To summarize, the boss matters. Oil price movements do not have a single, fixed meaning for the
-company. Their impact on departments depends on who is in charge and the broader
-environment they create.
-</p>
-
-<p class="ds-lead">
-But departments are still large units. Just as in any real company, not all teams inside a
-department behave the same way. To understand where these patterns truly come from, we
-now dive one level deeper and examine industry-level behavior.
-</p>
-
+<hr>
 <h2>From understanding to action: building portfolios around oil shocks</h2>
 
 <p class="ds-lead">
