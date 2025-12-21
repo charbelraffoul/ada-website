@@ -430,7 +430,7 @@ sectors and their underlying industries.
  </div>
 
  <p class="ds-caption">
- <strong>Figure X.</strong> Shock exposure map: abnormal returns during negative vs. positive
+ <strong>Figure 6.</strong> Shock exposure map: abnormal returns during negative vs. positive
  oil shocks (β ± 95% CI). Each point represents a sector or industry, plotted by its
  sensitivity to oil price collapses (x-axis) and oil price surges (y-axis). Use the dropdown
  to toggle between sectors, industries, or both. The diagonal line indicates symmetric exposure;
@@ -739,7 +739,7 @@ movements.
  </div>
 
  <p class="ds-caption">
- <strong>Figure X.</strong> Sector-level oil betas by regime (β ± 95% confidence intervals),
+ <strong>Figure 7.</strong> Sector-level oil betas by regime (β ± 95% confidence intervals),
  controlling for overall market returns. Each point shows how strongly a department
  listens to the boss under a given management style.
  </p>
@@ -822,6 +822,138 @@ The goal is to make the abstract patterns we documented earlier concrete and act
  </p>
 </div>
 
+<h2>Meet the portfolios</h2>
+
+<p class="ds-lead">
+Before you simulate what happens to your money, meet the five portfolio strategies. Each one
+represents a different way to position yourself when the boss is about to make a major move.
+Think of them as different bets on which employees will thrive - or survive - when oil prices shift.
+</p>
+
+<div class="boss-grid">
+
+ <!-- Energy Producers -->
+ <article class="boss-card" data-hover-video>
+ <div class="boss-media">
+ <img class="boss-img" src="{{ '/assets/img/portfolio_energy.png' | relative_url }}" alt="Energy producers portfolio">
+ <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/portfolio_energy.mp4' | relative_url }}"></video>
+ </div>
+
+ <h3>Energy Producers</h3>
+
+ <p class="ds-lead">
+ The all-in bet on oil. This portfolio invests in employees whose paychecks move directly with
+ oil prices: Oil & Gas E&P, Oil & Gas Integrated, and Oil & Gas Refining & Marketing.
+ </p>
+
+ <ul class="boss-traits">
+ <li><strong>Composition:</strong> 50% E&P, 25% Integrated, 25% Refining</li>
+ <li><strong>Oil exposure:</strong> very high, direct</li>
+ <li><strong>When oil surges:</strong> massive upside</li>
+ <li><strong>When oil crashes:</strong> severe downside</li>
+ <li><strong>Best for:</strong> betting on rising oil prices</li>
+ </ul>
+
+ </article>
+
+ <!-- Oil Users -->
+ <article class="boss-card" data-hover-video>
+ <div class="boss-media">
+ <img class="boss-img" src="{{ '/assets/img/portfolio_users.png' | relative_url }}" alt="Oil users portfolio">
+ <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/portfolio_users.mp4' | relative_url }}"></video>
+ </div>
+
+ <h3>Oil Users (Transport & Airlines)</h3>
+
+ <p class="ds-lead">
+ The contrarian bet. This portfolio invests in employees for whom oil is a major cost:
+ Airlines, Marine Shipping, and Railroads. They win when fuel gets cheaper.
+ </p>
+
+ <ul class="boss-traits">
+ <li><strong>Composition:</strong> 40% Airlines, 30% Marine, 30% Rail</li>
+ <li><strong>Oil exposure:</strong> high, inverse</li>
+ <li><strong>When oil surges:</strong> suffer from fuel costs</li>
+ <li><strong>When oil crashes:</strong> benefit from savings</li>
+ <li><strong>Best for:</strong> betting on falling oil prices</li>
+ </ul>
+
+ </article>
+
+ <!-- Defensive Staples -->
+ <article class="boss-card" data-hover-video>
+ <div class="boss-media">
+ <img class="boss-img" src="{{ '/assets/img/portfolio_defensive.png' | relative_url }}" alt="Defensive staples portfolio">
+ <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/portfolio_defensive.mp4' | relative_url }}"></video>
+ </div>
+
+ <h3>Defensive Staples</h3>
+
+ <p class="ds-lead">
+ The safe harbor. This portfolio invests in employees who deliver essentials:
+ Regulated Electric Utilities and Grocery Stores. Stable demand, predictable performance.
+ </p>
+
+ <ul class="boss-traits">
+ <li><strong>Composition:</strong> 60% Utilities, 40% Groceries</li>
+ <li><strong>Oil exposure:</strong> very low</li>
+ <li><strong>When oil surges:</strong> minimal impact</li>
+ <li><strong>When oil crashes:</strong> minimal impact</li>
+ <li><strong>Best for:</strong> crisis hedging, stability-seeking</li>
+ </ul>
+
+ </article>
+
+ <!-- Mixed Exposure -->
+ <article class="boss-card" data-hover-video>
+ <div class="boss-media">
+ <img class="boss-img" src="{{ '/assets/img/portfolio_mixed.png' | relative_url }}" alt="Mixed exposure portfolio">
+ <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/portfolio_mixed.mp4' | relative_url }}"></video>
+ </div>
+
+ <h3>Mixed Exposure (Producers + Users)</h3>
+
+ <p class="ds-lead">
+ The hedged bet. This portfolio balances oil winners and losers: half in energy producers,
+ half in transport and airlines. Opposite forces partially cancel out.
+ </p>
+
+ <ul class="boss-traits">
+ <li><strong>Composition:</strong> 50% producers, 50% users</li>
+ <li><strong>Oil exposure:</strong> moderate, balanced</li>
+ <li><strong>When oil surges:</strong> muted gains (offset)</li>
+ <li><strong>When oil crashes:</strong> muted losses (offset)</li>
+ <li><strong>Best for:</strong> diversified oil exposure</li>
+ </ul>
+
+ </article>
+
+ <!-- Broad Diversified -->
+ <article class="boss-card" data-hover-video>
+ <div class="boss-media">
+ <img class="boss-img" src="{{ '/assets/img/portfolio_broad.png' | relative_url }}" alt="Broad diversified portfolio">
+ <video class="boss-video" muted loop playsinline preload="metadata" data-src="{{ '/assets/video/portfolio_broad.mp4' | relative_url }}"></video>
+ </div>
+
+ <h3>Broad Diversified Mix</h3>
+
+ <p class="ds-lead">
+ The market-neutral approach. This portfolio spreads investment across energy, transport,
+ and defensive sectors. Broad exposure smooths out oil-specific shocks.
+ </p>
+
+ <ul class="boss-traits">
+ <li><strong>Composition:</strong> energy, transport, utilities, groceries</li>
+ <li><strong>Oil exposure:</strong> low to moderate, diversified</li>
+ <li><strong>When oil surges:</strong> modest reaction</li>
+ <li><strong>When oil crashes:</strong> modest reaction</li>
+ <li><strong>Best for:</strong> general market participation</li>
+ </ul>
+
+ </article>
+
+</div>
+
 <h2>Interactive portfolio simulator</h2>
 
 <p class="ds-lead">
@@ -850,7 +982,7 @@ trajectory and the final outcomes at fixed horizons: 1 month, 3 months, 6 months
 </div>
 
 <p class="ds-caption">
-  <strong>Figure X.</strong> Interactive portfolio simulation tool. Choose an initial
+  <strong>Figure 8.</strong> Interactive portfolio simulation tool. Choose an initial
   investment amount, select a historical oil shock event (shock month = month 0), and
   pick a portfolio strategy. The tool assumes you enter the position at the start of
   month −1 (one month before the shock) and tracks realized historical outcomes.
@@ -997,6 +1129,17 @@ through complex systems.
 The boss may be unpredictable, but by watching how different teams respond, we learn
 something essential about the organization itself.
 </p>
+
+<div class="ds-transition-box">
+ <p>
+ One final note: our analysis ends in March 2020. That's when COVID-19 hit and the entire
+ company went into lockdown. All employees went home - not because of the boss's mood, but
+ because the office building itself shut down. That story deserves its own analysis.
+ </p>
+ <p style="text-align: center; margin-top: 1.5rem; font-weight: 600; font-size: 1.1em;">
+ To be continued...
+ </p>
+</div>
 
 <div style="text-align: center; margin: 3rem 0 2rem 0;">
  <p style="font-size: 1.1em; color: #666;">
