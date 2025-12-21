@@ -63,7 +63,7 @@ layout: full
   Watching these responses closely is often the only way to understand how the organization really works.
 </p>
 </section>
-<section>
+
 <!-- MARKET STRUCTURE -->
 <section class="ds-wrap" id="market-structure" style="padding-top: 10px;">
 
