@@ -63,8 +63,6 @@ layout: full
     Observing these responses closely is often the only way to understand how the organization really functions.
   </p>
 
-  <hr style="margin: 46px 0 10px 0; opacity: 0.5;">
-
   </div>
 
 </section>
