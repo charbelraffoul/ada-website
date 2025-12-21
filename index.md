@@ -101,8 +101,6 @@ layout: full
     Tile size reflects median monthly dollar trading volume.
   </p>
 
-  <hr style="margin: 44px 0; opacity: 0.3;">
-
 </section>
 
 
