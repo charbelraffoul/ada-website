@@ -340,11 +340,12 @@ across sectors.
   <img src="{{ '/assets/img/matrix_causal_sectors.png' | relative_url }}"
        alt="Lagged regression p-values across sectors"
        class="img-fluid">
-  <p class="figure-caption">
-    Lagged regressions of sector returns on past oil price changes. Lower values indicate
+</div>
+
+<p class="ds-caption">
+    <strong>Figure 6.</strong> Lagged regressions of sector returns on past oil price changes. Lower values indicate
     stronger evidence that oil prices move before sector returns.
   </p>
-</div>
 
 <p class="ds-lead">
 The heatmap above examines whether past oil price changes help explain sector returns at
@@ -363,11 +364,12 @@ significance appearing only at certain lags or not at all.
   <img src="{{ '/assets/img/p_value_causal.png' | relative_url }}"
        alt="Granger causality results for oil and sector returns"
        class="img-fluid">
-  <p class="figure-caption">
-    Granger causality test results summarizing whether oil price changes help predict future
-    sector returns. Lower bars indicate stronger evidence of oil leading sector performance.
-  </p>
 </div>
+
+<p class="ds-caption">
+    <strong>Figure 7.</strong> Granger causality test results summarizing whether oil price changes help predict future
+    sector returns. Lower bars indicate stronger evidence of oil leading sector performance.
+</p>
 
 <p class="ds-lead">
 The bar chart provides a more direct summary of timing. Each bar shows the strength of
@@ -505,11 +507,12 @@ which oil shocks play out differently.
     alt="Monthly Brent oil price level with regime markers"
     style="width:100%; border-radius:12px;"
   >
-  <figcaption class="ds-caption">
-    Monthly Brent oil prices with regime markers: the Global Financial Crisis (2008–2009),
-    the high-price Plateau (2010–2014), and the Shale period (2014–2016).
-  </figcaption>
 </figure>
+
+<p class="ds-caption">
+    <strong>Figure 9.</strong> Monthly Brent oil prices with regime markers: the Global Financial Crisis (2008–2009),
+    the high-price Plateau (2010–2014), and the Shale period (2014–2016).
+</p>
 
 <p class="ds-lead">
 To make the “environment shift” even more concrete, the next figure shows how turbulent the oil market
@@ -523,11 +526,12 @@ the Shale era as the market adjusts to a new supply regime.
     alt="Rolling 12-month volatility of Brent log returns"
     style="width:100%; border-radius:12px;"
   >
-  <figcaption class="ds-caption">
-    Rolling 12-month volatility of Brent log returns (standard deviation), with the same regime markers.
-    Higher values indicate a more turbulent oil market.
-  </figcaption>
 </figure>
+
+<p class="ds-caption">
+    <strong>Figure 10.</strong> Rolling 12-month volatility of Brent log returns (standard deviation), with the same regime markers.
+    Higher values indicate a more turbulent oil market.
+</p>
 
 <p class="ds-lead">
 With this timeline in mind, we can now meet the three bosses who ran the company during these periods.
@@ -656,11 +660,12 @@ estimated while controlling for overall market movements.
     scrolling="no"
     loading="lazy">
   </iframe>
-  <div class="ds-caption">
-    36-month rolling oil beta by sector. Each line shows how a sector’s sensitivity to oil
-    price changes evolves over time in rolling windows.
-  </div>
 </div>
+
+<p class="ds-caption">
+    <strong>Figure 12.</strong> 36-month rolling oil beta by sector. Each line shows how a sector’s sensitivity to oil
+    price changes evolves over time in rolling windows.
+</p>
 
 <p class="ds-lead">
 Several features stand out immediately. Oil exposure is far from stable: sector betas drift,
@@ -681,12 +686,13 @@ when a given boss is in charge.
     alt="Oil beta by sector and regime"
     style="width:100%; border-radius:12px;"
   >
-  <figcaption class="ds-caption">
-    Sector-level oil exposure by regime. Red indicates positive sensitivity to oil price
+</figure>
+
+<p class="ds-caption">
+    <strong>Figure 13.</strong> Sector-level oil exposure by regime. Red indicates positive sensitivity to oil price
     changes, blue indicates negative sensitivity, and lighter colors indicate weaker
     relationships.
-  </figcaption>
-</figure>
+</p>
 
 <p class="ds-lead">
 Two patterns stand out clearly. First, department behavior is highly regime-dependent: the
