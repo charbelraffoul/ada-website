@@ -470,9 +470,8 @@ TODO, add causality to industries (Figure 9)
 </p>
 
 <hr>
-<h1>Oil regimes</h1>
 
-<h2>Choose your oil regime</h2>
+<h1>Choose your oil regime</h1>
 
 <p class="ds-lead">
 Looking back, the company goes through three very different management styles. You can
@@ -721,7 +720,7 @@ movements.
   </div>
 
   <p class="ds-caption">
-    <strong>Figure X.</strong> Sector-level oil betas by regime (β ± 95% confidence intervals),
+    <strong>Figure 14.</strong> Sector-level oil betas by regime (β ± 95% confidence intervals),
     controlling for overall market returns. Each point shows how strongly a department
     listens to the boss under a given management style.
   </p>
