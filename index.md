@@ -252,27 +252,27 @@ layout: full
     </p>
   </section>
 
-<p class="ds-lead">
-  Two patterns stand out. During large negative oil shocks, sector returns shift downward
-  and become more dispersed, indicating that adverse oil movements are associated with
-  broad market stress but uneven exposure across sectors. In contrast, positive oil shocks
-  are followed by higher and more tightly clustered sector returns, suggesting a more
-  uniform response when oil prices rise sharply.
-</p>
+  <p class="ds-lead">
+    Two patterns stand out. During large negative oil shocks, sector returns shift downward
+    and become more dispersed, indicating that adverse oil movements are associated with
+    broad market stress but uneven exposure across sectors. In contrast, positive oil shocks
+    are followed by higher and more tightly clustered sector returns, suggesting a more
+    uniform response when oil prices rise sharply.
+  </p>
 
-<p class="ds-lead">
-  Normal periods lie between these extremes, with returns that are generally positive
-  and less volatile. Together, these distributions suggest that oil shocks matter not
-  only through their direction, but also through the way they reshape the cross-section
-  of sector performance.
-</p>
+  <p class="ds-lead">
+    Normal periods lie between these extremes, with returns that are generally positive
+    and less volatile. Together, these distributions suggest that oil shocks matter not
+    only through their direction, but also through the way they reshape the cross-section
+    of sector performance.
+  </p>
 
-<p class="ds-lead">
-To move beyond distributions and summarize these effects more directly, we now compare
-average sector returns during oil-shock periods relative to normal conditions.
-</p>
-<section class="ds-wrap ds-figure-section">
+  <p class="ds-lead">
+  To move beyond distributions and summarize these effects more directly, we now compare
+  average sector returns during oil-shock periods relative to normal conditions.
+  </p>
 
+  <section class="ds-wrap ds-figure-section">
   <div class="ds-static-figure">
     <!-- Animated version: export an SVG and place it at /assets/img/shock_vs_non_shock_mean_return_diff.svg -->
     <div
@@ -287,54 +287,51 @@ average sector returns during oil-shock periods relative to normal conditions.
       />
     </div>
   </div>
-
   <p class="ds-caption">
     <strong>Figure 5.</strong> Difference in average sector returns during positive and negative
     oil-shock periods relative to no-shock periods.
   </p>
+  </section>
 
-</section>
+  <p class="ds-lead">
+    The figure highlights a clear asymmetry in how sectors respond to oil price disruptions.
+    Positive oil shocks are associated with modest improvements in average returns relative
+    to normal periods across most sectors. In contrast, negative oil shocks lead to
+    substantially larger declines, indicating that downside effects dominate.
+  </p>
+
+  <p class="ds-lead">
+    The <strong>Energy</strong> sector stands out most clearly. While it benefits during positive
+    oil shocks, it experiences by far the largest deterioration during negative shocks,
+    reflecting its direct exposure to adverse oil price movements. Other sectors display
+    more muted responses, suggesting that oil shocks primarily reshape the cross-section
+    of sector performance rather than uniformly shifting returns.
+  </p>
+
+<h3>From patterns to causality</h3>
+
 <p class="ds-lead">
-The figure highlights a clear asymmetry in how sectors respond to oil price disruptions.
-Positive oil shocks are associated with modest improvements in average returns relative
-to normal periods across most sectors. In contrast, negative oil shocks lead to
-substantially larger declines, indicating that downside effects dominate.
+  Up to this point, we have documented clear differences in how sectors behave during periods
+  of oil price stress. These patterns are visible in the data, but they raise a natural next
+  question: are oil price movements simply occurring at the same time as sector returns, or
+  do they tend to happen first and trigger the responses we observe?
 </p>
 
 <p class="ds-lead">
-The <strong>Energy</strong> sector stands out most clearly. While it benefits during positive
-oil shocks, it experiences by far the largest deterioration during negative shocks,
-reflecting its direct exposure to adverse oil price movements. Other sectors display
-more muted responses, suggesting that oil shocks primarily reshape the cross-section
-of sector performance rather than uniformly shifting returns.
-</p>
-
-<h2>From patterns to causality</h2>
-
-<p class="ds-lead">
-Up to this point, we have documented clear differences in how sectors behave during periods
-of oil price stress. These patterns are visible in the data, but they raise a natural next
-question: are oil price movements simply occurring at the same time as sector returns, or
-do they tend to happen first and trigger the responses we observe?
+  To address this question, we shift our focus from co-movements to timing. If changes in oil
+  prices consistently occur before changes in sector returns, this provides evidence that
+  oil price shocks act as a leading force rather than merely reflecting broader market
+  conditions.
 </p>
 
 <p class="ds-lead">
-To address this question, we shift our focus from co-movements to timing. If changes in oil
-prices consistently occur before changes in sector returns, this provides evidence that
-oil price shocks act as a leading force rather than merely reflecting broader market
-conditions.
+  Because large oil price changes are often driven by events outside equity markets—such as
+  geopolitical tensions or supply disruptions—oil prices can reasonably be treated as
+  external shocks. This makes them a useful starting point for examining directional effects
+  across sectors.
 </p>
 
-<p class="ds-lead">
-Because large oil price changes are often driven by events outside equity markets—such as
-geopolitical tensions or supply disruptions—oil prices can reasonably be treated as
-external shocks. This makes them a useful starting point for examining directional effects
-across sectors.
-</p>
-
-<hr>
-
-<h2>Who moves first?: does oil lead sector returns?</h2>
+<h3>Who moves first?</h3>
 
 <div class="figure-block">
   <img src="{{ '/assets/img/matrix_causal_sectors.png' | relative_url }}"
@@ -347,16 +344,16 @@ across sectors.
 </div>
 
 <p class="ds-lead">
-The heatmap above examines whether past oil price changes help explain sector returns at
-different time delays. Each row corresponds to a sector, and each column represents how many
-periods earlier the oil price change occurred.
+  The heatmap above examines whether past oil price changes help explain sector returns at
+  different time delays. Each row corresponds to a sector, and each column represents how many
+  periods earlier the oil price change occurred.
 </p>
 
 <p class="ds-lead">
-The results vary substantially across sectors. The Energy sector shows consistently low
-p-values at short lags, indicating that oil price movements are often followed by changes
-in energy-sector returns. Other sectors display weaker, less consistent patterns, with
-significance appearing only at certain lags or not at all.
+  The results vary substantially across sectors. The Energy sector shows consistently low
+  p-values at short lags, indicating that oil price movements are often followed by changes
+  in energy-sector returns. Other sectors display weaker, less consistent patterns, with
+  significance appearing only at certain lags or not at all.
 </p>
 
 <div class="figure-block">
@@ -370,88 +367,84 @@ significance appearing only at certain lags or not at all.
 </div>
 
 <p class="ds-lead">
-The bar chart provides a more direct summary of timing. Each bar shows the strength of
-evidence that oil price changes help predict future sector returns after accounting for the
-sector’s own past behavior. The dashed line marks the conventional 5% significance level.
+  The bar chart provides a more direct summary of timing. Each bar shows the strength of
+  evidence that oil price changes help predict future sector returns after accounting for the
+  sector’s own past behavior. The dashed line marks the conventional 5% significance level.
 </p>
 
 <p class="ds-lead">
-The Energy sector stands out with very strong evidence that oil prices precede returns.
-Healthcare, Financial Services, and Real Estate also show some evidence of a leading
-relationship, although less strongly. Industrials sits close to the significance threshold,
-while sectors such as Technology and Utilities show no evidence that oil prices lead their
-returns.
+  The Energy sector stands out with very strong evidence that oil prices precede returns.
+  Healthcare, Financial Services, and Real Estate also show some evidence of a leading
+  relationship, although less strongly. Industrials sits close to the significance threshold,
+  while sectors such as Technology and Utilities show no evidence that oil prices lead their
+  returns.
 </p>
 
 <p class="ds-lead">
-Overall, the results are clearly heterogeneous. Oil price movements do not lead the entire
-market in the same way. Instead, their effects are strongest in sectors with direct or
-meaningful exposure to oil prices, and weak or absent elsewhere.
+  Overall, the results are clearly heterogeneous. Oil price movements do not lead the entire
+  market in the same way. Instead, their effects are strongest in sectors with direct or
+  meaningful exposure to oil prices, and weak or absent elsewhere.
 </p>
 
 <p class="ds-lead">
-These findings do not prove causality in a strict structural sense. However, they reveal a
-consistent timing pattern: oil prices tend to move first, and certain sectors—especially
-energy-related ones—tend to react afterward. This pattern is consistent with viewing oil
-price shocks as external disturbances that affect sectors differently depending on their
-economic exposure.
+  These findings do not prove causality in a strict structural sense. However, they reveal a
+  consistent timing pattern: oil prices tend to move first, and certain sectors—especially
+  energy-related ones—tend to react afterward. This pattern is consistent with viewing oil
+  price shocks as external disturbances that affect sectors differently depending on their
+  economic exposure.
 </p>
 
-<h2>Sector-level abnormal returns during oil shocks</h2>
+<h3>Sector-level abnormal returns during oil shocks</h3>
 
 <p class="ds-lead">
-So far, we have shown that oil price movements tend to precede returns in certain sectors.
-We now ask a complementary question: when an oil shock occurs, how large is the abnormal
-performance experienced by each sector?
+  So far, we have shown that oil price movements tend to precede returns in certain sectors.
+  We now ask a complementary question: when an oil shock occurs, how large is the abnormal
+  performance experienced by each sector?
 </p>
+
 <p class="ds-lead">
-To answer this, we estimate sector-level regressions of monthly returns on oil price shocks,
-controlling for overall market movements. The coefficients can be interpreted as
-<em>abnormal returns</em> associated with oil-shock months relative to normal periods.
+  To answer this, we estimate sector-level regressions of monthly returns on oil price shocks,
+  controlling for overall market movements. The coefficients can be interpreted as
+  <em>abnormal returns</em> associated with oil-shock months relative to normal periods.
 </p>
+
 <section class="ds-wrap ds-figure-section">
-
   <div class="ds-two-col-figures">
-
-    <!-- NEGATIVE SHOCK -->
-    <div class="ds-figure-col">
-      <div class="ds-static-figure">
-        <img
-          src="{{ '/assets/img/LinREGSectorsNeg.png' | relative_url }}"
-          alt="Sector abnormal returns during negative oil shocks"
-        />
-      </div>
-      <p class="ds-caption">
-        <strong>Figure X.a.</strong> Sector-level abnormal returns during <strong>negative</strong>
-        oil-shock months (β ± 95% CI).
-      </p>
+  <!-- NEGATIVE SHOCK -->
+  <div class="ds-figure-col">
+    <div class="ds-static-figure">
+      <img
+        src="{{ '/assets/img/LinREGSectorsNeg.png' | relative_url }}"
+        alt="Sector abnormal returns during negative oil shocks"
+      />
     </div>
-
-    <!-- POSITIVE SHOCK -->
-    <div class="ds-figure-col">
-      <div class="ds-static-figure">
-        <img
-          src="{{ '/assets/img/LinRegSectorsPos.png' | relative_url }}"
-          alt="Sector abnormal returns during positive oil shocks"
-        />
-      </div>
-      <p class="ds-caption">
-        <strong>Figure X.b.</strong> Sector-level abnormal returns during <strong>positive</strong>
-        oil-shock months (β ± 95% CI).
-      </p>
-    </div>
-
+    <p class="ds-caption">
+      <strong>Figure X.a.</strong> Sector-level abnormal returns during <strong>negative</strong>
+      oil-shock months (β ± 95% CI).
+    </p>
   </div>
-
+  <!-- POSITIVE SHOCK -->
+  <div class="ds-figure-col">
+    <div class="ds-static-figure">
+      <img
+        src="{{ '/assets/img/LinRegSectorsPos.png' | relative_url }}"
+        alt="Sector abnormal returns during positive oil shocks"
+      />
+    </div>
+    <p class="ds-caption">
+      <strong>Figure X.b.</strong> Sector-level abnormal returns during <strong>positive</strong>
+      oil-shock months (β ± 95% CI).
+    </p>
+  </div>
+  </div>
 </section>
-<p class="ds-lead">
-To highlight the asymmetric nature of oil shocks, Figure X contrasts sector-level abnormal
-returns during negative and positive oil-shock months side by side.
-</p>
 
 <p class="ds-lead">
-
+  To highlight the asymmetric nature of oil shocks, Figure X contrasts sector-level abnormal
+  returns during negative and positive oil-shock months side by side.
 </p>
+
+
 
 <h2>At this point, it is tempting to stop at the sector level.</h2>
 
