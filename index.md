@@ -446,7 +446,7 @@ To highlight the asymmetric nature of oil shocks, Figure 8 contrasts sector-leve
 returns during negative and positive oil-shock months side by side.
 </p>
 
-
+<hr>
 
 <h2>At this point, it is tempting to stop at the sector level.</h2>
 
@@ -471,13 +471,13 @@ TODO, add causality to industries (Figure 9)
 
 <hr>
 
-<h1>Choose your oil regime</h1>
+<h2>Choose your oil regime</h2>
 
 <p class="ds-lead">
 Looking back, the company goes through three very different management styles. You can
 think of them as three bosses. Meet them—and pick one to explore.
 </p>
-<h2>Oil price regimes over time</h2>
+<h3>Oil price regimes over time</h3>
 
 <p class="ds-lead">
 To understand these bosses, it helps to look at the full picture, and we must first visualize the timeline they operated in. The figure below shows the monthly Brent oil price level, with the three periods we focus on highlighted.
@@ -525,7 +525,7 @@ the Shale era as the market adjusts to a new supply regime.
 With this timeline in mind, we can now meet the three bosses who ran the company during these periods.
 </p>
 
-<h2>Meet the bosses</h2>
+<h3>Meet the bosses</h3>
 
 <p class="ds-lead">
 Looking back at oil price history, we can clearly distinguish three short but very different
@@ -626,7 +626,7 @@ and which teams (industries) performed differently under each management era?
 The key idea is simple: the same oil price movement can lead to different outcomes depending
 on which boss is in charge. Next, we examine sector behavior conditional on these regimes.
 </p>
-<h2>How departments behave under each boss</h2>
+<h3>How departments behave under each boss</h3>
 
 <p class="ds-lead">
 Now that we have met the bosses, we can look inside the company. Each boss sets a very
