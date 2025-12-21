@@ -34,38 +34,34 @@ layout: full
   </div>
 </div>
 
-<!-- INTRO -->
-<section class="ds-wrap ds-top" id="intro">
+<!-- PAGE CONTENT (contained) -->
+<section class="ds-wrap ds-top">
 
-  <div style="max-width: 820px; margin: 0 auto; text-align: center;">
+  <h1 style="margin: 18px 0 10px 0;">Introduction</h1>
 
-  <p class="ds-lead" >
-    Oil is more than just a commodity; it is a macroeconomic force that quietly shapes costs, expectations,
+  <p class="ds-lead">
+    Oil is more than just a commodity, it is a macroeconomic force that quietly shapes costs, expectations,
     and risk across financial markets. When oil prices move abruptly, markets react, but not all in the same way.
     Some sectors feel the impact immediately through input costs and margins, others through demand and investor sentiment,
     while a few appear relatively insulated.
   </p>
 
-  <p class="ds-lead" >
-    A simple way to think about this is to imagine <strong>oil as a boss</strong>, the central decision maker within a firm.
-    On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team to adapt.
-    But not every team is equally exposed: some are directly exposed and must react immediately, while others are affected more indirectly
-    or remain relatively protected. This leads us to an essential question:
+  <p class="ds-lead">
+    A simple way to think about it is this: imagine <strong>oil as a boss</strong>.
+    On calm days, decisions are predictable and business runs smoothly. On stressful days, sudden changes force every team
+    to adapt, and not every team is equally exposed.
   </p>
 
-  <p class="ds-lead" >
-    <strong><em>How do oil price shocks reshape sector performance, and what does this imply for portfolio design?</em></strong>
-  </p>
+  <blockquote class="ds-quote">
+    <strong>This leads us to an essential question:</strong> how do oil price shocks reshape sector performance,
+    and what does this imply for portfolio design?
+  </blockquote>
 
-  <p class="ds-lead" >
-    In this setting, we step in as consultants inside the firm. When the boss is calm, patterns are easy to read.
-    When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
-    Observing these responses closely is often the only way to understand how the organization really functions.
-  </p>
-
-  </div>
-
-</section>
+  <p class="ds-lead">
+  In this setting, we step in as consultants inside the firm. When the boss is calm, patterns are easy to read.
+  When moods shift abruptly, reactions across teams reveal who is exposed, who adapts, and who remains steady.
+  Watching these responses closely is often the only way to understand how the organization really works.
+</p>
 
 
 <!-- MARKET STRUCTURE -->
